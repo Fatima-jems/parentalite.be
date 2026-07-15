@@ -203,7 +203,7 @@ body {
     color: var(--color-text-title);
     font-size : 2rem;
     line-height: 44px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .page-subtitle {
@@ -211,14 +211,14 @@ body {
     color: var(--color-text-title);
     font-size : 1rem;
     line-height: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .alpha-title {
     font-family: "Dosis", sans-serif;
     color: var(--color-text-title);
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 42px;
 }
 
@@ -227,7 +227,7 @@ body {
     color: var(--color-text-title);
     font-size: 1.5rem;
     line-height: 32px;
-    font-weight: 700
+    font-weight: 600;
 }
 
 .gamma-title {
@@ -236,6 +236,21 @@ body {
     font-size: 1.5rem;
     line-height: 32px;
     font-weight: 600;
+}
+
+.link {
+    color: var(--color-text-title);
+    font-family: "Manrope", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
 
 .list-nav h3{
@@ -1093,15 +1108,36 @@ svg.line-color {
     gap: 24px;
 }
 
-#homepage header .page-title{
-    display: grid;
-    gap: 16px;
+header {
+    position: relative;
+    padding: 0;
+    background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+header .page-subtitle, header .page-title {
     color: var(--color-purple-text);
 }
 
-#homepage header img {
-    position: absolute;
-    bottom: -64px;
+#homepage header .page-title{
+    display: grid;
+    gap: 8px;
+    color: var(--color-purple-text);
+}
+
+
+
+  #homepage header img {
+    margin-bottom: -150px;
+    padding-top: 24px;
+}
+
+#thematique_adoption header img{
+    margin-bottom: -250px;
 }
 
 .text-colored{
@@ -1113,10 +1149,10 @@ svg.line-color {
 }
 
 .partners-section{
-    padding-inline: 0;
+    padding-block: 60px;
 }
 
-.partners-section > .container, .news-section >.container, .agenda-section >.container, .ressources-section>.container{
+.partners-section > .container, .news-section >.container, .agenda-section >.container, .ressources-section>.container, .sous_thematiques-section>.container, .last-articles-section>.container, .annuaire-section>.container,.thematique-agenda-section>.container, .thematiques-ressources-section>.container{
     display: grid;
     gap: 32px;
 }
@@ -1191,6 +1227,18 @@ svg.line-color {
     line-height: 20px; /* 142.857% */
     }  
 
+.tag.pink {
+    border: 1px solid var(--color-pink-stroke);
+    background: var(--color-pink-bg-light);
+    color: var(--color-pink-text);
+    /* Tag/P - label */
+    font-family: "Manrope";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
+
 
 .card {
     display: flex;
@@ -1208,7 +1256,7 @@ svg.line-color {
     height: 350px;
 }
 
-.news-section a, .agenda-section a, .ressources-section a  {
+.news-section a, .agenda-section a, .ressources-section a, .last-articles-section a, .annuaire-section a, .thematiques-ressources-section a, .thematique-agenda-section a {
     text-decoration: none;
 }
 
@@ -1286,6 +1334,12 @@ svg.line-color {
   border: 1px solid var(--color-green-stroke);
   background: var(--color-green-bg-light);
   color: var(--color-green-text);
+}
+
+.card-more-ressources.pink {
+  border: 1px solid var(--color-pink-stroke);
+  background: var(--color-pink-bg-light);
+  color: var(--color-pink-text);
 }
 
 .card-more-ressources.yellow .card-body svg path{
@@ -1472,6 +1526,12 @@ footer > .container {
     gap: 24px;
     }
 
+    #homepage header img {
+    position: absolute;
+    bottom: -64px;
+    margin-bottom: 0;
+}
+
     .partners-section{
     padding-inline: 60px;
     }
@@ -1484,7 +1544,7 @@ footer > .container {
     max-width: 320px;
     }
 
-    .news-section, .depar-section, .agenda-section, .referentiel_satellite-section, .ressources-section, .newsletter-section {
+    .news-section, .depar-section, .agenda-section, .referentiel_satellite-section, .ressources-section, .newsletter-section, .sous_thematiques-section {
     padding-block: 120px;
     }
 
@@ -1513,4 +1573,94 @@ footer > .container {
     justify-content: end;
 }
 
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 4px;
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+
+.breadcrumbs a{
+    text-decoration: none;
+    color: var(--color-text-title);
+}
+
+.breadcrumbs .breadcrumb {
+    font-size: 14px;
+    color: var(--color-text-title);
+    margin-bottom: 0;
+}
+
+.breadcrumbs .breadcrumb.separator{
+    color: var(--color-purple-stroke);
+}
+
+.breadcrumbs .breadcrumb.active {
+    font-weight: bold;
+}
+
+.intro-section {
+    font-size: 1.5rem;
+    line-height: 36px;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+#thematique_adoption .sous_thematiques-section .card {
+    display: flex;
+    min-width: 310px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--color-purple-bg-light);
+    border: none;
+}
+
+#thematique_adoption .sous_thematiques-section h3.beta-title {
+    color: var(--color-purple-text);
+}
+
+#thematique_adoption a:hover {
+    text-decoration: none;
+}
+
+.last-articles-section, .annuaire-section, .thematique-agenda-section, .thematiques-ressources-section {
+    margin-bottom: 64px;
+}
+
+.card-more-ressources.yellow .beta-title {
+  color: var(--color-yellow-text);
+}
+
+.card-more-ressources.green .beta-title {
+  color: var(--color-green-text);
+}
+
+.card-more-ressources.blue .beta-title {
+  color: var(--color-blue-text);
+}
+
+.card-more-ressources.pink .beta-title{
+    color: var(--color-pink-text);
+}
+
+.card-more-ressources.pink svg path{
+    fill: var(--color-pink-text);
+}
+
+#thematique_adoption .partners-section {
+    background-color: var(--color-purple-bg-light);
+}
+
+#thematique_adoption .partners-section img{
+    background-color: var(--color-bg-main);
+    border-radius: var(--border-radius-8);
 }
