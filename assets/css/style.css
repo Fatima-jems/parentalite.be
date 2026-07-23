@@ -1225,15 +1225,20 @@ header .page-subtitle, header .page-title {
 
 
 .tag.yellow {
-    border: 1px solid var(--Coloured-Yellow-Stroke, #F59D01);
+    border: 1px solid var(--color-yellow-stroke);
     background: #FFF8EB;
-    color: var(--Coloured-Yellow-Text, #905C01);
+    color: var(--color-yellow-text);
     /* Tag/P - label */
     font-family: "Manrope";
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 142.857% */
+    fill: var(--color-yellow-text);
+    }
+
+    .tag.yellow svg{
+    fill: var(--color-yellow-text);
     }
 
 .tag.purple {
@@ -2921,4 +2926,9 @@ button.resultFilter {
 .img-activite-banner img{
     border-radius: 16px;
     height: 400px;
+}
+
+#annuaire img.illu-header  {
+    height: 250px;
+    /* width: 250px; */
 }
