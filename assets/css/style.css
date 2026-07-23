@@ -1159,7 +1159,7 @@ svg.line-color  rect{
     gap: 24px;
 }
  #annuaire header {
-    padding: 40px 20px 40px 20px;
+    padding: 118px 20px 40px 20px;
     min-height: 400px;
  }
 
@@ -1584,7 +1584,7 @@ footer > .container {
 @media (min-width: 992px) {
     .line-color{
     top: -1px;
-}
+    }
 
     svg.line-color  rect{
         height: 7px;
@@ -1618,6 +1618,11 @@ footer > .container {
 
     .news-section, .depar-section, .agenda-section, .referentiel_satellite-section, .ressources-section, .newsletter-section, .sous_thematiques-section {
     padding-block: 120px;
+    }
+
+    #annuaire header {
+        padding: 40px 20px 40px 20px;
+        min-height: 400px;
     }
 
     .illu-satellite-referentiel {
