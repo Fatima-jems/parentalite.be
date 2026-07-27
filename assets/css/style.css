@@ -1146,7 +1146,7 @@ svg.line-color  rect{
   height: 21px;
 }
 
-#homepage header, #annuaire header {
+#homepage header, #annuaire header, #thematique_adoption header, #thematique_content header {
     position: relative;
     padding: 0;
     background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
@@ -1158,7 +1158,20 @@ svg.line-color  rect{
     align-items: flex-start;
     gap: 24px;
 }
- #annuaire header, #annuaire-organisme header {
+
+#annuaire header, #thematique_adoption header, #thematique_content header {
+    position: relative;
+    padding: 0;
+    background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
+    display: flex;
+    /* min-height: 513px; */
+    min-height: auto;
+    padding: 118px 20px 40px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+ #annuaire header, #annuaire-organisme header, #thematique_adoption header, #thematique_content header  {
     padding: 118px 20px 40px 20px;
     /* min-height: 400px; */
     background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
@@ -1182,9 +1195,9 @@ header .page-subtitle, header .page-title {
     padding-top: 24px;
 }
 
-#thematique_adoption header img{
+/* #thematique_adoption header img{
     margin-bottom: -250px;
-}
+} */
 
 .text-colored{
     border-radius: 8px;
@@ -1619,7 +1632,7 @@ footer > .container {
     margin-bottom: 0;
     }
 
-    #homepage header, #annuaire header, #annuaire-organisme header {
+    #homepage header, #annuaire header, #annuaire-organisme header, #thematique_adoption header, #thematique_content header {
     position: relative;
     padding: 0;
     background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
@@ -2994,7 +3007,7 @@ button.resultFilter {
     height: 400px;
 }
 
-#annuaire img.illu-header  {
+#annuaire img.illu-header, #thematique_content img.illu-header, #thematique_adoption img.illu-header {
     height: 250px;
     /* width: 250px; */
 }
