@@ -724,5 +724,103 @@
         </div>
     </footer>
     </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    console.log('frontend js is loading');
+
+    // Overlay navigation
+    document.querySelectorAll('.nav-link-overlay').forEach(link => {
+        link.addEventListener('click', function () {
+            const overlay = this.nextElementSibling;
+            const parentNavItem = this.closest('.nav-item');
+
+            
+            console.log(
+            parentNavItem.parentElement.querySelectorAll('.nav-item')
+            );
+
+            
+
+            if (overlay && overlay.classList.contains('nav-overlay')) {
+                overlay.classList.add('open');
+            }
+
+            console.log(document.querySelectorAll('.nav-item'));
+
+            document.querySelectorAll('.fast-link').forEach(el => {
+                el.classList.add('disabled');
+            });
+
+
+           
+Array.from(parentNavItem.parentElement.children).forEach(item => {
+    if (item !== parentNavItem) {
+        item.classList.add('disabled');
+    }
+})
+
+        });
+    });
+
+    // Fermeture overlay
+    document.querySelectorAll('.nav-close-overlay').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.nav-overlay').forEach(el => {
+                el.classList.remove('open');
+            });
+
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('disabled');
+            });
+        });
+    });
+
+    // Menu mobile
+   document.querySelectorAll('.nav-toggle').forEach(btn => {
+
+    btn.addEventListener('click', function () {
+
+        setTimeout(() => {
+
+            const isOpen =
+                document.querySelector('#navbarNavMobile')
+                ?.classList.contains('show');
+
+            document.body.classList.toggle('no-scroll', isOpen);
+
+            document.querySelectorAll('.navbar-mobile').forEach(nav => {
+                nav.classList.toggle('open', isOpen);
+            });
+
+        }, 0);
+
+    });
+
+});
+
+    // Resize écran
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 1200) {
+
+            document.body.classList.remove('no-scroll');
+
+            document.querySelectorAll('.nav-toggle').forEach(el => {
+                el.classList.add('collapsed');
+            });
+
+            document.querySelectorAll('.navbar-collapse').forEach(el => {
+                el.classList.remove('show');
+            });
+
+            document.querySelectorAll('.navbar-mobile').forEach(el => {
+                el.classList.remove('open');
+            });
+        }
+    });
+
+   
+});
+</script>
 </body>
 </html>

@@ -1146,7 +1146,7 @@ svg.line-color  rect{
   height: 21px;
 }
 
-#homepage header, #annuaire header, #annuaire-organisme header {
+#homepage header, #annuaire header {
     position: relative;
     padding: 0;
     background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
@@ -1158,9 +1158,11 @@ svg.line-color  rect{
     align-items: flex-start;
     gap: 24px;
 }
- #annuaire header {
+ #annuaire header, #annuaire-organisme header {
     padding: 118px 20px 40px 20px;
-    min-height: 400px;
+    /* min-height: 400px; */
+    background: linear-gradient(100deg, rgba(0, 167, 170, 0.08) 15.51%, rgba(123, 97, 147, 0.08) 37.88%, rgba(163, 52, 137, 0.08) 47.2%, rgba(210, 0, 126, 0.08) 54.77%, rgba(241, 141, 15, 0.08) 79.97%, rgba(245, 159, 0, 0.08) 95%);
+
  }
 
 header .page-subtitle, header .page-title {
@@ -1202,6 +1204,19 @@ header .page-subtitle, header .page-title {
 }
 .partners-section .beta-title{
     color: var(--color-purple-text);
+}
+
+.logos-row img{
+    display: flex;
+    /* height: 48px; */
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    aspect-ratio: 1/1;
+    background-color: var(--color-bg-main);
+    border-radius: 16px;
+    padding: 12px;
+    width: 100%;
 }
 
 .news-section {
@@ -1663,6 +1678,18 @@ footer > .container {
     justify-content: end;
 }
 
+.logos-row img{
+    display: flex;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 16px;
+    padding: 12px;
+}
+
 }
 
 .breadcrumbs {
@@ -1670,6 +1697,7 @@ footer > .container {
     gap: 4px;
     padding-top: 64px;
     padding-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .breadcrumbs a{
@@ -2819,6 +2847,8 @@ button.resultFilter {
 
 .directory-card__logo img{
     object-fit:contain;
+    height: 100%;
+    width: 100%;
 }
 
 .list-contacts{
@@ -2860,6 +2890,12 @@ button.resultFilter {
     .directory-filters{
         border: none;
         width: 100%;
+    }
+
+    .directory-card__logo img{
+    object-fit:contain;
+    height: 150px;
+    /* width: 144px; */
     }
 
     .tag-filters-list {
@@ -2914,6 +2950,7 @@ button.resultFilter {
         border-bottom: none;
     }
 
+
 }
 
 
@@ -2960,4 +2997,19 @@ button.resultFilter {
 #annuaire img.illu-header  {
     height: 250px;
     /* width: 250px; */
+}
+
+@media (max-width:991.98px){ 
+        .img-activite-banner img{
+    border-radius: 16px;
+    height: 196px;
+    object-fit: cover;
+    width: 100%;
+}
+
+    .logo-organisme img {
+        height: 100px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
 }

@@ -476,48 +476,46 @@
                 </div>
 
                 <!-- Logos -->
-                <div class="row  g-4 logos-row">
-                    <div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/FWBE - Enseignement.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
+                <div class="row g-2 logos-row">
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://www.enseignement.be/">
+                            <img  src="./assets/images/enseignement-fwb.svg" alt="Logo Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                        </a>
                     </div>
-                    <div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/AVIQ.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://www.aviq.be/fr">
+                            <img  src="./assets/images/Logo_AVIQ_Officiel.svg" alt="Logo AVIQ" class="img-fluid partner-logo">
+                        </a>
                     </div>
-                    <div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/COCOF.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://www.federation-wallonie-bruxelles.be/">
+                            <img  src="./assets/images/FWB.svg"  alt="Logo Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                        </a>
                     </div>
-                    <div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/DGDE.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://ccf.brussels/">
+                            <img  src="./assets/images/Logo Francophones Bruxelles.svg" alt="Logo COCOF" class="img-fluid partner-logo">
+                        </a>
                     </div>
-                    <div class="col text-center">
-                    <img  src="./assets/images/Fonds_Houtman.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://www.defenseurdesenfants.be/">
+                            <img src="./assets/images/LOGO_DGDE.svg" alt="Logo DGDE - Délégué général aux droits de l'enfant" class="img-fluid partner-logo">
+                        </a>
                     </div>
-                    <div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/FWB.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
-                    </div><div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/OEJAJ.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
-                    </div><div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/Phare.jpg"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
-                    </div><div class="col-2 col-md-4 col-lg text-center">
-                    <img  src="./assets/images/ONE.png"
-                            alt="Fédération Wallonie Bruxelles"
-                            class="img-fluid partner-logo">
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://www.one.be/public/">
+                            <img  src="./assets/images/logo-ONE.svg" alt="Logo ONE" class="img-fluid partner-logo">
+                        </a>
+                    </div>
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="">
+                            <img  src="./assets/images/Logo-OEJAJ.svg" alt="Logo OEJAJ - Obervatoire de l'Enfance, de ka Jeunesse et de l'AIde à la Jeunesse" class="img-fluid partner-logo">
+                        </a>
+                    </div>
+                    <div class="col-3 col-lg d-flex align-items-center">
+                        <a href="https://ccf.brussels/nos-services/personnes-handicapees/service-phare/">
+                            <img  src="./assets/images/Logo-PHARE.svg" alt="Logo Phare" class="img-fluid partner-logo">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -616,5 +614,103 @@
         </div>
         </footer>
     </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    console.log('frontend js is loading');
+
+    // Overlay navigation
+    document.querySelectorAll('.nav-link-overlay').forEach(link => {
+        link.addEventListener('click', function () {
+            const overlay = this.nextElementSibling;
+            const parentNavItem = this.closest('.nav-item');
+
+            
+            console.log(
+            parentNavItem.parentElement.querySelectorAll('.nav-item')
+            );
+
+            
+
+            if (overlay && overlay.classList.contains('nav-overlay')) {
+                overlay.classList.add('open');
+            }
+
+            console.log(document.querySelectorAll('.nav-item'));
+
+            document.querySelectorAll('.fast-link').forEach(el => {
+                el.classList.add('disabled');
+            });
+
+
+           
+Array.from(parentNavItem.parentElement.children).forEach(item => {
+    if (item !== parentNavItem) {
+        item.classList.add('disabled');
+    }
+})
+
+        });
+    });
+
+    // Fermeture overlay
+    document.querySelectorAll('.nav-close-overlay').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.nav-overlay').forEach(el => {
+                el.classList.remove('open');
+            });
+
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('disabled');
+            });
+        });
+    });
+
+    // Menu mobile
+   document.querySelectorAll('.nav-toggle').forEach(btn => {
+
+    btn.addEventListener('click', function () {
+
+        setTimeout(() => {
+
+            const isOpen =
+                document.querySelector('#navbarNavMobile')
+                ?.classList.contains('show');
+
+            document.body.classList.toggle('no-scroll', isOpen);
+
+            document.querySelectorAll('.navbar-mobile').forEach(nav => {
+                nav.classList.toggle('open', isOpen);
+            });
+
+        }, 0);
+
+    });
+
+});
+
+    // Resize écran
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 1200) {
+
+            document.body.classList.remove('no-scroll');
+
+            document.querySelectorAll('.nav-toggle').forEach(el => {
+                el.classList.add('collapsed');
+            });
+
+            document.querySelectorAll('.navbar-collapse').forEach(el => {
+                el.classList.remove('show');
+            });
+
+            document.querySelectorAll('.navbar-mobile').forEach(el => {
+                el.classList.remove('open');
+            });
+        }
+    });
+
+   
+});
+</script>
 </body>
 </html>
