@@ -80,8 +80,8 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a class="nav-link w-100 text-center active" href="annuaire.html">Annuaire</a>
-                                        <a class="nav-link w-100 text-center" href="agenda.html">Agenda</a>
+                                        <a class="nav-link w-100 text-center" href="annuaire.html">Annuaire</a>
+                                        <a class="nav-link w-100 text-center active" href="agenda.html">Agenda</a>
                                         <a class="nav-link w-100 text-center" href="ressources.html">Ressources</a>
                                         <button class="nav-link dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Recherche
@@ -339,11 +339,11 @@
                 </div>
                 <div class="col-lg-6 col-12"> 
                     <h1 class="page-title">
-                        Annuaire
+                        Agenda
                     </h1>  
                 </div> 
                 <div class="col-12 col-sm-8 col-lg-6"> 
-                    <img src="./assets/images/header-annuaire.svg" class="d-block mx-lg-auto img-fluid illu-header" alt="" loading="lazy"> 
+                    <img src="./assets/images/illu-agenda.svg" class="d-block mx-lg-auto img-fluid illu-header" alt="" loading="lazy"> 
                 </div> 
             </div> 
         </div> 
@@ -354,7 +354,7 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="index.html">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">Annuaire</a></span></p>
+                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="index.html">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">Agenda</a></span></p>
                     </div>
                 </div>
             </div>
@@ -364,348 +364,187 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-12 col-lg-7">
-                        <p class="mb-0">Vous cherchez un service ou une action concrète pour soutenir une famille ou un parent ?  Cet annuaire regroupe à la fois des organismes et les projets qu’ils proposent sur le terrain.</p>
+                        <p class="mb-0">Découvrez les ateliers, rencontres et événements près de chez vous pour échanger, apprendre et avancer ensemble dans votre parcours parental.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="annuaire-list-section">
             <div class="container">
-                <div class="row g-5 d-flex justify-content-between">
-                    <div class="col-4 desktop-annuaire">
-                        <h2 class="gamma-title mb-4">
-                            <i class="fa-solid fa-filter"></i>
-                            Filtrer les résultats
-                        </h2>
-                        <aside class="directory-filters">
-                            <div class="accordion accordion-flush" id="directoryFilters">
-
-                                <!-- TYPE DE STRUCTURE -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterStructure">Type de structure</button>
-                                    </h2>
-                                    <div id="filterStructure" class="accordion-collapse collapse show" data-bs-parent="#directoryFilters">
-                                        <div class="accordion-body">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="organisme">
-                                                <label class="form-check-label" for="organisme">Organisme</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="activite">
-                                                <label class="form-check-label" for="activite">Activité</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- PROVINCE -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterProvince">Province</button>
-                                    </h2>
-                                    <div id="filterProvince" class="accordion-collapse collapse show" data-bs-parent="#directoryFilters">
-                                        <div class="accordion-body">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="bw">
-                                                <label class="form-check-label" for="bw">Brabant wallon</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="bxl">
-                                                <label class="form-check-label" for="bxl">Bruxelles-Capitale</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" checked type="checkbox" id="hainaut">
-                                                <label class="form-check-label" for="hainaut">Hainaut</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="liege">
-                                                <label class="form-check-label" for="liege">Liège</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="lux">
-                                                <label class="form-check-label" for="lux">Luxembourg</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="namur">
-                                                <label class="form-check-label" for="namur">Namur</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- THEMATIQUES -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterThemes">
-                                            Thématiques
-                                            <span class="filter-count">3</span>
-                                        </button>
-                                    </h2>
-                                    <div id="filterThemes" class="accordion-collapse collapse show" data-bs-parent="#directoryFilters">
-                                        <div class="accordion-body">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="adoption">
-                                                <label class="form-check-label" for="adoption">Adoption</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" checked type="checkbox" id="handicap">
-                                                <label class="form-check-label" for="handicap">Handicap</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="familles">
-                                                <label class="form-check-label" for="familles">Familles d'accueil</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="jeunesse">
-                                                <label class="form-check-label" for="jeunesse">Aide à la jeunesse</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- MOMENT DE VIE -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterLife">
-                                            Moment de vie
-                                            <span class="filter-count">4</span>
-                                        </button>
-                                    </h2>
-                                    <div id="filterLife" class="accordion-collapse collapse show" data-bs-parent="#directoryFilters">
-                                        <div class="accordion-body">
-                                            <div class="form-check">
-                                                <input class="form-check-input" checked type="checkbox" id="preconception">
-                                                <label class="form-check-label" for="preconception">Préconception</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" checked type="checkbox" id="grossesse">
-                                                <label class="form-check-label" for="grossesse">Grossesse</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" checked type="checkbox" id="naissance">
-                                                <label class="form-check-label" for="naissance">Naissance</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="petite">
-                                                <label class="form-check-label" for="petite">Petite enfance</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" checked type="checkbox" id="enfance">
-                                                <label class="form-check-label" for="enfance">Enfance</label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="ado">
-                                                <label class="form-check-label" for="ado">Adolescence</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
+                <div class="row">
+                    
+                    <div class="col-12">
+                    <h2 class="alpha-title m-b-8">Événements à venir</h2>
                     </div>
-                    <div class="col-12 col-lg-8">
+                </div>
+                <div class="row g-5 d-flex justify-content-between">
+                    <div class="col-12 col-md-8">
                         <div class="row">
-                            <div class="list-contacts mb-8">
-                                <div class="tab-searchForm">
-                                    <form action="" method="get">
-                                        <div class="form-group input-withIcon w-100">
-                                            <i class="fa-solid fa-magnifying-glass icon"></i>
-                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
-                                            </svg>
-                                            <input class="form-control-lg" type="text" id="searchKeyWords" name="" value="">
+                            <div class="list-events">
+                                <a href="agenda_detail.html" class="event-card card">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-12 col-md event-card-body">
+                                            <div class="card-body h-100 d-flex flex-column">
+                                                <h3 class="event-title card-title">
+                                                    Salon enVIE d'amour 2026
+                                                </h3>
+                                                <div class="event-info">
+                                                    <div class="info-row">
+                                                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3.01 4.9 3.01 6L3 20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V10H19V20ZM19 8H5V6H19V8ZM9 14H7V12H9V14ZM13 14H11V12H13V14ZM17 14H15V12H17V14ZM9 18H7V16H9V18ZM13 18H11V16H13V18ZM17 18H15V16H17V18Z" fill="#4E3A61"/>
+                                                        </svg>
+                                                        <span>Du 18.06.2026 au 20.03.2026</span>
+                                                    </div>
+
+                                                    <div class="info-row">
+                                                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12ZM18 10.2C18 6.57 15.35 4 12 4C8.65 4 6 6.57 6 10.2C6 12.54 7.95 15.64 12 19.34C16.05 15.64 18 12.54 18 10.2ZM12 2C16.2 2 20 5.22 20 10.2C20 13.52 17.33 17.45 12 22C6.67 17.45 4 13.52 4 10.2C4 5.22 7.8 2 12 2Z" fill="#4E3A61"/>
+                                                        </svg>
+                                                        <span>À La Louvière (Louv'Expo)</span>
+                                                    </div>
+
+                                                    <div class="info-row">
+                                                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.67 13.13C18.04 14.06 19 15.32 19 17V20H23V17C23 14.82 19.43 13.53 16.67 13.13Z" fill="#4E3A61"/>
+                                                            <path d="M15 12C17.21 12 19 10.21 19 8C19 5.79 17.21 4 15 4C14.53 4 14.09 4.1 13.67 4.24C14.5 5.27 15 6.58 15 8C15 9.42 14.5 10.73 13.67 11.76C14.09 11.9 14.53 12 15 12Z" fill="#4E3A61"/>
+                                                            <path d="M9 12C11.21 12 13 10.21 13 8C13 5.79 11.21 4 9 4C6.79 4 5 5.79 5 8C5 10.21 6.79 12 9 12ZM9 6C10.1 6 11 6.9 11 8C11 9.1 10.1 10 9 10C7.9 10 7 9.1 7 8C7 6.9 7.9 6 9 6Z" fill="#4E3A61"/>
+                                                            <path d="M9 13C6.33 13 1 14.34 1 17V20H17V17C17 14.34 11.67 13 9 13ZM15 18H3V17.01C3.2 16.29 6.3 15 9 15C11.7 15 14.8 16.29 15 17V18Z" fill="#4E3A61"/>
+                                                        </svg>
+                                                        <span>
+                                                            Pour les professionnels de l'aide, de l'éducation,
+                                                            du soin et du secteur social
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt-auto pt-3">
+                                                    <div class="d-flex flex-wrap gap-2">
+                                                        <span class="tag blue">
+                                                            Handicap
+                                                        </span>
+                                                        <span class="tag yellow">
+                                                            À partir de 150€
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <button type="button" class="btn btn--md btn-primary purple w-100 mt-2 mb-4 resultFilter" data-bs-toggle="modal" data-bs-target="#filtresModal">
-                                    Filtrer les résultats
-                                </button>
-                                <h2 class="alpha-title mt-4">
-                                    <span>3</span> Résultat(s)
-                                </h2>
-                                <div class="tag-filters-list">
-                                    <div>
-                                        <span class="tag grey">Hainaut
-                                            <!-- <span> -->
-                                                <!-- <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 1.175L10.4917 0L5.83333 4.65833L1.175 0L0 1.175L4.65833 5.83333L0 10.4917L1.175 11.6667L5.83333 7.00833L10.4917 11.6667L11.6667 10.4917L7.00833 5.83333L11.6667 1.175Z"/>
-                                                </svg> -->
-                                            <!-- </span> -->
-                                        </span>
-                                        <span class="tag grey">Handicap</span>
+
+                                        <div class="col-12 col-md-auto event-card-image">
+                                            <img src="assets/images/preparer-candidats-adoptants.png" alt="Évènement" class="img-fluid h-100 w-100">
+                                        </div>
+
                                     </div>
-                                    <button class="btn btn-ter purple">Effacer tous les filtres</button>
-                                </div>
+                                </a>
+                                <a href="agenda_detail.html" class="event-card card">
+                                    <div class="row g-0 h-100">
+                                        <div class="col-12 col-md event-card-body">
+                                            <div class="card-body h-100 d-flex flex-column">
+                                                <h3 class="event-title card-title">Salon enVIE d'amour 2026</h3>
+                                                <div class="event-info">
+                                                    <div class="info-row">
+                                                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3.01 4.9 3.01 6L3 20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V10H19V20ZM19 8H5V6H19V8ZM9 14H7V12H9V14ZM13 14H11V12H13V14ZM17 14H15V12H17V14ZM9 18H7V16H9V18ZM13 18H11V16H13V18ZM17 18H15V16H17V18Z" fill="#4E3A61"/>
+                                                        </svg>
+                                                        <span>Du 18.06.2026 au 20.03.2026</span>
+                                                    </div>
+
+                                                    <div class="info-row">
+                                                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12ZM18 10.2C18 6.57 15.35 4 12 4C8.65 4 6 6.57 6 10.2C6 12.54 7.95 15.64 12 19.34C16.05 15.64 18 12.54 18 10.2ZM12 2C16.2 2 20 5.22 20 10.2C20 13.52 17.33 17.45 12 22C6.67 17.45 4 13.52 4 10.2C4 5.22 7.8 2 12 2Z" fill="#4E3A61"/>
+                                                        </svg>
+                                                        <span>À La Louvière (Louv'Expo)</span>
+                                                    </div>
+
+                                                    <div class="info-row">
+                                                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.67 13.13C18.04 14.06 19 15.32 19 17V20H23V17C23 14.82 19.43 13.53 16.67 13.13Z" fill="#4E3A61"/>
+                                                            <path d="M15 12C17.21 12 19 10.21 19 8C19 5.79 17.21 4 15 4C14.53 4 14.09 4.1 13.67 4.24C14.5 5.27 15 6.58 15 8C15 9.42 14.5 10.73 13.67 11.76C14.09 11.9 14.53 12 15 12Z" fill="#4E3A61"/>
+                                                            <path d="M9 12C11.21 12 13 10.21 13 8C13 5.79 11.21 4 9 4C6.79 4 5 5.79 5 8C5 10.21 6.79 12 9 12ZM9 6C10.1 6 11 6.9 11 8C11 9.1 10.1 10 9 10C7.9 10 7 9.1 7 8C7 6.9 7.9 6 9 6Z" fill="#4E3A61"/>
+                                                            <path d="M9 13C6.33 13 1 14.34 1 17V20H17V17C17 14.34 11.67 13 9 13ZM15 18H3V17.01C3.2 16.29 6.3 15 9 15C11.7 15 14.8 16.29 15 17V18Z" fill="#4E3A61"/>
+                                                        </svg>
+                                                        <span>Pour les professionnels de l'aide, de l'éducation, du soin et du secteur social</span>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-auto pt-3">
+                                                    <div class="d-flex flex-wrap gap-2">
+                                                        <span class="tag blue">Handicap</span>
+                                                        <span class="tag yellow">À partir de 150€</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-auto event-card-image">
+                                            <img src="assets/images/preparer-candidats-adoptants.png" alt="Évènement" class="img-fluid h-100 w-100">
+                                        </div>
+                                    </div>
+                                </a>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="#846395"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#846395"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                             
-                                <div class="directory-card card">
-                                    <div class="row g-0 h-100">
-                                        <!-- CONTENT -->
-                                        <div class="directory-card__content">
-                                            <div class="card-body">
-                                                <div>
-                                                    <h3 class="directory-card__title">
-                                                        <a href="#" class="stretched-link text-decoration-none">
-                                                            AMO Chlorophylle – Service d'Actions en Milieu Ouvert
-                                                        </a>
-                                                    </h3>
-                                                    <p class="directory-card__description">
-                                                        Le service propose une aide préventive, tant sociale
-                                                        qu'éducative, au bénéfice des enfants et des jeunes dans
-                                                        leur milieu de vie et dans leurs relations familiales.
-                                                    </p>
-                                                    <div class="directory-card__badges">
-                                                        <span class="tag green badge-organisme">Organisme</span>
-                                                        <span class="tag yellow badge-life">Moment de vie</span>
-                                                        <span class="tag pink badge-theme">Adoption</span>
-                                                        <span class="tag grey badge-more">+3</span>
-                                                    </div>
-                                                </div>
-                                                <!-- LOGO -->
-                                                <div class="col-lg-auto directory-card__logo">
-                                                    <img src="./assets/images/amo-chlorophyle-logo.svg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="directory-card__footer">
-                                                <div class="directory-card__item">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.33 11.9 13.22 11.89 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#414141"/>
-                                                    </svg>
-                                                    <a href="tel:061468400">061/46 84 00</a>
-                                                </div>
-                                                <div class="directory-card__item">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12ZM18 10.2C18 6.57 15.35 4 12 4C8.65 4 6 6.57 6 10.2C6 12.54 7.95 15.64 12 19.34C16.05 15.64 18 12.54 18 10.2ZM12 2C16.2 2 20 5.22 20 10.2C20 13.52 17.33 17.45 12 22C6.67 17.45 4 13.52 4 10.2C4 5.22 7.8 2 12 2Z" fill="#555555"/>
-                                                    </svg>
-                                                    <span>
-                                                        Rue de la Fontaine 19
-                                                        <br>
-                                                        6870 Saint-Hubert
-                                                    </span>
-                                                </div>
-                                                <div class="directory-card__item">
-                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z" fill="#414141"/>
-                                                    </svg>
-                                                    <a href="mailto:contact@amochlorophylle.be">contact@amochlorophylle.be</a>
-                                                </div>
-                                            </div>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                                <div class="directory-card card">
-                                    <div class="row g-0 h-100">
-                                        <!-- CONTENT -->
-                                        <div class="directory-card__content">
-                                            <div class="card-body">
-                                                <div>
-                                                    <h3 class="directory-card__title">
-                                                        <a href="annuaire_organisme.html" class="stretched-link text-decoration-none">
-                                                             Province de Hainaut et agréé par l'AVIQ
-                                                        </a>
-                                                    </h3>
-                                                    <p class="directory-card__description">
-                                                        Le service est organisé par la Province de Hainaut et agréé par l'AVIQ.
-                                                        L'équipe du SAJE travaille au bénéfice de tout enfant de 0 à 8 ans présentant une déficience, une maladie chronique ou génétique, des troubles du développement et / ou du comportement. Le service d'Accompagnement s'adresse également à l'entourage de l'enfant.
-                                                        Un accompagnement peut également être proposé durant la grossesse
-                                                    </p>
-                                                    <div class="directory-card__badges">
-                                                        <span class="tag green badge-organisme">Organisme</span>
-                                                        <span class="tag yellow badge-life">Naissance à enfance</span>
-                                                        <span class="tag pink badge-theme">Handicap</span>
-                                                        <span class="tag grey badge-more">+3</span>
-                                                    </div>
-                                                </div>
-                                                <!-- LOGO -->
-                                                <div class="col-lg-auto directory-card__logo">
-                                                    <img src="./assets/images/logo-province-hainaut-aviq.svg" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="directory-card__footer">
-                                                <div class="directory-card__item">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.33 11.9 13.22 11.89 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#414141"/>
-                                                    </svg>
-                                                    <a href="tel:061468400">071 208 500</a>
-                                                </div>
-                                                <div class="directory-card__item">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12ZM18 10.2C18 6.57 15.35 4 12 4C8.65 4 6 6.57 6 10.2C6 12.54 7.95 15.64 12 19.34C16.05 15.64 18 12.54 18 10.2ZM12 2C16.2 2 20 5.22 20 10.2C20 13.52 17.33 17.45 12 22C6.67 17.45 4 13.52 4 10.2C4 5.22 7.8 2 12 2Z" fill="#555555"/>
-                                                    </svg>
-                                                    <span>
-                                                        Rue de Villers, 227
-                                                        <br>
-                                                        6010 Couillet
-                                                    </span>
-                                                </div>
-                                                <div class="directory-card__item">
-                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z" fill="#414141"/>
-                                                    </svg>
-                                                    <a href="mailto:saje.tournai@hainaut.be">saje.tournai@hainaut.be</a>
-                                                </div>
-                                            </div>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                                <div class="directory-card card">
-                                    <div class="row g-0 h-100">
-                                        <!-- CONTENT -->
-                                        <div class="directory-card__content">
-                                            <div class="card-body">
-                                                <div>
-                                                    <h3 class="directory-card__title">
-                                                        <a href="annuaire_activite.html" class="stretched-link text-decoration-none">
-                                                             Service d'Accompagnement pour Jeunes Enfants de Tournai
-                                                        </a>
-                                                    </h3>
-                                                    <p class="directory-card__description">
-                                                        L'équipe du SAJE travaille au bénéfice de tout enfant de 0 à 8 ans présentant une déficience, une maladie chronique ou génétique, des troubles du développement et / ou du comportement. Le service d'Accompagnement s'adresse également à l'entourage de l'enfant. Un accompagnement peut également être proposé durant la grossesse, lorsqu'un dialogue
-                                                    </p>
-                                                    <div class="directory-card__badges">
-                                                        <span class="tag green badge-organisme">Activité</span>
-                                                        <span class="tag yellow badge-life">Naissance à enfance</span>
-                                                        <span class="tag pink badge-theme">Handicap</span>
-                                                        <span class="tag grey badge-more">+3</span>
-                                                    </div>
-                                                </div>
-                                                <!-- LOGO -->
-                                                <div class="col-lg-auto directory-card__logo">
-                                                    <img src="./assets/images/Pastille_Logo_SAJE_Tournai.png" alt="" class="img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="directory-card__footer">
-                                                <div class="directory-card__item">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.54 2C3.6 2.89 3.75 3.76 3.99 4.59L2.79 5.79C2.38 4.59 2.12 3.32 2.03 2H3.54ZM13.4 14.02C14.25 14.26 15.12 14.41 16 14.47V15.96C14.68 15.87 13.41 15.61 12.2 15.21L13.4 14.02ZM4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.51C18 12.96 17.55 12.51 17 12.51C15.76 12.51 14.55 12.31 13.43 11.94C13.33 11.9 13.22 11.89 13.12 11.89C12.86 11.89 12.61 11.99 12.41 12.18L10.21 14.38C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.59C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0Z" fill="#414141"/>
-                                                    </svg>
-                                                    <a href="tel:061468400">069 76 56 50</a>
-                                                </div>
-                                                <div class="directory-card__item">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12ZM18 10.2C18 6.57 15.35 4 12 4C8.65 4 6 6.57 6 10.2C6 12.54 7.95 15.64 12 19.34C16.05 15.64 18 12.54 18 10.2ZM12 2C16.2 2 20 5.22 20 10.2C20 13.52 17.33 17.45 12 22C6.67 17.45 4 13.52 4 10.2C4 5.22 7.8 2 12 2Z" fill="#555555"/>
-                                                    </svg>
-                                                    <span>
-                                                        Bld des Combattants,86
-                                                        <br>
-                                                        7500 Tournai
-                                                    </span>
-                                                </div>
-                                                <div class="directory-card__item">
-                                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z" fill="#414141"/>
-                                                    </svg>
-                                                    <a href="mailto:saje.tournai@hainaut.be">saje.tournai@hainaut.be</a>
-                                                </div>
-                                            </div>
-                                        </div>                                    
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 desktop-annuaire">
+                        <div class="card card-contact yellow mb-4">
+                            <div class="card-body">
+                                <h3 class="beta-title">
+                                    Alimentez notre agenda !
+                                </h3>
+
+                                <p class="fw-semibold mb-0">
+                                    Envie de partager un événement concernant le soutien à la parentalité ? 
+                                </p>
+                                <a class="btn btn--md btn-primary yellow w-100">Nous contacter</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="depar-section green">
+            <div class="container">
+                <div class="row d-flex flex-lg-row flex-column flex-column-reverse"> 
+                    <div class="col-lg-7 col-12">
+                        <div class="m-b-6 ">
+                            <h2 class="alpha-title">Débats Parentalité en Réseau</h2>
+                            <h3 class="beta-title">Débattre, apprendre et faire réseau</h3>
+                        </div> 
+                        <p class="m-b-6 ">Chaque année, participez à des explorations collaboratives, ateliers-débats et tables rondes lors des journées DéPaR.</p>
+                        <a href="" class="btn btn--md btn-primary green">Découvrir les journées DéPaR</a>
+                    </div>
+                    <div class="col-12 col-sm-8 col-lg-5"> 
+                        <img src="./assets/images/homepage-depar.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy"> 
+                    </div> 
+                </div> 
+            </div> 
         </section>
         <section class="partners-section">
             <div class="container">
