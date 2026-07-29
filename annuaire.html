@@ -101,7 +101,7 @@
                                                             <i class="fa-solid fa-magnifying-glass icon"></i>
                                                             <input class="form-control-lg" type="text" id="searchInput" name="" value="">
                                                         </div>
-                                                        <button type="submit" class="btn btn--md btn-primary purple">Rechercher</button>
+                                                        <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                     </form>
 
                                                 </div>
@@ -280,7 +280,7 @@
                                             </svg>
                                                         <input class="form-control-lg" type="text" id="searchInput" name="" value="">
                                                     </div>
-                                                    <button type="submit" class="btn btn--md btn-primary purple">Rechercher</button>
+                                                    <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                 </div>
                                             </form>
                                             
@@ -531,15 +531,21 @@
                                     <span>3</span> Résultat(s)
                                 </h2>
                                 <div class="tag-filters-list">
-                                    <div>
-                                        <span class="tag grey">Hainaut
-                                            <!-- <span> -->
-                                                <!-- <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 1.175L10.4917 0L5.83333 4.65833L1.175 0L0 1.175L4.65833 5.83333L0 10.4917L1.175 11.6667L5.83333 7.00833L10.4917 11.6667L11.6667 10.4917L7.00833 5.83333L11.6667 1.175Z"/>
-                                                </svg> -->
-                                            <!-- </span> -->
+                                    <div class="list-tags">
+                                        <span class="tag grey close">Hainaut
+                                            <button>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.8333 5.34169L14.6583 4.16669L9.99996 8.82502L5.34163 4.16669L4.16663 5.34169L8.82496 10L4.16663 14.6584L5.34163 15.8334L9.99996 11.175L14.6583 15.8334L15.8333 14.6584L11.175 10L15.8333 5.34169Z" fill="#555555"/>
+                                                </svg>
+                                            </button>
                                         </span>
-                                        <span class="tag grey">Handicap</span>
+                                        <span class="tag grey close">Handicap
+                                            <button>
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.8333 5.34169L14.6583 4.16669L9.99996 8.82502L5.34163 4.16669L4.16663 5.34169L8.82496 10L4.16663 14.6584L5.34163 15.8334L9.99996 11.175L14.6583 15.8334L15.8333 14.6584L11.175 10L15.8333 5.34169Z" fill="#555555"/>
+                                                </svg>
+                                            </button>
+                                        </span>
                                     </div>
                                     <button class="btn btn-ter purple">Effacer tous les filtres</button>
                                 </div>
@@ -707,6 +713,38 @@
                                         </div>                                    
                                     </div>
                                 </div>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="#846395"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#846395"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            
+                        </div>
+                    </div>
                             </div>
                         </div>
                     </div>

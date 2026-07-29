@@ -1,1 +1,1035 @@
-ressources
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/Bootstrap5/bootstrap.bundle.min.js"></script>
+    <title>Portail Ressources</title>
+</head>
+<body id="ressources_portal">
+    <header class="colored">
+        <svg class="line-color top" width="1728" height="7" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="47" height="7" fill="#1D6FB7"/>
+            <rect x="47" width="82" height="7" fill="#C9C9C9"/>
+            <rect x="129" width="164" height="7" fill="#00A7AA"/>
+            <rect x="293" width="19" height="7" fill="#C9C9C9"/>
+            <rect x="312" width="76" height="7" fill="#F59F00"/>
+            <rect x="388" width="50" height="7" fill="#C9C9C9"/>
+            <rect x="438" width="213" height="7" fill="#7B6193"/>
+            <rect x="651" width="187" height="7" fill="#C9C9C9"/>
+            <rect x="838" width="323" height="7" fill="#D2007E"/>
+            <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
+            <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
+            <rect x="1190" width="52" height="7" fill="#00A7AA"/>
+            <rect x="1190" width="52" height="7" fill="#00A7AA"/>
+            <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
+            <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
+            <rect x="1357" width="252" height="7" fill="#F59F00"/>
+            <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
+            <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
+            <rect x="1623" width="105" height="7" fill="#1D6FB7"/>
+        </svg>
+
+        <div id="navigation" class="container">
+            <div class="row align-items-center"> 
+                <div class="col-lg-12">
+                    <div class="navbar-container navbar-desktop">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid d-flex justify-content-between menu-1">
+                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="" srcset=""></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="depar.html">DéPar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="a-propos.html">À propos</a>
+                                        </li><li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Contact</a>
+                                        </li><li class="nav-item">
+                                            <a class="nav-link" href="faq.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                <!-- </div> -->
+                            </div>
+                        </nav>
+                        <div class="nav-dropdowns-container">
+                            <div class="nav-dropdowns">
+                                <li class="nav-item dropdown">
+                                    <div class="container-fluid d-flex justify-content-between px-0 menu-2">
+
+                                        <button class="nav-link nav-item dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Thématiques
+                                        </button>
+                                        <div class="dropdown-menu thematiques w-100">
+                                            <div class="dropdown-content">
+                                                <ul class=" tab-links ">
+                                                    <li><a class="dropdown-item" href="thematique_portail.html">Adoption</a></li>
+                                                    <li><a class="dropdown-item" href="#">Assuétude</a></li>
+                                                    <li><a class="dropdown-item" href="#">Handicap</a></li>
+                                                    <li><a class="dropdown-item" href="#">Hébergement</a></li>
+                                                    <li><a class="dropdown-item" href="#">Maltraitance de l'enfant</a></li>
+                                                    <li><a class="dropdown-item" href="#">Migration / immigration</a></li>
+                                                    <li><a class="dropdown-item" href="#">Santé mentale</a></li>
+                                                    <li><a class="dropdown-item" href="#">Posture professionnelle</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a class="nav-link w-100 text-center" href="annuaire.html">Annuaire</a>
+                                        <a class="nav-link w-100 text-center" href="agenda.html">Agenda</a>
+                                        <a class="nav-link w-100 text-center active" href="ressources.html">Ressources</a>
+                                        <button class="nav-link dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Recherche
+                                        </button>
+                                        <div class="dropdown-menu w-100 search-section">
+                                            <div class="dropdown-content">
+                                                <ul class=" tab-links list-tags" aria-label="Rechercher sur le site">
+                                                    <li class="tag purple">Alimentation</li>
+                                                    <li class="tag purple">Limites</li>
+                                                    <li class="tag purple">Burn-out parentale</li>
+                                                    <li class="tag purple">Soutenir un parent en deuil</li>
+                                                    <li class="tag purple">Séparation conflictuelle</li>
+                                                </ul>
+                                                <div class="tab-searchForm">
+                                                    <form action="" method="get">
+                                                        <div class="form-group input-withIcon w-100">
+                                                            <i class="fa-solid fa-magnifying-glass icon"></i>
+                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                        </div>
+                                                        <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-container navbar-mobile">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="navbar-top">
+                                <h1><a class="navbar-brand" href="index.html">parentalité.be</a></h1>
+                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="nav-close">
+                                        Menu
+                                        <svg class="ms-2" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 20H30V16.6667H0V20ZM0 11.6667H30V8.33333H0V11.6667ZM0 0V3.33333H30V0H0Z" fill="#4E3A61"/>
+                                        </svg>
+                                    </span>
+                                    <span class="nav-open">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.3333 2.35L20.9833 0L11.6667 9.31667L2.35 0L0 2.35L9.31667 11.6667L0 20.9833L2.35 23.3333L11.6667 14.0167L20.9833 23.3333L23.3333 20.9833L14.0167 11.6667L23.3333 2.35Z" fill="#4E3A61"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-collapse" id="navbarNavMobile">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item nav-item-overlay">
+                                            <button class="nav-link-overlay">
+                                                Thématiques
+                                                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.41 0L0 1.41L4.58 6L0 10.59L1.41 12L7.41 6L1.41 0Z" fill="#846395"/>
+                                                </svg>
+                                            </button>
+                                            <ul class="nav-overlay">
+                                                <li>
+                                                    <button class="nav-close-overlay">
+                                                        <svg class="me-2" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z" fill="#846395"/>
+                                                        </svg>
+                                                        Thématiques
+                                                    </button>
+                                                </li>
+                                                
+                                                    <li class="nav-item">
+                                                        <a href="thematique_portail.html">
+                                                            Adoption
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li class="nav-item">
+                                                        <a href="#">
+                                                            Assuétude
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li class="nav-item">
+                                                        <a href="#">
+                                                            Handicap
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li class="nav-item">
+                                                        <a href="#">
+                                                            Hébergement temporaire en dehors du milieu de vie
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li class="nav-item">
+                                                        <a href="#">
+                                                            Maltraitance de l'enfant
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li class="nav-item">
+                                                        <a href="#">
+                                                            Migration / immigration
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#">
+                                                            Santé mentale
+                                                        </a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="annuaire.html" class="nav-link">
+                                                Annuaire
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="agenda.html" class="nav-link">
+                                                Agenda
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="ressources.html" class="nav-link">
+                                                Ressources
+                                            </a>
+                                        </li>
+                                
+                                    <li class="nav-item nav-item-overlay">
+                                        <button class="nav-link-overlay">
+                                            Recherche
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
+                                            </svg>
+                                        </button>
+
+                                        <div class="nav-overlay">
+                                            <button class="nav-close-overlay">
+                                                <svg class="me-2" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z" fill="#846395"/>
+                                                </svg>
+                                                Recherche
+                                            </button>
+                                            <div class="tab-search" role="presentation">
+                                                
+                                    <div class="tab-search" role="presentation">
+                                        <div class="tab-searchForm">
+                                            
+                                            <form action="/famille/ressources" method="get">
+                                                <div class="FormElement-line w-100">
+                                                    <div class="form-group input-withIcon w-100">
+                                                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
+                                            </svg>
+                                                        <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                    </div>
+                                                    <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                        <ul class="tab-tags" aria-label="Rechercher sur le site">                                        
+                                            <li class="tag purple">Alimentation</li>                                       
+                                            <li class="tag purple">Limites</li>                                       
+                                            <li class="tag purple">Burn-out parentale</li>                                       
+                                            <li class="tag purple">Soutenir un parent en deuil</li>                                       
+                                            <li class="tag purple">Séparation conflictuelle</li>                                       
+                                        </ul>
+                                    </div>
+                                                    
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="navbar-content" id="navbarNav">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item fast-link ">
+                                                <a href="depar.html" class="nav-link">DéPar</a>
+                                            </li>
+                                        
+                                            <li class="nav-item fast-link ">
+                                                <a href="a-propos.html" class="nav-link">
+                                                    À propos 
+                                                    
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item fast-link ">
+                                                <a href="contact.html" class="nav-link">
+                                                    Contact 
+                                                    
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-item fast-link ">
+                                                <a href="faq.html" class="nav-link">
+                                                    FAQ
+                                                    
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                        
+                </div>
+                <div class="col-lg-6 col-12"> 
+                    <h1 class="page-title">
+                        Ressources
+                    </h1>  
+                </div> 
+                <div class="col-12 col-sm-8 col-lg-6"> 
+                    <img src="./assets/images/illu-agenda.svg" class="d-block mx-lg-auto img-fluid illu-header" alt="" loading="lazy"> 
+                </div> 
+            </div> 
+        </div> 
+    </header>
+    <main>
+         <section class="breadcrumbs-section">
+            <div class="container">
+                <!-- Titre -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="index.html">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">Ressources</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="list-ressources">
+            <section class="intro-section">
+                <div class="container">
+                    <!-- Titre -->
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <p class="mb-0">Sur le terrain, vous avez besoin d’outils fiables et directement mobilisables dans votre pratique. Cette rubrique rassemble des ressources concrètes pour vous aider à comprendre, orienter et agir dans vos situations professionnelles.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="brochures-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                        <h2 class="alpha-title m-b-8">Brochures</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between ">
+                        <div class="col-12 brochure-section">
+                            <div class="row  g-4">
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="brochure_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/csm_CApture_image_brochure_repit_7562c8d2f4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Brochure des services de répit</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Diversité des familles</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Brochure</span> • <span class="date">18.04.2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="brochure_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/csm_Couv__Grandir_avec_des_limites_et_des_reperes_67fc2f0edb.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Grandir avec des limites et des repères - Guide pratique</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Brochure</span> • <span class="date">21.01.2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="brochure_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/csm_Couv__Grandir_avec_des_limites_et_des_reperes_67fc2f0edb.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Grandir avec des limites et des repères - Pour aller plus loin...</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Brochure</span> • <span class="date">29.12.2025</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="">
+                                        <div class="card card-more-ressources green h-100">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="card-content-info">
+                                                    <h4 class="beta-title">Voir toutes les brochures</h4>
+                                                    <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="videos-section">
+                <div class="container">
+                    <!-- Titre -->
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h3 class="alpha-title m-b-8">Vidéos</h3>
+                        </div>
+                    </div>
+
+                    <!-- News list -->
+                    <div class="row  g-4">
+                        <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                            <a href="video_detail.html">
+                                <div class="card video h-100">
+                                    <div class="position-relative w-100">
+                                        <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="...">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_di_2672_17380)">
+                                            <rect x="6" y="3" width="40" height="40" rx="20" fill="#4E3A61"/>
+                                            <path d="M32.5625 22.7039L22.25 28.6578L22.25 16.75L32.5625 22.7039Z" fill="#F6F3F7"/>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_di_2672_17380" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="3"/>
+                                            <feGaussianBlur stdDeviation="3"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.0482755 0 0 0 0 0.149562 0 0 0 0 0.229801 0 0 0 0.1 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2672_17380"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2672_17380" result="shape"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="-3"/>
+                                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0.1 0"/>
+                                            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2672_17380"/>
+                                            </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Au Home Reine Astrid, qu'est-ce qui fait frein au soutien à la parentalité ?</h5>
+                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
+                                        <div class="card-content-info">
+                                            <div class="tags">
+                                                <span class="tag green">Famille d'accueil</span>
+                                                <span class="tag purple">Enfance</span>
+                                            </div>
+                                            <small>Article • 18.04.2026</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <a href="video_detail.html">
+                            <div class="card video h-100">
+                                <div class="position-relative w-100">
+                                    <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="...">
+                                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_di_2672_17380)">
+                                        <rect x="6" y="3" width="40" height="40" rx="20" fill="#4E3A61"/>
+                                        <path d="M32.5625 22.7039L22.25 28.6578L22.25 16.75L32.5625 22.7039Z" fill="#F6F3F7"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_di_2672_17380" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="3"/>
+                                        <feGaussianBlur stdDeviation="3"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.0482755 0 0 0 0 0.149562 0 0 0 0 0.229801 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2672_17380"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2672_17380" result="shape"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="-3"/>
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2672_17380"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Comment aider les parents sans abri à être acteurs malgré l'hébergement ?</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
+                                    <div class="card-content-info">
+                                        <div class="tags">
+                                            <span class="tag green">Aide à la jeunesse</span>
+                                            <span class="tag purple">Enfance</span>
+                                        </div>
+                                        <small>Article • 18.04.2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                            
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                            <a href="video_detail.html">
+                                <div class="card video h-100">
+                                    <div class="position-relative w-100">
+                                        <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="...">
+                                        <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_di_2672_17380)">
+                                            <rect x="6" y="3" width="40" height="40" rx="20" fill="#4E3A61"/>
+                                            <path d="M32.5625 22.7039L22.25 28.6578L22.25 16.75L32.5625 22.7039Z" fill="#F6F3F7"/>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_di_2672_17380" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="3"/>
+                                            <feGaussianBlur stdDeviation="3"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.0482755 0 0 0 0 0.149562 0 0 0 0 0.229801 0 0 0 0.1 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2672_17380"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2672_17380" result="shape"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="-3"/>
+                                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0.1 0"/>
+                                            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2672_17380"/>
+                                            </filter>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Comment aider les victimes de violences conjugales à répondre aux besoins de leurs enfants ?</h5>
+                                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
+                                        <div class="card-content-info">
+                                            <div class="tags">
+                                                <span class="tag green">Adoption</span>
+                                                <span class="tag purple">Enfance</span>
+                                            </div>
+                                            <small>Article • 18.04.2026</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                            <a href="">
+                                <div class="card card-more-ressources green h-100">
+                                    <div class="card-body d-flex flex-column">
+                                        <div class="card-content-info">
+                                            <h4 class="beta-title">Voir toutes les vidéos</h4>
+                                            <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bibliotheque-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                        <h2 class="alpha-title m-b-8">Bibliothèque</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between ">
+                        <div class="col-12 brochure-section">
+                            <div class="row  g-4">
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="bibliotheque_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/lecture-1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">"Etre un bon parent" : une injonction contemporaine</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Diversité des familles</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Bibliothèque</span> • <span class="date">18.04.2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="bibliotheque_detail.html">
+                                        <div class="card h-100">
+                                            <!-- <img src="./assets/images/csm_Couv__Grandir_avec_des_limites_et_des_reperes_67fc2f0edb.jpg" class="card-img-top" alt="..."> -->
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">"Familles, handicaps et inclusion" - La Ligue des Familles défend un projet de société inclusive : actes du colloque</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Bibliothèque</span> • <span class="date">21.01.2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="bibliotheque_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/lecture-2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">"N'oubliez pas les bébés, Monsieur le Président !"</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Bibliothèque</span> • <span class="date">29.12.2025</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="">
+                                        <div class="card card-more-ressources green h-100">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="card-content-info">
+                                                    <h4 class="beta-title">Voir toute la bibliothèque</h4>
+                                                    <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="download-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                        <h2 class="alpha-title m-b-8">À télécharger et imprimer</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between ">
+                        <div class="col-12 brochure-section">
+                            <div class="row  g-4">
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="bibliotheque_detail.html">
+                                        <div class="card h-100">
+                                            <!-- <img src="./assets/images/lecture-1.jpg" class="card-img-top" alt=""> -->
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Des images pour accompagner les parents au quotidien</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Diversité des familles</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Document</span> • <span class="date">18.04.2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="bibliotheque_detail.html">
+                                        <div class="card h-100">
+                                            <!-- <img src="./assets/images/csm_Couv__Grandir_avec_des_limites_et_des_reperes_67fc2f0edb.jpg" class="card-img-top" alt="..."> -->
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Le Jeu de l'Oie Systémique</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Document</span> • <span class="date">21.01.2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="bibliotheque_detail.html">
+                                        <div class="card h-100">
+                                            <!-- <img src="./assets/images/lecture-2.jpg" class="card-img-top" alt=""> -->
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Le Panier à Problèmes</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Document</span> • <span class="date">29.12.2025</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="">
+                                        <div class="card card-more-ressources green h-100">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="card-content-info">
+                                                    <h4 class="beta-title">Voir tous les documents à télécharger et imprimer</h4>
+                                                    <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="textes-legislatifs-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                        <h2 class="alpha-title m-b-8">Textes législatifs</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between ">
+                        <div class="col-12 brochure-section">
+                            <div class="row  g-4">
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="texte-legislatif_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/text-legislatif.svg" class="card-img-top" alt="">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Accords de coopération entre régions</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Diversité des familles</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Texte législatif</span> • <span class="date">2026</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="texte-legislatif_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/text-legislatif.svg" class="card-img-top" alt="">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Arrêté portant réforme des consultations pour enfants</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Texte législatif</span> • <span class="date">2025</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="texte-legislatif_detail.html">
+                                        <div class="card h-100">
+                                            <img src="./assets/images/text-legislatif.svg" class="card-img-top" alt="...">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Arrêté relatif à l’adoption</h5>
+                                                <div class="card-content-info">
+                                                    <div class="tags">
+                                                        <span class="tag green">Aide à la jeunesse</span>
+                                                        <span class="tag purple">Enfance</span>
+                                                    </div>
+                                                    <small><span class="ressource-type">Texte législatif</span> • <span class="date">2025</span></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                                    <a href="">
+                                        <div class="card card-more-ressources green h-100">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="card-content-info">
+                                                    <h4 class="beta-title">Voir tous les textes legislatifs</h4>
+                                                    <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="partners-section bg-color">
+            <div class="container">
+                <!-- Titre -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="alpha-title mb-2">Partenaires</h2>
+                        <h3 class="beta-title">Un site interinstitutionnel aux expertises multiples</h3>
+                    </div>
+                </div>
+
+                <!-- Logos -->
+                <div class="row gy-3 logos-row">
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/enseignement-fwb.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/Logo_AVIQ_Officiel.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/Logo Francophones Bruxelles.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/LOGO_DGDE.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/FWB.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/Logo-OEJAJ.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/Logo-PHARE.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                    <div class="col-3 col-lg text-center">
+                        <img  src="./assets/images/logo-ONE.svg" alt="Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-custom">
+        <div class="container">
+            <svg class="line-color" width="1728" height="7" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="47" height="7" fill="#1D6FB7"/>
+                <rect x="47" width="82" height="7" fill="#C9C9C9"/>
+                <rect x="129" width="164" height="7" fill="#00A7AA"/>
+                <rect x="293" width="19" height="7" fill="#C9C9C9"/>
+                <rect x="312" width="76" height="7" fill="#F59F00"/>
+                <rect x="388" width="50" height="7" fill="#C9C9C9"/>
+                <rect x="438" width="213" height="7" fill="#7B6193"/>
+                <rect x="651" width="187" height="7" fill="#C9C9C9"/>
+                <rect x="838" width="323" height="7" fill="#D2007E"/>
+                <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
+                <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
+                <rect x="1190" width="52" height="7" fill="#00A7AA"/>
+                <rect x="1190" width="52" height="7" fill="#00A7AA"/>
+                <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
+                <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
+                <rect x="1357" width="252" height="7" fill="#F59F00"/>
+                <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
+                <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
+                <rect x="1623" width="105" height="7" fill="#1D6FB7"/>
+            </svg>
+            <div class="row">
+
+                <!-- Newsletter -->
+                <div class="col-lg-7">
+                    <h5 class="footer-title mb-3">
+                        S'inscrire à la newsletter
+                    </h5>
+
+                    <div class="newsletter-box">
+                            <form action="">
+                                <div class="form-group">
+                                    <div class="mb-2">
+                                        <input type="email" class="form-control form-control-lg" id="email-newsletter" placeholder="Adresse email">
+                                        <a href="#" class="link-more-info">En savoir plus sur la newsletter</a>
+                                    </div>
+                                </div>
+                                <button href="" class="btn btn--md btn-secondary purple">Je m’inscris !</button>
+                            </form>
+                        </div>
+
+                </div>
+
+                <!-- Logo -->
+                <div class="col-lg-5 logo-parentalite">
+                    <img class="" src="./assets/images/logo-parentalité-footer.svg">
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="row">
+
+                <div class="col-md-4 col-lg-3 list-nav">
+                    <h3 class="gamma-title">Parentalité.be</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-3 list-nav">
+                    <h3 class="gamma-title">Plan du site</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Thématiques</a></li>
+                        <li><a href="annuaire.html">Annuaire</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="ressources.html">Ressources</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-lg-4 list-nav">
+                    <h3 class="gamma-title">Légal</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="mentions_legales.html">Mentions légales</a></li>
+                        <li><a href="declaration_accessibilite.html">Déclaration d’accessibilité</a></li>
+                        <li><a href="politique_confidentialite.html">Politique de confidentialité et cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bas de footer -->
+            <div class="footer-bottom text-center">
+                <p class="mb-0">
+                    Ce site est réalisé avec le support de
+                    <img src="assets/images/ETNIC_LOGO.svg">
+                </p>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    console.log('frontend js is loading');
+
+    // Overlay navigation
+    document.querySelectorAll('.nav-link-overlay').forEach(link => {
+        link.addEventListener('click', function () {
+            const overlay = this.nextElementSibling;
+            const parentNavItem = this.closest('.nav-item');
+
+            
+            console.log(
+            parentNavItem.parentElement.querySelectorAll('.nav-item')
+            );
+
+            
+
+            if (overlay && overlay.classList.contains('nav-overlay')) {
+                overlay.classList.add('open');
+            }
+
+            console.log(document.querySelectorAll('.nav-item'));
+
+            document.querySelectorAll('.fast-link').forEach(el => {
+                el.classList.add('disabled');
+            });
+
+
+           
+Array.from(parentNavItem.parentElement.children).forEach(item => {
+    if (item !== parentNavItem) {
+        item.classList.add('disabled');
+    }
+})
+
+        });
+    });
+
+    // Fermeture overlay
+    document.querySelectorAll('.nav-close-overlay').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.nav-overlay').forEach(el => {
+                el.classList.remove('open');
+            });
+
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('disabled');
+            });
+        });
+    });
+
+    // Menu mobile
+   document.querySelectorAll('.nav-toggle').forEach(btn => {
+
+    btn.addEventListener('click', function () {
+
+        setTimeout(() => {
+
+            const isOpen =
+                document.querySelector('#navbarNavMobile')
+                ?.classList.contains('show');
+
+            document.body.classList.toggle('no-scroll', isOpen);
+
+            document.querySelectorAll('.navbar-mobile').forEach(nav => {
+                nav.classList.toggle('open', isOpen);
+            });
+
+        }, 0);
+
+    });
+
+});
+
+    // Resize écran
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 1200) {
+
+            document.body.classList.remove('no-scroll');
+
+            document.querySelectorAll('.nav-toggle').forEach(el => {
+                el.classList.add('collapsed');
+            });
+
+            document.querySelectorAll('.navbar-collapse').forEach(el => {
+                el.classList.remove('show');
+            });
+
+            document.querySelectorAll('.navbar-mobile').forEach(el => {
+                el.classList.remove('open');
+            });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
