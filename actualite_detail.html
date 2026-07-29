@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./assets/css/Bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/Bootstrap5/bootstrap.bundle.min.js"></script>
-    <title>Page Annuaire détail organisme</title>
+    <title>Page actualité détail</title>
 </head>
-<body id="annuaire-organisme">
+<body id="actualite_detail">
     <header>
         <svg class="line-color top" width="1728" height="7" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
@@ -32,16 +32,13 @@
             <rect x="1623" width="105" height="7" fill="#1D6FB7"/>
         </svg>
 
-        <div class="container">
-            <div class="row align-items-center"> 
-                <div class="col-lg-12">
-                    <div id="navigation" class="container">
+        <div id="navigation" class="container">
             <div class="row align-items-center"> 
                 <div class="col-lg-12">
                     <div class="navbar-container navbar-desktop">
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid d-flex justify-content-between menu-1">
-                                <a class="navbar-brand" href="#"><img src="./assets/images/logo-nav.svg" alt="" srcset=""></a>
+                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="" srcset=""></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                                 </button>
@@ -273,18 +270,20 @@
                                                 
                                     <div class="tab-search" role="presentation">
                                         <div class="tab-searchForm">
-                                            <form action="" method="get">
+                                            
+                                            <form action="/famille/ressources" method="get">
                                                 <div class="FormElement-line w-100">
                                                     <div class="form-group input-withIcon w-100">
                                                         <i class="fa-solid fa-magnifying-glass icon"></i>
                                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
-                                                        </svg>
+                                                <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
+                                            </svg>
                                                         <input class="form-control-lg" type="text" id="searchInput" name="" value="">
                                                     </div>
                                                     <button type="submit" class="btn btn--md btn-primary purple">Rechercher</button>
                                                 </div>
                                             </form>
+                                            
                                         </div>
                                         <ul class="tab-tags" aria-label="Rechercher sur le site">                                        
                                             <li class="tag purple">Alimentation</li>                                       
@@ -332,28 +331,20 @@
                             </div>
                         </nav>
                     </div>
-                </div>
-            </div> 
-        </div> 
+
+                        
                 </div>
                 <div class="col-lg-6 col-12">
                     <h1 class="page-subtitle">
-                        Annuaire
+                        Actualités
                     </h1> 
                     <h2 class="page-title">
-                        Province de Hainaut et agréé par l'AVIQ
+                        “Parlons Enfance” : découvrez les résultats !
                     </h2>  
-                    <h3 class="page-desc-title">
-                        Organisme
-                    </h3>
-                    
-                </div> 
-                    <!-- <div class="col-12 col-sm-8 col-lg-6"> 
-                        <img src="./assets/images/thematique-adoption.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy"> 
-                    </div>  -->
-                </div> 
+                </div>
             </div> 
         </div> 
+
     </header>
     <main>
         <section class="breadcrumbs-section">
@@ -361,178 +352,78 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="index.html">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb"><a href="annuaire.html">Annuaire</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">Province de Hainaut et agréé par l'AVIQ</a></span></p>
+                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb"><a href="#">Actualités</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">“Parlons Enfance” : découvrez les résultats !</a></span></p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <section class="intro-section">
+        <section class="intro-section">
             <div class="container">
+                <!-- Titre -->
                 <div class="row">
                     <div class="col img-banner-page-detail">
                         <img src="./assets/images/Illustration bannière.png" alt="">
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
         <section class="article-page">
             <div class="container">
                 <div class="row g-5 d-flex justify-content-between">
-                    <!-- Contenu principal -->
-                    <div class="col-lg-7">
-                        <article class="m-b-12">
-                            <div class="d-flex justify-content-between m-b-6">
-                                <div class="tags">
-                                    <span class="tag yellow">Naissance à enfance</span>
-                                    <span class="tag purple">Handicap</span>
-                                    <span class="tag purple">Aide à la jeunesse</span>
-                                </div>
-                            </div>
-                            <p class="intro">Dans le Hainaut, 90 services publics provinciaux d’Action sociale oeuvrent pour vous dans plusieurs domaines :</p>
-                        </article>
-
-                        
-                        <article class="m-b-12">
-                            <h3 class="alpha-title m-b-8">En un coup d’œil</h3>
-                            <div class="d-lg-flex d-block justify-content-lg-between">
-                                <div class="info public w-100">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7 11H5V18H7V11ZM13 11H11V18H13V11ZM21.5 20H2.5V22H21.5V20ZM19 11H17V18H19V11ZM12 4.26L17.21 7H6.79L12 4.26ZM12 2L2.5 7V9H21.5V7L12 2Z" fill="#261D30"/>
-                                        </svg>
-                                        <h4 class="mb-0">Forme juridique</h4>
+                    <div class="col-lg-7 list-depar-articles">
+                        <section>
+                            <article>
+                                <div class="d-flex justify-content-between m-b-6">
+                                    <p class="text-muted small">
+                                        18.01.2024
+                                    </p>
+                                    <div class="tags">
+                                        <span class="tag yellow">Aide à la jeunesse</span>
+                                        <span class="tag purple">Enfance</span>
                                     </div>
-                                    <p>ASBL</p>
                                 </div>
-                                <div class="info place w-100">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12ZM18 10.2C18 6.57 15.35 4 12 4C8.65 4 6 6.57 6 10.2C6 12.54 7.95 15.64 12 19.34C16.05 15.64 18 12.54 18 10.2ZM12 2C16.2 2 20 5.22 20 10.2C20 13.52 17.33 17.45 12 22C6.67 17.45 4 13.52 4 10.2C4 5.22 7.8 2 12 2Z" fill="#2D3642"/>
-                                        </svg>
-                                        <h4 class="mb-0">Zone de couverture</h4>
-                                    </div>
-                                    <p>Wallonie, Hainaut</p>
+                                <p class="intro-section">La consultation publique “Parlons Enfance” livre ses enseignements et trace les prochaines actions de l’ONE au service des enfants et des familles.</p>
+                            </article>
+                        <!-- </section>
+                        <section> -->
+                            <article class="m-b-8">
+                            <h3 class="alpha-title m-b-8">Description</h3>
+                                <div>
+                                    <p>L’ONE poursuit son engagement en s’appuyant sur vos idées pour nourrir ses actions. Grâce à cette démarche de co-construction, nous continuons d’améliorer les services publics pour l’enfance et les familles.</p>
+                                    <a class="btn btn-ter purple" href="#">Lien</a>
                                 </div>
-                            </div>
-                            <div class="d-lg-flex d-block justify-content-lg-between">
-                                <div class="info public w-100">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M23 11.99L20.56 9.2L20.9 5.51L17.29 4.69L15.4 1.5L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5L3.44 9.2L1 11.99L3.44 14.78L3.1 18.48L6.71 19.3L8.6 22.5L12 21.03L15.4 22.49L17.29 19.3L20.9 18.48L20.56 14.79L23 11.99ZM19.05 13.47L18.49 14.12L18.57 14.97L18.75 16.92L16.01 17.54L15.57 18.28L14.58 19.96L12.8 19.19L12 18.85L11.21 19.19L9.43 19.96L8.44 18.29L8 17.55L5.26 16.93L5.44 14.97L5.52 14.12L4.96 13.47L3.67 12L4.96 10.52L5.52 9.87L5.43 9.01L5.25 7.07L7.99 6.45L8.43 5.71L9.42 4.03L11.2 4.8L12 5.14L12.79 4.8L14.57 4.03L15.56 5.71L16 6.45L18.74 7.07L18.56 9.02L18.48 9.87L19.04 10.52L20.33 11.99L19.05 13.47Z" fill="#261D30"/>
-                                            <path d="M10.09 13.75L7.77 11.42L6.29 12.91L10.09 16.72L17.43 9.36L15.95 7.87L10.09 13.75Z" fill="#261D30"/>
-                                        </svg>
-                                        <h4 class="mb-0">Structure agréée ou reconnue par</h4>
-                                    </div>
-                                    <p>Aviq</p>
-                                </div>
-                                <div class="info place w-100">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M21.408 11.4124L12.578 2.58244C12.208 2.21244 11.698 2.00244 11.168 2.00244H3.99805C2.89805 2.00244 1.99805 2.90244 1.99805 4.00244V11.1724C1.99805 11.7024 2.20805 12.2124 2.58805 12.5824L11.418 21.4124C12.198 22.1924 13.468 22.1924 14.248 21.4124L21.418 14.2424C22.198 13.4624 22.198 12.2024 21.408 11.4124ZM12.828 20.0024L3.99805 11.1724V4.00244H11.168L19.998 12.8324L12.828 20.0024Z" fill="#261D30"/>
-                                            <path d="M6.49805 8.00244C7.32647 8.00244 7.99805 7.33087 7.99805 6.50244C7.99805 5.67401 7.32647 5.00244 6.49805 5.00244C5.66962 5.00244 4.99805 5.67401 4.99805 6.50244C4.99805 7.33087 5.66962 8.00244 6.49805 8.00244Z" fill="#261D30"/>
-                                        </svg>
-                                        <h4 class="mb-0">Mots-clés</h4>
-                                    </div>
-                                    <p>Médiation, accompagnement, handicap, entraide</p>
-                                </div>
-                            </div>
-                            
-                        </article>
-                        <article class="m-b-12">
-                            <h3 class="alpha-title m-b-8">Ce que propose cet organisme</h3>
-                            <div>
-                                <p>Les secteurs d’activité de la Province de Hainaut en matière sociale sont les suivants : </p>
-                                <ul>
-                                    <li>L’<span class="fw-bold">accompagnement</span>, l’<span class="fw-bold">hébergement</span>, l’<span class="fw-bold">accompagnement en milieu de vie</span>accompagnement en milieu de vie et l’insertion professionnelle des personnes en situation de handicap;</li>
-                                    <li>L’enseignement spécialisé dédié aux élèves à besoins spécifiques et/ou en situation de handicap;</li>
-                                    <li>L’hébergement relevant de l’aide à la jeunesse;</li>
-                                    <li>La guidance en santé mentale;</li>
-                                    <li>La sensibilisation au handicap et la promotion de l’inclusion</li>
-                                </ul>
-                            </div>
-                        </article>
-                        <article class="m-b-12">
-                            <h3 class="alpha-title m-b-8">Activité(s) de l’organisme</h3>
-                            <div id="list-activities">
-                                <p>Cet organisme propose également des actions concrètes sur le terrain :</p>
-                                <ul class="ps-0">
-                                    <li>
-                                        <a href="" class="card activity">
-                                            <img width="80px" src="./assets/images/Pastille_Logo_SAJE_Tournai.png" alt="" srcset="">
-                                            <p class="mb-0">Service d'Accompagnement pour Jeunes Enfants de Tournai</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="card activity">
-                                            <img width="80px" src="./assets/images/Pastille_Logo_SAJE_Tournai.png" alt="" srcset="">
-                                            <p class="mb-0">Service d'Accompagnement pour Jeunes Enfants de Mons</p>
-                                        </a>
-                                    </li>
-                               
-                                </ul>
-                            </div>
-                        </article>
+                            </article>
+                      
                     </div>
 
                     <!-- Aside -->
-                    <aside class="col-lg-4">
-
+                    <aside class="col-lg-4 mt-0">
                         <div class="sticky-lg-top pt-lg-3">
 
-                            <!-- Bloc 1 -->
-                            <div class="logo-organisme mb-4">
-                                <img src="./assets/images/logo-province-hainaut-aviq.svg" alt="" srcset="">
-                            </div>
-
-                            <!-- Bloc 2 -->
-                            <div class="card mb-4 card-contact pink w-100">
+                            <div class="card mb-4 card-contact yellow w-100">
                                 <div class="card-body  w-100">
-                                    <h3 class="beta-title mb-0">Contact</h3>
-                                    <div>
-                                        <h4 class="card-title">
-                                            Personne de contact
-                                        </h4>
-                                        <p class="mb-0">France Pépin</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="card-title">
-                                            Téléphone
-                                        </h4>
-                                        <p class="mb-0">071 208 500</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="card-title">
-                                            Adresse email
-                                        </h4>
-                                        <p class="mb-0">institution.dgas@hainaut.be</p>
-                                    </div>
-                                    <div>
-                                        <h4 class="card-title">
-                                            Adresse
-                                        </h4>
-                                        <p class="mb-0">Rue de Villers, 227
-                                            <br>6010 Couillet</p>
-                                    </div>
-                                    <button class="btn btn--md btn-primary pink w-100">Accéder au site de l'organisme</button>
-
+                                    <h3 class="beta-title mb-0">En savoir plus</h3>
+                                    <p>Explorez dès maintenant les enseignements majeurs de la consultation publique et ce que l’ONE en retient.</p>
+                                    <a href="#" class="btn btn-primary btn--md yellow">Voir la consultation publique</a>
                                 </div>
                             </div>
+
                         </div>
+
                     </aside>
+
                 </div>
+
             </div>
         </section>
-
-
-
         <section class="last-articles-section">
             <div class="container">
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <h3 class="alpha-title">Organismes similaires dans votre région</h3>
+                        <h3 class="alpha-title">Articles liés</h3>
                     </div>
                 </div>
 
@@ -541,15 +432,16 @@
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
                         <a href="">
                             <div class="card h-100">
-                                <img src="./assets/images/cellule-mobile-reference-handicap.svg" class="card-img-top" alt="...">
+                                <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Cellule Mobile de Référence Handicap et Vieillissement (CRHV)</h5>
+                                    <h5 class="card-title">Préparer les candidats adoptants : repères pour les professionnels de soutien à la parentalité</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
                                     <div class="card-content-info">
-                                        <div class="tags">
-                                            <span class="tag pink">Adoption</span>
+                                        <div class="list-tags">
+                                            <span class="tag yellow">Adoption</span>
                                             <span class="tag purple">Enfance</span>
                                         </div>
-                                        <small>Hainaut</small>
+                                        <small>Article • 18.04.2026</small>
                                     </div>
                                 </div>
                             </div>
@@ -558,15 +450,16 @@
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
                         <a href="">
                             <div class="card h-100">
-                                <img src="./assets/images/amo-oxygene.svg" class="card-img-top" alt="...">
+                                <img src="./assets/images/agenda1.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">AMO Oxyjeunes</h5>
+                                    <h5 class="card-title">"Adolescence et adoption : identité, questions et nouveaux équilibres</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
                                     <div class="card-content-info">
-                                        <div class="tags">
-                                            <span class="tag pink">Adoption</span>
+                                        <div class="list-tags">
+                                            <span class="tag yellow">Adoption</span>
                                             <span class="tag purple">Adolescence</span>
                                         </div>
-                                        <small>Hainaut</small>
+                                        <small>Article • 21.01.2026</small>
                                     </div>
                                 </div>
                             </div>
@@ -575,15 +468,16 @@
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
                         <a href="">
                             <div class="card h-100">
-                                <!-- <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="..."> -->
+                                <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">FAMISOL – Familles Solidaires asbl (FAMISOL asbl)</h5>
+                                    <h5 class="card-title">Grandir adopté·e : l’adoption à l’épreuve de l’adolescence</h5>
+                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
                                     <div class="card-content-info">
-                                        <div class="tags">
-                                            <span class="tag pink">Adoption</span>
-                                            <span class="tag purple">Petite enfance</span>
+                                        <div class="list-tags">
+                                            <span class="tag yellow">Adoption</span>
+                                            <span class="tag purple">Adolescence</span>
                                         </div>
-                                        <small>Hainaut</small>
+                                        <small>Article • 29.12.2025</small>
                                     </div>
                                 </div>
                             </div>
@@ -591,10 +485,10 @@
                         
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
                         <a href="">
-                            <div class="card card-more-ressources pink h-100">
+                            <div class="card card-more-ressources yellow h-100">
                                 <div class="card-body">
                                     <div class="card-content-info">
-                                        <h4 class="beta-title">Voir tous les contacts</h4>
+                                        <h4 class="beta-title">Voir tous les articles</h4>
                                         <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
                                         </svg>
@@ -607,25 +501,87 @@
                 </div>
             </div>
         </section>
-        <section class="newsletter-section">
+       
+        <section class="thematiques-ressources-section">
             <div class="container">
-                <div class="row d-flex flex-lg-row flex-column flex-column-reverse"> 
-                    <div class="col-lg-7 col-12">
-                        <div class="m-b-6 ">
-                            <h2 class="alpha-title">Souhaitez -vous faire partie de l’annuaire ?</h2>
-                            <!-- <h3 class="beta-title">S’informer, s’inspirer, se connecter</h3> -->
-                        </div> 
-                        <p class="m-b-6 ">Téléchargez le formulaire et envoyez-le à l’adresse parentalite@one.be</p>
-                        <button href="" class="btn btn--md btn-primary pink">Télécharger le formulaire</button>
+                <!-- Titre -->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3 class="alpha-title">Ressources liées</h3>
                     </div>
-                    <div class="col-12 col-sm-8 col-lg-5"> 
-                        <img src="./assets/images/inscription-annuaire.svg" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy"> 
-                    </div> 
-                </div> 
-            </div> 
+                </div>
+
+                <!-- News list -->
+                <div class="row g-4">
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <a href="">
+                            <div class="card h-100">
+                                <img src="./assets/images/confier-son-enfant.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Confier son enfant en adoption</h5>
+                                    <div class="card-content-info">
+                                        <div class="list-tags">
+                                            <span class="tag green">Adoption</span>
+                                            <span class="tag purple">Âge adulte</span>
+                                        </div>
+                                        <small>Vidéo • 18.04.2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <a href="">
+                            <div class="card h-100">
+                                <img src="./assets/images/convention-protection-enfants.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Convention sur la protection des enfants et la coopération en matière d'adoption internationale</h5>
+                                    <div class="card-content-info">
+                                        <div class="list-tags">
+                                            <span class="tag green">Adoption</span>
+                                            <span class="tag purple">Adolescence</span>
+                                        </div>
+                                        <small>Texte législatif • 21.01.2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <a href="">
+                            <div class="card h-100">
+                                <img src="./assets/images/brochure-service-repit.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brochure des services de répit</h5>
+                                    <div class="card-content-info">
+                                        <div class="list-tags">
+                                            <span class="tag green">Adoption</span>
+                                            <span class="tag purple">Adolescence</span>
+                                        </div>
+                                        <small>Brochure • 29.12.2025</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <a href="">
+                            <div class="card card-more-ressources green h-100">
+                                <div class="card-body">
+                                    <div class="card-content-info">
+                                        <h4 class="beta-title">Voir toutes les ressources</h4>
+                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
-       
-       
         
         <footer class="footer-custom">
         <div class="container">
