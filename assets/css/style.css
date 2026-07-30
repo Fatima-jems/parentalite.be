@@ -3110,6 +3110,13 @@ button.resultFilter {
     object-fit: contain;
 }
 
+.img-event-full img{
+    width: 100%;
+    height: 269px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .img-activite-banner img{
     border-radius: 16px;
     height: 400px;
@@ -3128,7 +3135,7 @@ button.resultFilter {
     width: 100%;
 }
 
-    .logo-organisme img {
+    .logo-organisme img , .img-event-full img{
         height: 100px;
         object-fit: cover;
         border-radius: 16px;
