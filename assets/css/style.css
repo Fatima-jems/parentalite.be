@@ -1216,7 +1216,7 @@ header .page-subtitle, header .page-title {
 }
 
 .partners-section{
-    padding-block: 120px;
+    padding-block: 40px;
 }
 
 .partners-section > .container, .news-section >.container, .agenda-section >.container, .ressources-section>.container, .sous_thematiques-section>.container, .last-articles-section>.container, .annuaire-section>.container,.thematique-agenda-section>.container, .thematiques-ressources-section>.container, .last-editions-depar-section>.container{
@@ -1458,15 +1458,22 @@ header .page-subtitle, header .page-title {
 }
 
 .card-more-ressources.yellow .card-body svg path{
-  fill: var(--color-yellow-text);
+  fill: var(--color-yellow-stroke);
 }
 
 .card-more-ressources.blue .card-body svg path{
-  fill: var(--color-blue-text);
+  fill: var(--color-blue-stroke);
 }
 
 .card-more-ressources.green .card-body svg path{
-  fill: var(--color-green-text);
+  fill: var(--color-green-stroke);
+}
+
+.card-more-ressources.purple .card-body svg path{
+  fill: var(--color-purple-stroke);
+}
+.card-more-ressources.pink .card-body svg path{
+  fill: var(--color-pink-stroke);
 }
 
 .btn-primary.purple{
@@ -1513,6 +1520,10 @@ header .page-subtitle, header .page-title {
 .referentiel_satellite-section .beta-title{
     color: var(--color-green-text);
 }
+
+.section-colored a.btn, button.btn{
+        width: 100%;
+    }
 
 .illu-satellite-referentiel {
     margin-top: 24px;
@@ -1672,11 +1683,16 @@ footer > .container {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-}
+    }   
 
     .partners-section{
-    padding-inline: 60px;
+    padding-block: 120px;
     }
+
+    .section-colored a.btn, button.btn{
+        width: fit-content;
+    }
+
 
     .partners-section .partner-logo{
     width: 100%;
@@ -1951,6 +1967,7 @@ article p, ul {
     height: 450px;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 #navigation li {
@@ -3659,3 +3676,12 @@ button.nav-link.dropdown-toggle {
     gap: 8px;
     /* flex: 1 0 0; */
 }
+
+/* @media (max-width: 574px) {
+    .scroll {
+        min-width: 300px;
+        max-width: 574px;
+        overflow-x: scroll;
+        display: flex;
+    }
+} */
