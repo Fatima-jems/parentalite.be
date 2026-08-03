@@ -1091,7 +1091,8 @@ button:focus,button:active,button:visited {
 }
 
 .btn-primary.green:hover {
-  background-color: var(--color-green-stroke);
+  background-color: #015455;
+  /* background-color: #407A67; */
 }
 
 .btn-primary.yellow:hover {
@@ -1099,7 +1100,7 @@ button:focus,button:active,button:visited {
 }
 
 .btn-primary.pink:hover {
-  background-color: var(--color-pink-stroke);
+  background-color: #9E2562;
 }
 
 .btn-secondary.purple{
@@ -1242,7 +1243,7 @@ header .page-subtitle, header .page-title {
     border-radius: 8px;
     background: var(--color-purple-stroke);
     color: var(--color-text-light);
-    padding: 8px 16px;
+    padding: 0 16px 12px 16px;
     width: fit-content;
 }
 
@@ -1760,6 +1761,10 @@ footer > .container {
     margin-top: 0;
 }
 
+.newsletter-section.section-colored a.btn, .newsletter-section.section-colored button.btn{
+        width: fit-content;
+        text-wrap: nowrap;
+    }
 
     .partners-section .partner-logo{
     width: 100%;
@@ -2285,9 +2290,9 @@ article p, ul {
 
 .navbar-mobile {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    left: 15px;
+    top: 20px;
+    right: 20px;
+    left: 20px;
     margin-bottom: 24px;
 }
 
