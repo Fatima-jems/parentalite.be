@@ -1969,12 +1969,6 @@ article p, ul {
     border-radius: 0;
 }
 
-#navigation .nav-dropdowns-container {
-    /* border-radius: 8px;
-    border: 1px solid var(--color-purple-stroke);
-    background: var(--color-bg-main); */
-}
-
 #navigation .nav-dropdowns-container a.nav-link, #navigation .nav-dropdowns-container button.nav-link {
     padding-block: 24px;
 }
@@ -2856,8 +2850,7 @@ button.resultFilter {
 }
 
 .list-contacts, .list-events, #depar .list-articles{
-    max-width: 760px;
-    /* margin-bottom: 32px; */
+    width: 760px;
 }
 
 .list-articles {
@@ -3017,13 +3010,13 @@ button.resultFilter {
 
 .logo-organisme img{
     width: 100%;
-    height: 269px;
+    height: 244px;
     object-fit: contain;
 }
 
 .img-event-full img{
     width: 100%;
-    height: 269px;
+    height: 244px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -3047,9 +3040,9 @@ button.resultFilter {
 }
 
     .logo-organisme img , .img-event-full img{
-        height: 100px;
+        height: 196px;
         object-fit: cover;
-        border-radius: 16px;
+        border-radius: 8px;
     }
 }
 
@@ -3242,7 +3235,6 @@ ul.pagination .page-item a.page-link {
     top: -24px;
 }
 
-/* Responsive */
 @media (max-width: 576px) {
 
     .pagination {
@@ -3257,7 +3249,6 @@ ul.pagination .page-item a.page-link {
     }
 }
 
-/* Mobile */
 @media (max-width: 767.98px) {
 
     .event-card-image {
