@@ -2850,7 +2850,7 @@ button.resultFilter {
 }
 
 .list-contacts, .list-events, #depar .list-articles{
-    width: 760px;
+    max-width: 760px;
 }
 
 .list-articles {
@@ -3024,6 +3024,8 @@ button.resultFilter {
 .img-activite-banner img{
     border-radius: 16px;
     height: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
 #annuaire img.illu-header, #thematique_content img.illu-header, #thematique_adoption img.illu-header, #agenda img.illu-header, #depar img.illu-header, header.colored  img.illu-header{
