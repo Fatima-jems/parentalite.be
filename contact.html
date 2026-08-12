@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./assets/css/Bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/Bootstrap5/bootstrap.bundle.min.js"></script>
-    <title>DéPaR</title>
+    <title>Contact</title>
 </head>
-<body id="">
+<body id="contact">
     <header class="colored">
         <svg class="line-color top" width="1728" height="7" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
@@ -240,55 +240,111 @@
                         <div class="">
                             <div class="row contact-form-container">
                                 <div class="col-12">
-                                    <h2 class="alpha-title">Vous avez une question ou un besoin d’information ?</h2>
+                                    <h2 class="alpha-title">Formulaire de contact</h2>
                                 </div>
                                 <div class="col-12">
-                                    <img class="w-100 rounded-1 illu-form-contact" src="./assets/images/illu-contact.jpg" alt="">
-                                </div>
-                                <div class="col-12">
-                                    <h2 class="alpha-title m-b-8">Formulaire de contact</h2>
-                                    <form class="row g-4">
-                                        <div class="col-12">
-                                            <label for="nom" class="form-label">Nom</label>
-                                            <input type="text" class="form-control form-control-lg" id="nom" placeholder="Doe">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="firstname" class="form-label">Prénom</label>
-                                            <input type="text" class="form-control form-control-lg" id="firstname" placeholder="John">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="email" class="form-label">Email</label>
-                                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
-                                        </div>
-                                        <div class="col-md-12">
-                                            <label for="province" class="form-label">Province (optionnel)</label>
-                                            <select id="province" class="form-select form-control-lg">
-                                            <option selected>Choississez une province</option>
-                                            <option>Bruxelles-Capitale</option>
-                                            <option>Hainaut</option>
-                                            <option>Liège</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="demande" class="form-label">Votre demande</label>
-                                            <textarea class="form-control" id="demande" rows="3"></textarea>
-                                        </div>
-                                        <div class="col-12 d-md-flex d-block justify-content-between">
-                                            <div>
-                                                <label for="file_upload" class="form-label custom-file-upload">
-                                                    <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M11 5H9V9H5V11H9V15H11V11H15V9H11V5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="#4E3A61"/>
-                                                    </svg>
 
-                                                    Ajouter un fichier
-                                                </label>
-                                                <input class="form-control d-none" type="file" id="file_upload">
+                                    <p class="fw-bold">Champs obligatoire *</p>
+                                </div>
+                                <form class="row g-4">
+                                    <div class="col-12">
+                                        <fieldset>
+                                            <label class="form-label">Je suis</label>
+
+                                            <div class="d-flex gap-5">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="profil" id="professionnel" value="professionnel" checked>
+                                                    <label class="form-check-label" for="professionnel">
+                                                        Un professionnel
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="profil" id="parent" value="parent">
+                                                    <label class="form-check-label" for="parent">
+                                                        Un parent
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <button type="submit" class="btn btn--md btn-primary purple">Envoyer</button>
-                                        </div>
-                                    </form>
+                                        </fieldset>
+                                    </div>
 
-                                </div>
+                                    <!-- Message parent -->
+                                    <div class="col-12 parent-message">
+                                        <div class="card banner neutral">
+                                            <div class="header-card">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/>
+                                                </svg>
+                                                <h3 class="title-banner">Vous êtes parent ?</h3>
+                                            </div>
+                                            <p class="fw-bold mb-0">Pour toute question ou demande d’information, nous vous invitons à contacter l’ONE via leur formulaire de contact. Cet espace est destiné aux professionnels.</p>
+                                            <a href="https://www.one.be/contact/formulaire-de-contact/" class="btn btn-ter blue">Contacter l'ONE</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Formulaire professionnel -->
+                                    <div class="col-12 form-pro">
+
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <label for="nom" class="form-label">Nom</label>
+                                                <input type="text" class="form-control form-control-lg" id="nom" placeholder="ex: Doe">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="firstname" class="form-label">Prénom</label>
+                                                <input type="text" class="form-control form-control-lg" id="firstname" placeholder="ex: John">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="province" class="form-label">
+                                                    Province (optionnel)
+                                                </label>
+
+                                                <select id="province" class="form-select form-control-lg">
+                                                    <option selected>Choississez une province</option>
+                                                    <option>Bruxelles-Capitale</option>
+                                                    <option>Hainaut</option>
+                                                    <option>Liège</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="demande" class="form-label">
+                                                    Votre demande
+                                                </label>
+
+                                                <textarea
+                                                    class="form-control"
+                                                    id="demande"
+                                                    rows="3"
+                                                ></textarea>
+                                            </div>
+
+                                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <label for="file_upload" class="form-label custom-file-upload">
+                                                        <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M11 5H9V9H5V11H9V15H11V11H15V9H11V5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="#4E3A61"/>
+                                                        </svg>
+
+                                                        Ajouter un fichier
+                                                    </label>
+                                                    <input class="form-control d-none" type="file" id="file_upload">
+                                                </div>
+                                                <button type="submit" class="btn btn--md btn-primary purple">Envoyer</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -309,7 +365,7 @@
                                         <h4 class="card-title">
                                             Adresse email
                                         </h4>
-                                        <p class="mb-0">parentalite@one.be</p>
+                                        <a href="mailto:parentalite@one.be">parentalite@one.be</a>
                                     </div>
                                     <div>
                                         <h4 class="card-title">
@@ -328,34 +384,26 @@
                 </div>
             </div>
         </section>
-        <section class="newsletter-section">
+        <section class="newsletter-section section-colored">
             <div class="container">
-                <div class="row g-4 d-flex flex-lg-row flex-column flex-column-reverse"> 
+                <div class="row g-4 d-flex flex-lg-row flex-column"> 
                     <div class="col-lg-7 col-12">
                         <div class="m-b-6 ">
-                            <h2 class="alpha-title">Ne ratez rien de l’actualité du secteur</h2>
-                            <h3 class="beta-title">S’informer, s’inspirer, se connecter</h3>
+                            <h2 class="alpha-title">Ne ratez rien de l'actualité du secteur</h2>
+                            <h3 class="beta-title">S'informer, s'inspirer, se connecter</h3>
                         </div> 
                         <p class="m-b-6 ">Recevez chaque mois une sélection des dernières ressources, événements, publications et tendances en matière de soutien à la parentalité.</p>
-                        <div class="newsletter-box">
-                            <form action="">
-                                <div class="form-group">
-                                    <div class="mb-2">
-                                        <input type="email" class="form-control form-control-lg" id="email-newsletter" placeholder="Adresse email">
-                                        <a href="#" class="link-more-info">En savoir plus sur la newsletter</a>
-                                    </div>
-                                </div>
-                                <button href="" class="btn btn--md btn-primary pink">Je m’inscris !</button>
-                            </form>
-                        </div>
+                        <a href="https://acd35b8a.sibforms.com/serve/MUIFALTJGEJp2PSMzxQNc6Qyx2w7uiJgH_jzUNzksDCoK_z3hp6Nqiadl9ARVl-_Q2d74hpRWjjwDm0Wt0xq012szwefjEdq1vjMc1F8OuHBRUKXY25Ht1g5GfnLO5yPsm2_q-p_mqFukShe49hZztMibT-7uMCHsBQC4pDAo8TRH6Y4X758oEyU577njNnIu2A4ddpz2C5ypj-k" class="btn btn--md btn-primary pink">
+                            Je m'inscris !
+                        </a>
                     </div>
-                    <div class="col-12 col-sm-8 col-lg-5"> 
+                    <div class="col-12 col-sm-12 col-lg-5"> 
                         <img src="./assets/images/illu newsletter.svg" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy"> 
                     </div> 
                 </div> 
             </div> 
         </section>
-        <section class="partners-section bg-color">
+        <section class="partners-section">
             <div class="container">
                 <!-- Titre -->
                 <div class="row">
@@ -395,7 +443,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer-custom">
+    <footer>
         <div class="container">
             <svg class="line-color" width="1728" height="7" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="47" height="7" fill="#1D6FB7"/>
@@ -419,72 +467,93 @@
                 <rect x="1623" width="105" height="7" fill="#1D6FB7"/>
             </svg>
             <div class="row">
-
                 <!-- Newsletter -->
-                <div class="col-lg-7">
-                    <h5 class="footer-title mb-3">
-                        S'inscrire à la newsletter
-                    </h5>
-
+                <div class="col-12 col-lg-8">
+                    <p class="footer-title mb-2 fw-bold">Newsletter Parentalité.be</p>
                     <div class="newsletter-box">
-                            <form action="">
-                                <div class="form-group">
-                                    <div class="mb-2">
-                                        <input type="email" class="form-control form-control-lg" id="email-newsletter" placeholder="Adresse email">
-                                        <a href="#" class="link-more-info">En savoir plus sur la newsletter</a>
-                                    </div>
-                                </div>
-                                <button href="" class="btn btn--md btn-secondary purple">Je m’inscris !</button>
-                            </form>
-                        </div>
-
+                        <a href="https://acd35b8a.sibforms.com/serve/MUIFALTJGEJp2PSMzxQNc6Qyx2w7uiJgH_jzUNzksDCoK_z3hp6Nqiadl9ARVl-_Q2d74hpRWjjwDm0Wt0xq012szwefjEdq1vjMc1F8OuHBRUKXY25Ht1g5GfnLO5yPsm2_q-p_mqFukShe49hZztMibT-7uMCHsBQC4pDAo8TRH6Y4X758oEyU577njNnIu2A4ddpz2C5ypj-k" class="btn btn--md btn-secondary purple">S'inscrire à la newsletter
+                            <svg class="ms-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="link-more-info d-block">En savoir plus sur la newsletter</a>
+                    </div>
                 </div>
 
                 <!-- Logo -->
-                <div class="col-lg-5 logo-parentalite">
-                    <img class="" src="./assets/images/logo-parentalité-footer.svg">
+                <div class="col-12 col-lg-4">
+                    <div class="list-nav">
+                        <h3 class="gamma-title">Suivez-nous</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <svg class="icon-social-media" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_13593_959)">
+                                        <path d="M34.0605 33.9933H28.1647V24.7788C28.1647 22.5816 28.1254 19.753 25.0982 19.753C22.0274 19.753 21.5576 22.147 21.5576 24.6189V33.9927H15.6617V15.044H21.3218V17.6335H21.401C21.9674 16.667 22.786 15.8719 23.7694 15.3329C24.7528 14.7938 25.8643 14.5311 26.9855 14.5726C32.9612 14.5726 34.063 18.4953 34.063 23.5984L34.0605 33.9933ZM9.00924 12.4538C8.33255 12.4539 7.67099 12.2538 7.10827 11.8787C6.54555 11.5036 6.10695 10.9704 5.84788 10.3465C5.58881 9.72266 5.52091 9.03613 5.65281 8.37375C5.78471 7.71137 6.11047 7.10291 6.58888 6.62529C7.06729 6.14767 7.67688 5.82236 8.34055 5.69049C9.00422 5.55862 9.69216 5.62612 10.3174 5.88445C10.9426 6.14277 11.4771 6.58032 11.8531 7.14177C12.2292 7.70322 12.43 8.36335 12.4301 9.03868C12.4302 9.48708 12.3417 9.93111 12.1699 10.3454C11.998 10.7597 11.7461 11.1362 11.4284 11.4533C11.1108 11.7704 10.7336 12.022 10.3185 12.1937C9.90344 12.3653 9.45856 12.4537 9.00924 12.4538ZM11.9572 33.9933H6.05517V15.044H11.9572V33.9933ZM36.9999 0.160664H3.09252C2.32292 0.151997 1.58131 0.448607 1.03074 0.985316C0.480157 1.52202 0.165643 2.25492 0.15625 3.02296V37.0021C0.165321 37.7705 0.479651 38.5039 1.03021 39.0412C1.58077 39.5785 2.32253 39.8757 3.09252 39.8675H36.9999C37.7714 39.8771 38.5152 39.5808 39.0679 39.0435C39.6207 38.5063 39.9371 37.7721 39.9478 37.0021V3.02051C39.9368 2.25095 39.6201 1.51722 39.0674 0.98052C38.5146 0.443825 37.771 0.148062 36.9999 0.158212" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_13593_959">
+                                        <rect width="40" height="40" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
-
-            <!-- Navigation -->
+             <!-- Navigation -->
             <div class="row">
-
-                <div class="col-md-4 col-lg-3 list-nav">
-                    <h3 class="gamma-title">Parentalité.be</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="a-propos.html">À propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
+                <div class="col-12 col-md-4 col-lg-4 border-b">
+                    <div class="list-nav">
+                        <h3 class="gamma-title">Parentalité.be</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="a-propos.html">À propos</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="annuaire.html">Annuaire</a></li>
+                            <li><a href="agenda.html">Agenda</a></li>
+                            <li><a href="ressources.html">Ressources</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="col-md-4 col-lg-3 list-nav">
-                    <h3 class="gamma-title">Plan du site</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Thématiques</a></li>
-                        <li><a href="annuaire.html">Annuaire</a></li>
-                        <li><a href="agenda.html">Agenda</a></li>
-                        <li><a href="ressources.html">Ressources</a></li>
-                    </ul>
+                <div class="col-12 col-md-8 col-lg-8">
+                    <div class="list-nav">
+                        <h3 class="gamma-title">Thématiques</h3>
+                        <ul class="list-unstyled list-themes">  
+                            <li><a href="thematique_portail.html">Adoption</a></li>
+                            <li><a href="thematique_portail.html">Assuétudes</a></li>
+                            <li><a href="thematique_portail.html">Handicap</a></li>
+                            <li><a href="thematique_portail.html">Maltraitance de l'enfant</a></li>
+                            <li><a href="thematique_portail.html">Migration / immigration</a></li>
+                            <li><a href="thematique_portail.html">Santé mentale</a></li>
+                            <li><a href="thematique_portail.html">Hébergement temporaire en dehors du milieu de vie</a></li>
+                            <li><a href="thematique_portail.html">Isolement social</a></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="col-md-4 col-lg-4 list-nav">
-                    <h3 class="gamma-title">Légal</h3>
-                    <ul class="list-unstyled">
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class=" logo-parentalite">
+                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 d-grid">
+                    <ul class="list-unstyled footer-legal">
+                        <li><a href="plan_site.html">Plan du site</a></li>                            
                         <li><a href="mentions_legales.html">Mentions légales</a></li>
-<li><a href="plan_site.html">Plan du site</a></li>                        <li><a href="declaration_accessibilite.html">Déclaration d’accessibilité</a></li>
+                        <li><a href="declaration_accessibilite.html">Déclaration d’accessibilité</a></li>
                         <li><a href="politique_confidentialite.html">Politique de confidentialité et cookies</a></li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- Bas de footer -->
-            <div class="footer-bottom text-center">
-                <p class="mb-0">
-                    Ce site est réalisé avec le support de
-                    <img src="assets/images/ETNIC_LOGO.svg">
-                </p>
+                <div class="col-12">
+                    <p class="mb-0 mt-4 text-center">
+                        Ce site est réalisé avec le support de
+                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg"></a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
