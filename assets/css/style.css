@@ -1472,7 +1472,7 @@ header .page-subtitle, header .page-title {
 }
 
 .illu-satellite-referentiel img {
-    width: 100%;
+    width: inherit;
     border-radius: 8px;
 }
 
