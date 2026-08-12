@@ -1466,14 +1466,20 @@ header .page-subtitle, header .page-title {
 }
 
 .illu-satellite-referentiel {
-    margin-top: 24px;
     display: flex;
-    gap: 24px;
+gap: 24px;
+margin-top: 24px;
 }
 
 .illu-satellite-referentiel img {
     width: inherit;
     border-radius: 8px;
+}
+
+.illu-satellite-referentiel img {
+    flex: 1;
+    min-width: 0;
+    height: auto;
 }
 
 .ressources-section {
