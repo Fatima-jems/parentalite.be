@@ -2369,7 +2369,7 @@ body#navigation.dropdown-toggle.active:after {
     font-weight: 500;
 }
 
-#navigation .menu-1 .nav-link:focus, #navigation .menu-2 .nav-link:focus {
+#navigation .menu-1 .nav-link:focus-visible, #navigation .menu-2 .nav-link:focus-visible {
     /* border-color: var(--color-stroke-main); */
     outline: 3px solid var(--color-purple-interactive);
     /* outline-offset: 3px; */
