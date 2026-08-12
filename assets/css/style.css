@@ -2321,6 +2321,21 @@ article p, ul {
     border-bottom: 0;
 }
 
+body#navigation.dropdown-toggle.active {
+    position: fixed;
+    width: 100%;
+}
+
+body#navigation.dropdown-toggle.active:after {
+    content: "";
+    background-color: rgba(43, 66, 92, 0.5);
+    position: absolute;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    top: 0
+}
+
 #navigation .menu-1 .nav-link {
     color: var(--color-purple-text);
     font-family: "Dosis", sans-serif;
@@ -4078,6 +4093,9 @@ button.btn-filters {
     border-radius: 4px;
 }
 
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
 .parent-message {
     display: none;
 }
@@ -4114,4 +4132,41 @@ form:has(#parent:checked) .parent-message {
 
 form:has(#parent:checked) .form-pro {
     display: none;
+}
+
+/* Overlay desktop */
+@media (min-width: 992px) {
+
+    body:has(.navbar-desktop .dropdown-menu.show)::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(43, 66, 92, 0.5);
+        z-index: 1000;
+        pointer-events: none;
+    }
+
+    .navbar-desktop {
+        position: relative;
+        z-index: 1100;
+    }
+}
+
+
+/* Overlay mobile */
+@media (max-width: 991.98px) {
+
+    body:has(.navbar-mobile #navbarNavMobile.show)::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(43, 66, 92, 0.5);
+        z-index: 1000;
+        pointer-events: none;
+    }
+
+    .navbar-mobile {
+        /* position: relative; */
+        z-index: 1100;
+    }
 }
