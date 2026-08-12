@@ -1467,7 +1467,7 @@ header .page-subtitle, header .page-title {
 
 .illu-satellite-referentiel {
     margin-top: 24px;
-    display: grid;
+    display: flex;
     gap: 24px;
 }
 
@@ -4102,6 +4102,171 @@ button:focus:not(:focus-visible) {
 
 .form-pro {
     display: block;
+}
+
+.upload-field {
+    width: 100%;
+}
+
+
+
+/* ==========================================
+   ZONE UPLOAD
+   ========================================== */
+
+.upload-zone {
+    width: 100%;
+    min-height: 138px;
+    border: 2px dashed var(--color-stroke-main);
+    border-radius: var(--border-radius-8);
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    transition:
+        border-color .2s ease,
+        background-color .2s ease;
+}
+
+.upload-zone:hover,
+.upload-zone.dragover {
+    border-color: var(--color-purple-interactive);
+    background-color: var(--color-purple-bg-light);
+}
+
+
+/* Croix dans la zone */
+
+.upload-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+
+/* Texte */
+
+.upload-text {
+    /* color: #005a9c;
+    font-size: 18px; */
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* ==========================================
+   LISTE DES FICHIERS
+   ========================================== */
+
+.uploaded-files {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* Fichier */
+
+.uploaded-file {
+    /* min-height: 72px; */
+
+    border: 1px solid #cfdae5;
+    border-radius: 10px;
+
+    padding: 12px 12px 12px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+
+
+/* Nom */
+
+.uploaded-file-name {
+    min-width: 0;
+
+    color: #183c5c;
+    font-size: 16px;
+    font-weight: 600;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* Infos éventuelles */
+
+.uploaded-file-info {
+    margin-left: 10px;
+
+    color: #7a8793;
+    font-size: 13px;
+}
+
+
+/* Bouton supprimer */
+
+.uploaded-file-remove {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    margin-left: 15px;
+
+    border: 1px solid #0070c9;
+    border-radius: 9px;
+
+    background: #fff;
+
+    color: #005a9c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease;
+}
+
+.uploaded-file-remove:hover {
+    background-color: #005a9c;
+    color: #fff;
+}
+
+
+/* ==========================================
+   ERREUR
+   ========================================== */
+
+.upload-error {
+    margin-top: 12px;
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    background-color: #fff1f1;
+    color: #b42318;
+
+    font-size: 14px;
 }
 
 /* Parent sélectionné */

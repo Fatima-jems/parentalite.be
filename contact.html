@@ -279,7 +279,7 @@
                                                 <h3 class="title-banner">Vous êtes parent ?</h3>
                                             </div>
                                             <p class="fw-bold mb-0">Pour toute question ou demande d’information, nous vous invitons à contacter l’ONE via leur formulaire de contact. Cet espace est destiné aux professionnels.</p>
-                                            <a href="https://www.one.be/contact/formulaire-de-contact/" class="btn btn-ter blue">Contacter l'ONE</a>
+                                            <a href="https://www.one.be/contact/formulaire-de-contact/" class="btn btn-ter blue ps-0">Contacter l'ONE</a>
                                         </div>
                                     </div>
 
@@ -288,17 +288,23 @@
 
                                         <div class="row g-4">
                                             <div class="col-12">
-                                                <label for="nom" class="form-label">Nom</label>
+                                                <label for="nom" class="form-label">Nom
+                                                    <span class="mandatory">*</span>
+                                                </label>
                                                 <input type="text" class="form-control form-control-lg" id="nom" placeholder="ex: Doe">
                                             </div>
 
                                             <div class="col-12">
-                                                <label for="firstname" class="form-label">Prénom</label>
+                                                <label for="firstname" class="form-label">Prénom
+                                                    <span class="mandatory">*</span>
+                                                </label>
                                                 <input type="text" class="form-control form-control-lg" id="firstname" placeholder="ex: John">
                                             </div>
 
                                             <div class="col-12">
-                                                <label for="email" class="form-label">Email</label>
+                                                <label for="email" class="form-label">Email
+                                                    <span class="mandatory">*</span>
+                                                </label>
                                                 <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
                                             </div>
 
@@ -318,6 +324,7 @@
                                             <div class="col-12">
                                                 <label for="demande" class="form-label">
                                                     Votre demande
+                                                    <span class="mandatory">*</span>
                                                 </label>
 
                                                 <textarea
@@ -340,6 +347,7 @@
                                                 </div>
                                                 <button type="submit" class="btn btn--md btn-primary purple">Envoyer</button>
                                             </div>
+                                            
 
                                         </div>
                                     </div>
