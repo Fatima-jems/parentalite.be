@@ -939,8 +939,8 @@ button:focus,button:active,button:visited {
 }
 
 .btn--sm {
-  padding: var(--Spacings-xs) var(--Spacings-md);
-  height: var(--Spacings-4xl);
+  padding: 8px 12px;
+  /* height: var(--Spacings-4xl); */
 }
 
 .btn--md {
@@ -1467,8 +1467,8 @@ header .page-subtitle, header .page-title {
 
 .illu-satellite-referentiel {
     display: flex;
-gap: 24px;
-margin-top: 24px;
+    gap: 24px;
+    margin-top: 24px;
 }
 
 .illu-satellite-referentiel img {
@@ -2884,7 +2884,7 @@ body.navbar-mobile dropdown-active:after {
     gap: 8px;
 }
 
-.directory-filters .form-check-label {
+label.form-check-label  {
     color: var(--color-text-body);
     /* Input/P - Label */
     font-family: Manrope;
@@ -4171,10 +4171,18 @@ button:focus:not(:focus-visible) {
    ========================================== */
 
 .uploaded-files {
-    margin-top: 40px;
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.uploaded-files svg{
+    width: 12px;
+}
+
+.uploaded-file button{
+    padding: 8px;
 }
 
 

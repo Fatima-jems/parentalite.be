@@ -240,33 +240,32 @@
                         <div class="">
                             <div class="row contact-form-container">
                                 <div class="col-12">
-                                    <h2 class="alpha-title">Formulaire de contact</h2>
+                                    <h2 class="alpha-title mb-3">Formulaire de contact</h2>
+                                    <p class="fw-bold mb-0">Champs obligatoire *</p>
                                 </div>
-                                <div class="col-12">
-
-                                    <p class="fw-bold">Champs obligatoire *</p>
-                                </div>
-                                <form class="row g-4">
+                                <form class="">
                                     <div class="col-12">
-                                        <fieldset>
-                                            <label class="form-label">Je suis</label>
+                                        <div class="mb-3">
+                                            <fieldset>
+                                                <label class="form-label">Je suis</label>
 
-                                            <div class="d-flex gap-5">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="profil" id="professionnel" value="professionnel" checked>
-                                                    <label class="form-check-label" for="professionnel">
-                                                        Un professionnel
-                                                    </label>
-                                                </div>
+                                                <div class="d-sm-block d-lg-flex gap-5">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="profil" id="professionnel" value="professionnel" checked>
+                                                        <label class="form-check-label" for="professionnel">
+                                                            Un professionnel
+                                                        </label>
+                                                    </div>
 
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="profil" id="parent" value="parent">
-                                                    <label class="form-check-label" for="parent">
-                                                        Un parent
-                                                    </label>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="profil" id="parent" value="parent">
+                                                        <label class="form-check-label" for="parent">
+                                                            Un parent
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </fieldset>
+                                            </fieldset>
+                                        </div>
                                     </div>
 
                                     <!-- Message parent -->
@@ -284,109 +283,118 @@
                                     </div>
 
                                     <!-- Formulaire professionnel -->
-                                    <div class="col-12 form-pro">
+                                    <div class=" form-pro">
 
-                                        <div class="row g-4">
+                                        <!-- <div class="row g-4"> -->
                                             <div class="col-12">
-                                                <label for="nom" class="form-label">Nom
-                                                    <span class="mandatory">*</span>
-                                                </label>
-                                                <input type="text" class="form-control form-control-lg" id="nom" placeholder="ex: Doe">
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label for="firstname" class="form-label">Prénom
-                                                    <span class="mandatory">*</span>
-                                                </label>
-                                                <input type="text" class="form-control form-control-lg" id="firstname" placeholder="ex: John">
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label for="email" class="form-label">Email
-                                                    <span class="mandatory">*</span>
-                                                </label>
-                                                <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label for="province" class="form-label">
-                                                    Province (optionnel)
-                                                </label>
-
-                                                <select id="province" class="form-select form-control-lg">
-                                                    <option selected>Choississez une province</option>
-                                                    <option>Bruxelles-Capitale</option>
-                                                    <option>Hainaut</option>
-                                                    <option>Liège</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <label for="demande" class="form-label">
-                                                    Votre demande
-                                                    <span class="mandatory">*</span>
-                                                </label>
-
-                                                <textarea
-                                                    class="form-control"
-                                                    id="demande"
-                                                    rows="3"
-                                                ></textarea>
-                                            </div>
-
-                                            <div class="col-12 d-flex justify-content-between align-items-center">
-                                                <div>
-                                                    <label for="file_upload" class="form-label custom-file-upload">
-                                                        <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11 5H9V9H5V11H9V15H11V11H15V9H11V5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="#4E3A61"/>
-                                                        </svg>
-
-                                                        Ajouter un fichier
+                                                <div class="mb-3">
+                                                    <label for="nom" class="form-label">Nom
+                                                        <span class="mandatory">*</span>
                                                     </label>
-                                                    <input class="form-control d-none" type="file" id="file_upload">
+                                                    <input type="text" class="form-control form-control-lg" id="nom" placeholder="ex: Doe">
                                                 </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="firstname" class="form-label">Prénom
+                                                        <span class="mandatory">*</span>
+                                                    </label>
+                                                    <input type="text" class="form-control form-control-lg" id="firstname" placeholder="ex: John">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="email" class="form-label">Email
+                                                        <span class="mandatory">*</span>
+                                                    </label>
+                                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="province" class="form-label">
+                                                        Province (optionnel)
+                                                    </label>
+
+                                                    <select id="province" class="form-select form-control-lg">
+                                                        <option selected>Choississez une province</option>
+                                                        <option>Bruxelles-Capitale</option>
+                                                        <option>Hainaut</option>
+                                                        <option>Liège</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="demande" class="form-label">
+                                                        Votre demande
+                                                        <span class="mandatory">*</span>
+                                                    </label>
+
+                                                    <textarea
+                                                        class="form-control"
+                                                        id="demande"
+                                                        rows="3"
+                                                    ></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <div class="upload-field">
+
+                                                        <label for="cv-upload" class="form-label">
+                                                            Pièce(s) jointe(s)
+                                                        </label>
+
+                                                        <input type="file" id="cv-upload" class="visually-hidden" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg," multiple >
+
+                                                        <!-- Zone d'upload -->
+                                                        <label for="cv-upload" class="upload-zone">
+
+                                                            <span class="upload-icon">
+                                                                <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M11 5H9V9H5V11H9V15H11V11H15V9H11V5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="#4E3A61"/>
+                                                            </svg>
+                                                            </span>
+
+                                                            <span class="upload-text">
+                                                                Glissez votre fichier ici ou cliquez pour ajouter
+                                                            </span>
+
+                                                        </label>
+                                                        <small class="d-block">3 fichiers maximum.</small>
+                                                        <small class="d-block">Limité à 256 Mo.</small>
+                                                        <small class="d-block">Types autorisés : png, gif, jpg, jpeg, webp, pdf.</small>
+    
+                                                        <!-- Message d'erreur -->
+                                                        <div id="upload-error" class="upload-error " role="alert">
+                                                            Message d'erreur
+                                                        </div>
+
+                                                        <!-- Liste des fichiers -->
+                                                        <div id="uploaded-files" class="uploaded-files">
+                                                            <div class="uploaded-file">
+                                                                <span class="file-name">file_name.pdf</span>
+                                                                <button class="btn btn-secondary btn--sm purple">
+                                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M23.3333 2.35L20.9833 0L11.6667 9.31667L2.35 0L0 2.35L9.31667 11.6667L0 20.9833L2.35 23.3333L11.6667 14.0167L20.9833 23.3333L23.3333 20.9833L14.0167 11.6667L23.3333 2.35Z" fill="#4E3A61"/>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
                                                 <button type="submit" class="btn btn--md btn-primary purple">Envoyer</button>
                                             </div>
-                                            <div class="col-12">
-                                                <div class="upload-field">
 
-                                                    <label for="cv-upload" class="form-label">
-                                                        CV <span>*</span>
-                                                    </label>
-
-                                                    <input type="file" id="cv-upload" class="visually-hidden" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg," multiple >
-
-                                                    <!-- Zone d'upload -->
-                                                    <label for="cv-upload" class="upload-zone">
-
-                                                        <span class="upload-icon">
-                                                            <svg class="me-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M11 5H9V9H5V11H9V15H11V11H15V9H11V5ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="#4E3A61"/>
-                                                        </svg>
-                                                        </span>
-
-                                                        <span class="upload-text">
-                                                            Glissez votre fichier ici ou cliquez pour ajouter
-                                                        </span>
-
-                                                    </label>
-
-                                                    <!-- Message d'erreur -->
-                                                    <div id="upload-error" class="upload-error " role="alert">
-                                                        Message d'erreur
-                                                    </div>
-
-                                                    <!-- Liste des fichiers -->
-                                                    <div id="uploaded-files" class="uploaded-files">
-                                                        <div class="uploaded-file">
-                                                            Fichier n°1
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                        <!-- </div> -->
                                     </div>
 
                                 </form>
