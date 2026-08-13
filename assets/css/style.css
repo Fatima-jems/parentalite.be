@@ -1533,6 +1533,11 @@ header .page-subtitle, header .page-title {
     border: 1px solid var(--color-stroke-main);
 }
 
+textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid var(--color-stroke-main);
+}
+
 .newsletter-section .form-group {
     width: 100%;
 }
@@ -4191,8 +4196,8 @@ button:focus:not(:focus-visible) {
 .uploaded-file {
     /* min-height: 72px; */
 
-    border: 1px solid #cfdae5;
-    border-radius: 10px;
+    border: 1px solid var(--color-stroke-main);
+    border-radius: 8px;
 
     padding: 12px 12px 12px 16px;
 
