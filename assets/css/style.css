@@ -4203,6 +4203,11 @@ button:focus:not(:focus-visible) {
     background-color: #fff;
 }
 
+.upload-text small{
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
 
 /* Nom */
 
