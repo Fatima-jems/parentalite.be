@@ -965,6 +965,11 @@ button:focus,button:active,button:visited {
   color: var(--color-text-light)!important;
 }
 
+.btn-primary.blue{
+  background-color: var(--color-blue-interactive);
+  color: var(--color-text-light)!important;
+}
+
 .btn-primary.purple:hover{
   background-color: var(--color-purple-stroke);
 }
@@ -980,6 +985,10 @@ button:focus,button:active,button:visited {
 
 .btn-primary.pink:hover {
   background-color: #9E2562;
+}
+
+.btn-primary.blue:hover{
+  background-color: var(--color-blue-stroke);
 }
 
 .btn-secondary.purple{
@@ -1113,6 +1122,10 @@ header .page-subtitle, header .page-title {
 
 .partners-section{
     padding-block: 40px;
+}
+
+.partners-section.bg-white {
+    background-color: white;
 }
 
 .partners-section > .container, .news-section >.container, .agenda-section >.container, .ressources-section>.container, .sous_thematiques-section>.container, .last-articles-section>.container, .annuaire-section>.container,.thematique-agenda-section>.container, .thematiques-ressources-section>.container, .last-editions-depar-section>.container{
@@ -1738,6 +1751,10 @@ footer .icon-social-media {
     }
 
     .card-category button{
+        width: fit-content;
+    }
+
+    .section-colored a.btn, .section-colored button.btn{
         width: fit-content;
     }
 
