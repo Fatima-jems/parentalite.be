@@ -159,10 +159,10 @@ label {
 .page-desc-title {
     color: var(--color-purple-text);
     font-family: "Manrope", sans-serif;
-    font-size: var(--Font-Size-xxl, 28px);
+    font-size: var(--Font-Size-xxl, 18px);
     font-style: normal;
     font-weight: 400;
-    line-height: var(--Font-Line-height-2lg, 44px); /* 157.143% */
+    line-height: var(--Font-Line-height-2lg, 28px); /* 157.143% */
 }
 
 .link {
@@ -910,6 +910,11 @@ label {
     font-size: 1.75rem;
     line-height: 36px;
     }
+
+    .page-desc-title {
+    font-size: var(--Font-Size-xxl, 28px);
+    line-height: var(--Font-Line-height-2lg, 44px); /* 157.143% */
+}
     
 }
 
@@ -1276,7 +1281,7 @@ header .page-subtitle, header .page-title {
     height: 350px;
 }
 
-.news-section a, .agenda-section a, .ressources-section a, .last-articles-section a, .annuaire-section a, .thematiques-ressources-section a, .thematique-agenda-section a, .last-editions-depar-section a, .brochure-section a, .videos-section a {
+.news-section a, .agenda-section a, .ressources-section a, .last-articles-section a, .annuaire-section a, .thematiques-ressources-section a, .thematique-agenda-section a, .last-editions-depar-section a, .brochure-section a, .videos-section a, .list-cards a {
     text-decoration: none;
 }
 
@@ -1589,6 +1594,13 @@ textarea.form-control {
 
 .newsletter-box form button, footer form button {
     width: fit-content;
+}
+
+.content_image img {
+    width: 100%;
+    height: 425px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 footer {
