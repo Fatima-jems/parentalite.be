@@ -3385,6 +3385,16 @@ button.resultFilter {
     object-fit: cover;
 }
 
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-header p{
+    margin-bottom: 0;
+}
+
 #annuaire img.illu-header, #thematique_content img.illu-header, #thematique_adoption img.illu-header, #agenda img.illu-header, #depar img.illu-header, header.colored  img.illu-header{
     height: 200px;
     /* width: 250px; */
@@ -3403,6 +3413,15 @@ button.resultFilter {
         object-fit: cover;
         border-radius: 8px;
     }
+
+    .article-header {
+    display: block;
+}
+
+.article-header p{
+    margin-bottom: 16px;
+}
+
 }
 
 .event-card {
