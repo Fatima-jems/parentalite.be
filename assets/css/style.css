@@ -934,13 +934,26 @@ button:focus,button:active,button:visited {
   align-items: center;
   justify-content: center;
   border: none;
-  gap: var(--Spacings-xs);
+  gap: 12px;
   border-radius: var(--border-radius-8);
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   font-style: normal;
   font-weight: 700;
   line-height: var(--Font-Line-height-md, 32px); /* 177.778% */
+}
+
+.btn svg{
+  height: 24px;
+  width: 24px!important;
+  flex-shrink: 0;
+}
+
+.btn-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+align-items: flex-start;
 }
 
 .btn--sm {
@@ -1685,6 +1698,15 @@ footer .icon-social-media {
     padding: 0 40px 80px 40px;
     }
 
+    
+.btn-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: start;
+    }
+
     #homepage header .page-title{
     display: grid;
     gap: 24px;
@@ -2409,7 +2431,8 @@ body#navigation.dropdown-toggle.active:after {
     font-weight: 500;
 }
 
-#navigation .menu-1 .nav-link:focus-visible, #navigation .menu-2 .nav-link:focus-visible {
+#navigation .menu-1 .nav-link:focus-visible, #navigation .menu-2 .nav-link:focus-visible, a.focus:focus-visible
+ {
     /* border-color: var(--color-stroke-main); */
     outline: 3px solid var(--color-purple-interactive);
     /* outline-offset: 3px; */
@@ -2863,12 +2886,12 @@ body.navbar-mobile dropdown-active:after {
     gap: 8px;
 }
 
-.navbar-mobile .tab-searchForm .input-withIcon, #annuaire .tab-searchForm .form-group.input-withIcon, #search-page .tab-searchForm .form-group.input-withIcon {
+.navbar-mobile .tab-searchForm .input-withIcon, #annuaire .tab-searchForm .form-group.input-withIcon, #search-page .tab-searchForm .form-group.input-withIcon, #search-page_referentiel-satellites .tab-searchForm .form-group.input-withIcon {
     flex-grow: 1;
     position: relative;
 }
 
-.navbar-mobile .tab-searchForm .form-group.input-withIcon > svg, #annuaire .tab-searchForm .form-group.input-withIcon > svg, #search-page .tab-searchForm .form-group.input-withIcon > svg{
+.navbar-mobile .tab-searchForm .form-group.input-withIcon > svg, #annuaire .tab-searchForm .form-group.input-withIcon > svg, #search-page .tab-searchForm .form-group.input-withIcon > svg, #search-page_referentiel-satellites .tab-searchForm .form-group.input-withIcon > svg{
     position: absolute;
     z-index: 1;
     left: 20px;
@@ -2876,7 +2899,7 @@ body.navbar-mobile dropdown-active:after {
     transform: translateY(-50%);
 }
 
-.navbar-mobile .tab-searchForm .input-withIcon > input#searchInput, #annuaire .tab-searchForm .input-withIcon > input#searchKeyWords, #search-page .tab-searchForm .input-withIcon > input#searchKeyWords {
+.navbar-mobile .tab-searchForm .input-withIcon > input#searchInput, #annuaire .tab-searchForm .input-withIcon > input#searchKeyWords, #search-page .tab-searchForm .input-withIcon > input#searchKeyWords , #search-page_referentiel-satellites .tab-searchForm .input-withIcon > input#searchKeyWords{
     width: 100%;
     padding: 16px 20px 16px 48px;
 
@@ -3317,23 +3340,26 @@ button.resultFilter {
 }
 
 .card.activity, .card.external-link {
-    padding: 12px 16px;
+    padding: 4px 16px 4px 4px;
     display: flex;
     gap: 12px;
     align-items: center;
     flex-direction: row;
     max-width: 648px;
+    text-decoration: underline;
 }
 
-#list-activities li, #list-link-external li {
+#list-activities li, #list-link-external li, #list-articles-referentiel_satellites li{
     list-style: none;
 }
 
-#list-activities img, #list-link-external img {
+#list-activities img, #list-link-external img, #list-articles-referentiel_satellites img {
     width: 80px;
+    height: 64px;
+    object-fit: cover;
 }
 
-#list-activities ul, #list-link-external ul {
+#list-activities ul, #list-link-external ul, #list-articles-referentiel_satellites ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -4118,14 +4144,14 @@ button.btn-filters {
     }
 }
 
-.custom-input .form-control:focus-visible, .form-control:focus-visible, .form-control-lg:focus-visible, .dropdownMenuLink:focus-visible,  button.btn:focus-visible, a:focus-visible, a.btn:focus-visible {
+.custom-input .form-control:focus-visible, .form-control:focus-visible, .form-control-lg:focus-visible, .dropdownMenuLink:focus-visible,  button.btn:focus-visible, a:focus-visible, a.btn:focus-visible, input[type="checkbox"]:focus-visible, a.focus:focus .card{
     border-color: var(--color-stroke-main);
     outline: 3px solid var(--color-purple-interactive);
     outline-offset: 3px;
     box-shadow: 0 0 0 2px transparent;
     border-radius: 4px;
 }
-.custom-input .form-control:focus, .form-control:focus, .form-control-lg:focus{
+.custom-input .form-control:focus, .form-control:focus, .form-control-lg:focus, button:focus {
     /* border-color: var(--color-stroke-main); */
     border: 1px solid var(--color-purple-stroke);
     /* outline-offset: 3px; */
