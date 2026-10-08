@@ -1852,7 +1852,7 @@ footer .icon-social-media {
     }
 
 }
-header .logos-row {
+/* header .logos-row {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 100px);
@@ -1889,7 +1889,93 @@ header .partner-logo {
         max-height: 100px;
         height: 75px;
     }
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;600&display=swap");
+
+:root {
+  --partners-title: #5a4a6b;
+  --partners-tile-bg: #ffffff;
+  --partners-gradient: linear-gradient(90deg, #e5f3f7 0%, #fbe9f2 45%, #fdf2e8 100%);
+  --partners-font: "Dosis", "Trebuchet MS", Arial, sans-serif;
+
+  --partners-tile: 60px;   /* taille max d'une tuile (desktop / tablette) */
+  --partners-gap: 16px;    /* espace minimal entre les logos */
+  --partners-pad-y: 28px;
+  --partners-pad-x: 32px;
 }
+
+
+
+.partners__title {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--partners-title);
+}
+
+/* Desktop : 1 rangée de 8, répartition égale.
+   minmax(0, 60px) = jamais plus de 60px, mais peut rétrécir. */
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 100px));
+  justify-content: space-between;
+  gap: var(--partners-gap);
+}
+
+.partner-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  padding: 6px;
+  background: var(--partners-tile-bg);
+  border-radius: 8px;
+}
+
+.partner-logo-link:focus-visible {
+  outline: 2px solid var(--partners-title);
+  outline-offset: 3px;
+}
+
+/* L'image remplit la tuile sans jamais la dépasser */
+.partner-logo {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Mobile : 2 rangées de 4, tuiles de 56px max */
+@media (max-width: 767px) {
+  :root {
+    --partners-tile: auto;
+    --partners-gap: 12px;
+    --partners-pad-y: 24px;
+    --partners-pad-x: 16px;
+  }
+
+  .partners__title {
+    margin-bottom: 16px;
+    font-size: 1.125rem;
+  }
+
+  .partners__list {
+    grid-template-columns: repeat(4, minmax(0, var(--partners-tile)));
+  }
+
+  .partner-logo-link { 
+    padding: 4px; 
+    height: 100%;
+}
+}
+
+
+
+
 .breadcrumbs {
     display: flex;
     gap: 4px;
