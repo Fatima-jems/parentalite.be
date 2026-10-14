@@ -1686,7 +1686,7 @@ footer .list-nav {
     /* padding-inline: 0; */
 }
 
-footer .row, footer .border-b {
+ footer .border-b {
     border-bottom: 1px solid var(--color-stroke-main);
 }
 
