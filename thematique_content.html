@@ -10,7 +10,7 @@
 </head>
 <body id="thematique_content">
     <header class="colored">
-        <svg class="line-color top" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
             <rect x="47" width="82" height="7" fill="#C9C9C9"/>
             <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -38,10 +38,10 @@
                     <!-- DESKTOP MENUS -->
                     <div class="navbar-container navbar-desktop">
                         <!-- MENU-1 : FAST LINKS -->
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="container-fluid d-flex justify-content-between menu-1">
-                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be - Accueil"></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be, pour les Pros"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <ul class="navbar-nav  mb-2 mb-lg-0">
@@ -58,10 +58,9 @@
                                 </ul>
                             </div>
                         </nav>
-                        <!-- MENU-2 : MAIN MENU -->
-                        <div class="nav-dropdowns-container">
+                        <nav class="nav-dropdowns-container" aria-label="Menu principal">
                             <div class="nav-dropdowns">
-                                <li class="nav-item dropdown">
+                                <div class="nav-item dropdown">
                                     <div class="container-fluid d-flex justify-content-between px-0 menu-2">
                                         <button class="nav-link nav-item dropdown-toggle w-100 active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Thématiques
@@ -88,7 +87,7 @@
                                         </button>
                                         <div class="dropdown-menu w-100 search-section">
                                             <div class="dropdown-content">
-                                                <ul class=" tab-links list-tags" aria-label="Rechercher sur le site">
+                                                <ul class=" tab-links list-tags" aria-label="Mots-clés">
                                                     <li class="tag purple">Alimentation</li>
                                                     <li class="tag purple">Limites</li>
                                                     <li class="tag purple">Burn-out parentale</li>
@@ -99,7 +98,7 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="form-group input-withIcon w-100">
                                                             <i class="fa-solid fa-magnifying-glass icon"></i>
-                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                         </div>
                                                         <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                     </form>
@@ -107,16 +106,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                     <!-- MOBILE MENUS -->
                     <div class="navbar-container navbar-mobile">
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="navbar-top">
-                                <h1><a class="navbar-brand" href="index.html">parentalité.be</a></h1>
-                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                                <span><a class="navbar-brand" href="index.html">parentalité.be</a></span>
+                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Menu">
                                     <span class="nav-close">
                                         Menu
                                         <svg class="ms-2" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,10 +178,10 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="w-100">
                                                             <div class="form-group input-withIcon w-100">
-                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <svg width="18" height="18" aria-hidden="true" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
                                                                 </svg>
-                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                             </div>
                                                             <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                         </div>
@@ -211,19 +210,14 @@
                         </nav>
                     </div> 
                 </div>
-                <div class="col-lg-6 col-12">
-                    <h1 class="page-subtitle">
-                        Adoption
-                    </h1> 
-                    <h2 class="page-title">
+                <div class="col-lg-6 col-12 d-flex flex-column-reverse">
+                    <h1 class="page-title">
                         Préparer les candidats adoptants : repères pour les professionnels de soutien à la parentalité
-                    </h2>  
-                    
-                <!-- </div> 
-                    <div class="col-12 col-sm-8 col-lg-6"> 
-                        <img src="./assets/images/thematique-adoption.svg" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy"> 
-                    </div> 
-                </div>  -->
+                    </h1>  
+                    <span class="page-subtitle mb-2">
+                        Adoption
+                    </span> 
+                </div> 
             </div> 
         </div> 
     </header>
@@ -233,7 +227,19 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb"><a href="">Adoption</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="">Préparer les candidats adoptants : repères pour les professionnels de soutien à la parentalité</a></span></p>
+                        <nav aria-label="Vous êtes ici" class="breadcrumbs">
+                            <ol class="breadcrumb-list d-flex ps-0">
+                                <li class="breadcrumb">
+                                    <a href="index.html">Accueil</a>
+                                    <span class="separator px-1" aria-hidden="true">/</span>
+                                </li>
+                                <li class="breadcrumb">
+                                    <a href="ressources.html">Ressources</a>
+                                    <span class="separator px-1" aria-hidden="true">/</span>
+                                </li>
+                                <li class="breadcrumb active" aria-current="page">Préparer les candidats adoptants : repères pour les professionnels de soutien à la parentalité</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -250,12 +256,12 @@
         </section>
 
 
-        <section class="article-page">
+        <div class="article-page">
             <div class="container">
                 <div class="row g-5 d-flex justify-content-between">
                     <!-- Contenu principal -->
-                    <div class="col-lg-7">
-                        <article>
+                    <div class="col-lg-7 list-sections">
+                        <section>
                             <div class="d-flex justify-content-between m-b-6">
                                 <p class="text-muted small">
                                     18.01.2024
@@ -266,11 +272,11 @@
                                 </div>
                             </div>
                             <p class="intro">Comment soutenir les parents qui sont engagés dans la voie de l’adoption pour fonder une famille ? Comment soutenir les parents qui souhaitent confier leur enfant à l’adoption ? Qui peut adopter et quelles sont les conditions ? Quelle place donner à l’enfant dans le processus adoptif ? Quel accompagnement proposer aux familles après l’adoption ?</p>
-                        </article>
+                        </section>
 
                         <!-- Sommaire -->
-                        <article class="">
-                            <nav class="nav-in-page" aria-label="">
+                        <section class="m-b-12">
+                            <nav class="nav-in-page" aria-label="Sommaire">
                                 <p class="fw-bold">Dans cette page</p>
                                 <ul class="nav-in-page__list">
                                 <li>
@@ -294,53 +300,53 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#article5" class="nav-in-page__item">
+                                    <a href="#articles-liés" class="nav-in-page__item">
                                         Ressources liées
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-in-page__item">
+                                    <a href="#même-sujet" class="nav-in-page__item">
                                         Sur le même sujet
                                     </a>
                                 </li>
                                 </ul>
                             </nav>
-                        </article>
-                        <article>
+                        </section>
+                        <section class="m-b-12">
                             <h3 class="alpha-title m-b-8" id="article1">L'attente avant l'adoption : un temps clé d'accompagnement professionnel</h3>
                             <div>
                                 <p>Avant même toute procédure officielle, les candidats à l'adoption traversent une période émotionnellement dense : désir d'enfant parfois ancien, parcours de fertilité complexe, sentiment d'attente prolongée, projection dans un futur incertain. Les besoins de ces futurs parents sont multiples : être écoutés sans être jugés, pouvoir formuler leurs ambivalences, comprendre les réalités de l'adoption sans les idéaliser.</p>
                                 <p>Le rôle du professionnel n'est pas d'accélérer ni de valider le projet, mais de soutenir une élaboration progressive, en aidant les futurs parents à mettre des mots sur leurs attentes, leurs limites et leurs ressources, tout en respectant le rythme de chacun.</p>
                                 <p>“Comment offrir du soutien à la parentalité aux candidats en attente de la concrétisation d'un projet d'adoption ?” Parentalité.be a posé cette question à Émilie Moget, psychologue au service Adoption de l'Office de la Naissance et de l'Enfance.</p>
                             </div>
-                        </article>
-                        <article>
-                            <h3 class="alpha-title m-b-8" id="article2">Le cadre de l’adoption en Belgique</h3>
+                        </section>
+                        <section class="m-b-12">
+                            <h3 class="alpha-title m-b-8" id="article2">Le cadre de l'adoption en Belgique</h3>
                             <div>
-                                <p>En Belgique, l’adoption est un processus strictement encadré par la loi. Il débute par une phase de préparation obligatoire, suivie d’une évaluation des aptitudes des candidats. Cette étape vise à s’assurer que le projet d’adoption est réfléchi, stable et centré sur l’intérêt de l’enfant. En cas d’adoption internationale, des démarches supplémentaires s’ajoutent, impliquant les autorités du pays d’origine. La procédure peut s’étendre sur plusieurs années : une temporalité longue qui renforce l’importance d’un accompagnement professionnel adapté, notamment durant les phases d’attente et d’incertitude.</p>
+                                <p>En Belgique, l'adoption est un processus strictement encadré par la loi. Il débute par une phase de préparation obligatoire, suivie d’une évaluation des aptitudes des candidats. Cette étape vise à s’assurer que le projet d’adoption est réfléchi, stable et centré sur l’intérêt de l’enfant. En cas d’adoption internationale, des démarches supplémentaires s’ajoutent, impliquant les autorités du pays d’origine. La procédure peut s’étendre sur plusieurs années : une temporalité longue qui renforce l’importance d’un accompagnement professionnel adapté, notamment durant les phases d’attente et d’incertitude.</p>
                             </div>
                             <h3 class="beta-title m-b-6" id="article3">Beta title</h3>
                             <div>
-                                <p>Plusieurs acteurs interviennent à différents niveaux du parcours d’adoption. La Direction de l’Adoption est l’autorité fédérale chargée de garantir le cadre légal et éthique des adoptions, en particulier pour l’adoption internationale. En Fédération Wallonie-Bruxelles, le Service Adoption de l’Office de la Naissance et de l’Enfance assure la préparation, l’accompagnement et l’orientation des candidats adoptants. Ces acteurs travaillent en complémentarité avec les professionnels de terrain (psychologues, travailleurs sociaux, équipes de soutien à la parentalité), qui jouent un rôle clé dans l’écoute et le suivi des familles.</p>
+                                <p>Plusieurs acteurs interviennent à différents niveaux du parcours ''adoption. La Direction de l'Adoption est l'autorité fédérale chargée de garantir le cadre légal et éthique des adoptions, en particulier pour l’adoption internationale. En Fédération Wallonie-Bruxelles, le Service Adoption de l’Office de la Naissance et de l’Enfance assure la préparation, l’accompagnement et l’orientation des candidats adoptants. Ces acteurs travaillent en complémentarité avec les professionnels de terrain (psychologues, travailleurs sociaux, équipes de soutien à la parentalité), qui jouent un rôle clé dans l’écoute et le suivi des familles.</p>
                             </div>
-                        </article>
-                        <article>
+                        </section>
+                        <section class="m-b-12">
                             <h3 class="alpha-title m-b-8" id="article4">Adopter la bonne posture professionnelle : repères concrets</h3>
                             <div>
-                                <p>Accompagner des candidats à l’adoption suppose une posture spécifique, à la fois contenante et non prescriptive. Quelques repères utiles dans la pratique quotidienne :</p>
+                                <p>Accompagner des candidats à l'adoption suppose une posture spécifique, à la fois contenante et non prescriptive. Quelques repères utiles dans la pratique quotidienne :</p>
                                 <ul>
                                     <li>Adopter la bonne isolement social : repères concrets</li>
-                                    <li>Respecter le rythme : éviter toute pression implicite à “avancer” dans le projet. L’attente fait partie intégrante du processus.</li>
-                                    <li>Clarifier sans décourager : nommer les réalités de l’adoption (délais, complexité, histoire de l’enfant) avec honnêteté, tout en restant soutenant.</li>
-                                    <li>Rester centré sur l’enfant : rappeler que la préparation vise avant tout à créer les conditions d’un accueil sécurisant pour l’enfant à venir.</li>
-                                    <li>Savoir relayer : orienter vers les services spécialisés lorsque des questions dépassent son champ d’intervention.</li>
+                                    <li>Respecter le rythme : éviter toute pression implicite à “avancer” dans le projet. L'attente fait partie intégrante du processus.</li>
+                                    <li>Clarifier sans décourager : nommer les réalités de l'adoption (délais, complexité, histoire de l'enfant) avec honnêteté, tout en restant soutenant.</li>
+                                    <li>Rester centré sur l'enfant : rappeler que la préparation vise avant tout à créer les conditions d'un accueil sécurisant pour l'enfant à venir.</li>
+                                    <li>Savoir relayer : orienter vers les services spécialisés lorsque des questions dépassent son champ d'intervention.</li>
                                 </ul>
                             </div>
-                        </article>
+                        </section>
                     </div>
 
-                    <!-- Aside -->
-                    <aside class="col-lg-4">
+                    <!-- Right Column -->
+                    <section class="col-lg-4">
 
                         <div class="sticky-lg-top pt-lg-3">
 
@@ -360,25 +366,18 @@
                             <!-- Bloc 2 -->
                             <div class="card mb-4 card-contact pink">
                                 <div class="card-body">
-
-                                    <h4 class="card-title">
-                                        Date de publication
-                                    </h4>
-
-                                    <p class="mb-0">18.01.2024</p>
-
-                                    <h4 class="card-title">
-                                        Dernière mise à jour
-                                    </h4>
-
-                                    <p class="mb-0">18.01.2024</p>
-
-                                    <h4 class="card-title">
-                                        Auteur(s)
-                                    </h4>
-
-                                    <p class="mb-0">...</p>
-
+                                    <div>
+                                        <h4 class="card-title">Date de publication</h4>
+                                        <p class="mb-0">18.01.2024</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title">Dernière mise à jour</h4>
+                                        <p class="mb-0">18.01.2024</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="card-title">Auteur(s)</h4>
+                                        <p class="mb-0">...</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -401,16 +400,16 @@
 
                         </div>
 
-                    </aside>
+                    </section>
 
                 </div>
 
             </div>
-        </section>
+        </div>
 
 
 
-        <section class="last-articles-section">
+        <section class="last-articles-section" id="articles-liés">
             <div class="container">
                 <!-- Titre -->
                 <div class="row">
@@ -422,79 +421,75 @@
                 <!-- News list -->
                 <div class="row  g-4">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none stretched-link">
                                     <h5 class="card-title">Préparer les candidats adoptants : repères pour les professionnels de soutien à la parentalité</h5>
-                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Enfance</span>
-                                        </div>
-                                        <small>Article • 18.04.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Enfance</span>
                                     </div>
+                                    <small>Article • 18.04.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/agenda1.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/agenda1.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none stretched-link">
                                     <h5 class="card-title">"Adolescence et adoption : identité, questions et nouveaux équilibres</h5>
-                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Article • 21.01.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Article • 21.01.2026</small>
                                 </div>
                             </div>
-                        </a>
-                        
-                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Grandir adopté·e : l’adoption à l’épreuve de l’adolescence</h5>
-                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Article • 29.12.2025</small>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <div class="card h-100">
+                            <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="#" class="text-decoration-none stretched-link">
+                                    <h5 class="card-title">Grandir adopté·e : l'adoption à l'épreuve de l'adolescence</h5>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Article • 29.12.2025</small>
                                 </div>
                             </div>
-                        </a>
-                        
-                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card card-more-ressources yellow h-100">
-                                <div class="card-body">
-                                    <div class="card-content-info">
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <div class="card card-more-ressources yellow h-100">
+                            <div class="card-body">
+                                <div class="card-content-info">
+                                    <a href="#" class="text-decoration-none stretched-link">
                                         <h4 class="beta-title">Voir tous les articles</h4>
-                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
-                                        </svg>
-                                    </div>
+                                    </a>
+                                    <svg width="45" height="37" aria-hidden=true viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
        
-        <section class="thematiques-ressources-section">
+        <section class="thematiques-ressources-section" id="même-sujet">
             <div class="container">
                 <!-- Titre -->
                 <div class="row">
@@ -504,72 +499,71 @@
                 </div>
 
                 <!-- News list -->
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/confier-son-enfant.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/confier-son-enfant.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link text-decoration-none">
                                     <h5 class="card-title">Confier son enfant en adoption</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Âge adulte</span>
-                                        </div>
-                                        <small>Vidéo • 18.04.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Âge adulte</span>
                                     </div>
+                                    <small>Vidéo • 18.04.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/convention-protection-enfants.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/convention-protection-enfants.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link text-decoration-none">
                                     <h5 class="card-title">Convention sur la protection des enfants et la coopération en matière d'adoption internationale</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Texte législatif • 21.01.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Texte législatif • 21.01.2026</small>
                                 </div>
                             </div>
-                        </a>
-                        
-                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/brochure-service-repit.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        </div>
+                    </div>      
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <div class="card h-100">
+                            <img src="./assets/images/brochure-service-repit.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link text-decoration-none">
                                     <h5 class="card-title">Brochure des services de répit</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Brochure • 29.12.2025</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Brochure • 29.12.2025</small>
                                 </div>
                             </div>
-                        </a>
-                        
-                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card card-more-ressources green h-100">
-                                <div class="card-body">
-                                    <div class="card-content-info">
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <div class="card card-more-ressources green h-100">
+                            <div class="card-body">
+                                <div class="card-content-info">
+                                    <a href="" class="stretched-link text-decoration-none">
                                         <h4 class="beta-title">Voir toutes les ressources</h4>
-                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
-                                        </svg>
-                                    </div>
+                                    </a>
+                                    <svg width="45" height="37" aria-hidden=true viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -593,127 +587,127 @@
                 </div> 
             </div> 
         </section>
-        
-        <footer>
-        <div class="container">
-            <svg class="line-color" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="47" height="7" fill="#1D6FB7"/>
-                <rect x="47" width="82" height="7" fill="#C9C9C9"/>
-                <rect x="129" width="164" height="7" fill="#00A7AA"/>
-                <rect x="293" width="19" height="7" fill="#C9C9C9"/>
-                <rect x="312" width="76" height="7" fill="#F59F00"/>
-                <rect x="388" width="50" height="7" fill="#C9C9C9"/>
-                <rect x="438" width="213" height="7" fill="#7B6193"/>
-                <rect x="651" width="187" height="7" fill="#C9C9C9"/>
-                <rect x="838" width="323" height="7" fill="#D2007E"/>
-                <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
-                <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
-                <rect x="1190" width="52" height="7" fill="#00A7AA"/>
-                <rect x="1190" width="52" height="7" fill="#00A7AA"/>
-                <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
-                <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
-                <rect x="1357" width="252" height="7" fill="#F59F00"/>
-                <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
-                <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
-                <rect x="1623" width="105" height="7" fill="#1D6FB7"/>
-            </svg>
-            <div class="row g-4 d-flex flex-lg-row flex-column">
-                <div class="col-12">
-                    <section class="newsletter purple-dark section-colored mb-4 mb-lg-0">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-lg-3"> 
-                                <img src="./assets/images/illu newsletter.svg" class="d-block mx-lg-auto img-fluid mt-0" style="max-height: 250px;" alt="" loading="lazy"> 
-                            </div> 
-                            <div class="col-lg-9 col-12">
-                                <div class="m-b-6 ">
-                                    <h2 class="gamma-title">Newsletter Parentalité.be</h2>
-                                    <!-- <h3 class="beta-title">Découvrez notre annuaire</h3> -->
-                                </div> 
-                                <p class="m-b-6 ">Restez informé de nos dernières actualités, de nos évènements et des récents services ajoutés. En savoir plus.</p>
-                                <a href="https://acd35b8a.sibforms.com/serve/MUIFALTJGEJp2PSMzxQNc6Qyx2w7uiJgH_jzUNzksDCoK_z3hp6Nqiadl9ARVl-_Q2d74hpRWjjwDm0Wt0xq012szwefjEdq1vjMc1F8OuHBRUKXY25Ht1g5GfnLO5yPsm2_q-p_mqFukShe49hZztMibT-7uMCHsBQC4pDAo8TRH6Y4X758oEyU577njNnIu2A4ddpz2C5ypj-k" class="btn btn--md btn-secondary purple">
-                                    S’inscrire à la newsletter
-                                </a>
-                            </div>
+    </main>
+    
+    <footer>
+    <div class="container">
+        <svg class="line-color" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="47" height="7" fill="#1D6FB7"/>
+            <rect x="47" width="82" height="7" fill="#C9C9C9"/>
+            <rect x="129" width="164" height="7" fill="#00A7AA"/>
+            <rect x="293" width="19" height="7" fill="#C9C9C9"/>
+            <rect x="312" width="76" height="7" fill="#F59F00"/>
+            <rect x="388" width="50" height="7" fill="#C9C9C9"/>
+            <rect x="438" width="213" height="7" fill="#7B6193"/>
+            <rect x="651" width="187" height="7" fill="#C9C9C9"/>
+            <rect x="838" width="323" height="7" fill="#D2007E"/>
+            <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
+            <rect x="1161" width="29" height="7" fill="#C9C9C9"/>
+            <rect x="1190" width="52" height="7" fill="#00A7AA"/>
+            <rect x="1190" width="52" height="7" fill="#00A7AA"/>
+            <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
+            <rect x="1242" width="115" height="7" fill="#C9C9C9"/>
+            <rect x="1357" width="252" height="7" fill="#F59F00"/>
+            <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
+            <rect x="1609" width="14" height="7" fill="#C9C9C9"/>
+            <rect x="1623" width="105" height="7" fill="#1D6FB7"/>
+        </svg>
+        <div class="row g-4 d-flex flex-lg-row flex-column">
+            <div class="col-12">
+                <section class="newsletter purple-dark section-colored mb-4 mb-lg-0">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-lg-3"> 
+                            <img src="./assets/images/illu newsletter.svg" class="d-block mx-lg-auto img-fluid mt-0" style="max-height: 250px;" alt="" loading="lazy"> 
                         </div> 
-                    </section>
-                </div>
+                        <div class="col-lg-9 col-12">
+                            <div class="m-b-6 ">
+                                <h2 class="gamma-title">Newsletter Parentalité.be</h2>
+                                <!-- <h3 class="beta-title">Découvrez notre annuaire</h3> -->
+                            </div> 
+                            <p class="m-b-6 ">Restez informé de nos dernières actualités, de nos évènements et des récents services ajoutés. En savoir plus.</p>
+                            <a href="https://acd35b8a.sibforms.com/serve/MUIFALTJGEJp2PSMzxQNc6Qyx2w7uiJgH_jzUNzksDCoK_z3hp6Nqiadl9ARVl-_Q2d74hpRWjjwDm0Wt0xq012szwefjEdq1vjMc1F8OuHBRUKXY25Ht1g5GfnLO5yPsm2_q-p_mqFukShe49hZztMibT-7uMCHsBQC4pDAo8TRH6Y4X758oEyU577njNnIu2A4ddpz2C5ypj-k" class="btn btn--md btn-secondary purple">
+                                S’inscrire à la newsletter
+                            </a>
+                        </div>
+                    </div> 
+                </section>
             </div>
-             <!-- Navigation -->
-            <div class="row">
-                <div class="col-12 col-md-3 col-lg-3 border-b">
-                    <div class="list-nav">
-                        <h3 class="gamma-title">Parentalité.be</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="a-propos.html">À propos</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="annuaire.html">Annuaire</a></li>
-                            <li><a href="agenda.html">Agenda</a></li>
-                            <li><a href="ressources.html">Ressources</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6 border-b">
-                    <div class="list-nav">
-                        <h3 class="gamma-title">Thématiques</h3>
-                        <ul class="list-unstyled list-themes">  
-                            <li><a href="thematique_portail.html">Adoption</a></li>
-                            <li><a href="thematique_portail.html">Assuétudes</a></li>
-                            <li><a href="thematique_portail.html">Handicap</a></li>
-                            <li><a href="thematique_portail.html">Maltraitance de l'enfant</a></li>
-                            <li><a href="thematique_portail.html">Migration / immigration</a></li>
-                            <li><a href="thematique_portail.html">Santé mentale</a></li>
-                            <li><a href="thematique_portail.html">Hébergement temporaire en dehors du milieu de vie</a></li>
-                            <li><a href="thematique_portail.html">Isolement social</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-3 col-lg-3 border-b">
-                    <div class="list-nav">
-                        <h3 class="gamma-title">Suivez-nous</h3>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#" aria-label="LinkedIn de Parentalité.be">
-                                    <svg aria-hidden="true" class="icon-social-media" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_13593_959)">
-                                        <path d="M34.0605 33.9933H28.1647V24.7788C28.1647 22.5816 28.1254 19.753 25.0982 19.753C22.0274 19.753 21.5576 22.147 21.5576 24.6189V33.9927H15.6617V15.044H21.3218V17.6335H21.401C21.9674 16.667 22.786 15.8719 23.7694 15.3329C24.7528 14.7938 25.8643 14.5311 26.9855 14.5726C32.9612 14.5726 34.063 18.4953 34.063 23.5984L34.0605 33.9933ZM9.00924 12.4538C8.33255 12.4539 7.67099 12.2538 7.10827 11.8787C6.54555 11.5036 6.10695 10.9704 5.84788 10.3465C5.58881 9.72266 5.52091 9.03613 5.65281 8.37375C5.78471 7.71137 6.11047 7.10291 6.58888 6.62529C7.06729 6.14767 7.67688 5.82236 8.34055 5.69049C9.00422 5.55862 9.69216 5.62612 10.3174 5.88445C10.9426 6.14277 11.4771 6.58032 11.8531 7.14177C12.2292 7.70322 12.43 8.36335 12.4301 9.03868C12.4302 9.48708 12.3417 9.93111 12.1699 10.3454C11.998 10.7597 11.7461 11.1362 11.4284 11.4533C11.1108 11.7704 10.7336 12.022 10.3185 12.1937C9.90344 12.3653 9.45856 12.4537 9.00924 12.4538ZM11.9572 33.9933H6.05517V15.044H11.9572V33.9933ZM36.9999 0.160664H3.09252C2.32292 0.151997 1.58131 0.448607 1.03074 0.985316C0.480157 1.52202 0.165643 2.25492 0.15625 3.02296V37.0021C0.165321 37.7705 0.479651 38.5039 1.03021 39.0412C1.58077 39.5785 2.32253 39.8757 3.09252 39.8675H36.9999C37.7714 39.8771 38.5152 39.5808 39.0679 39.0435C39.6207 38.5063 39.9371 37.7721 39.9478 37.0021V3.02051C39.9368 2.25095 39.6201 1.51722 39.0674 0.98052C38.5146 0.443825 37.771 0.148062 36.9999 0.158212" fill="white"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_13593_959">
-                                        <rect width="40" height="40" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class=" logo-parentalite">
-                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="LOGO ETNIC"></a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-9 d-grid">
-                    <ul class="list-unstyled footer-legal">
-                        <li><a href="plan_site.html">Plan du site</a></li>                            
-                        <li><a href="mentions_legales.html">Mentions légales</a></li>
-                        <li><a href="declaration_accessibilite.html">Déclaration d’accessibilité</a></li>
-                        <li><a href="politique_confidentialite.html">Politique de confidentialité et cookies</a></li>
+        </div>
+         <!-- Navigation -->
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-3 border-b">
+                <div class="list-nav">
+                    <h3 class="gamma-title">Parentalité.be</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="annuaire.html">Annuaire</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="ressources.html">Ressources</a></li>
                     </ul>
                 </div>
-                <div class="col-12">
-                    <p class="mb-0 mt-4 text-center">
-                        Ce site est réalisé avec le support de
-                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg"></a>
-                    </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 border-b">
+                <div class="list-nav">
+                    <h3 class="gamma-title">Thématiques</h3>
+                    <ul class="list-unstyled list-themes">  
+                        <li><a href="thematique_portail.html">Adoption</a></li>
+                        <li><a href="thematique_portail.html">Assuétudes</a></li>
+                        <li><a href="thematique_portail.html">Handicap</a></li>
+                        <li><a href="thematique_portail.html">Maltraitance de l'enfant</a></li>
+                        <li><a href="thematique_portail.html">Migration / immigration</a></li>
+                        <li><a href="thematique_portail.html">Santé mentale</a></li>
+                        <li><a href="thematique_portail.html">Hébergement temporaire en dehors du milieu de vie</a></li>
+                        <li><a href="thematique_portail.html">Isolement social</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 border-b">
+                <div class="list-nav">
+                    <h3 class="gamma-title">Suivez-nous</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" aria-label="LinkedIn de Parentalité.be">
+                                <svg aria-hidden="true" class="icon-social-media" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_13593_959)">
+                                    <path d="M34.0605 33.9933H28.1647V24.7788C28.1647 22.5816 28.1254 19.753 25.0982 19.753C22.0274 19.753 21.5576 22.147 21.5576 24.6189V33.9927H15.6617V15.044H21.3218V17.6335H21.401C21.9674 16.667 22.786 15.8719 23.7694 15.3329C24.7528 14.7938 25.8643 14.5311 26.9855 14.5726C32.9612 14.5726 34.063 18.4953 34.063 23.5984L34.0605 33.9933ZM9.00924 12.4538C8.33255 12.4539 7.67099 12.2538 7.10827 11.8787C6.54555 11.5036 6.10695 10.9704 5.84788 10.3465C5.58881 9.72266 5.52091 9.03613 5.65281 8.37375C5.78471 7.71137 6.11047 7.10291 6.58888 6.62529C7.06729 6.14767 7.67688 5.82236 8.34055 5.69049C9.00422 5.55862 9.69216 5.62612 10.3174 5.88445C10.9426 6.14277 11.4771 6.58032 11.8531 7.14177C12.2292 7.70322 12.43 8.36335 12.4301 9.03868C12.4302 9.48708 12.3417 9.93111 12.1699 10.3454C11.998 10.7597 11.7461 11.1362 11.4284 11.4533C11.1108 11.7704 10.7336 12.022 10.3185 12.1937C9.90344 12.3653 9.45856 12.4537 9.00924 12.4538ZM11.9572 33.9933H6.05517V15.044H11.9572V33.9933ZM36.9999 0.160664H3.09252C2.32292 0.151997 1.58131 0.448607 1.03074 0.985316C0.480157 1.52202 0.165643 2.25492 0.15625 3.02296V37.0021C0.165321 37.7705 0.479651 38.5039 1.03021 39.0412C1.58077 39.5785 2.32253 39.8757 3.09252 39.8675H36.9999C37.7714 39.8771 38.5152 39.5808 39.0679 39.0435C39.6207 38.5063 39.9371 37.7721 39.9478 37.0021V3.02051C39.9368 2.25095 39.6201 1.51722 39.0674 0.98052C38.5146 0.443825 37.771 0.148062 36.9999 0.158212" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_13593_959">
+                                    <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
-    </main>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class=" logo-parentalite">
+                    <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="Parentalité.be"></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-9 d-grid">
+                <ul class="list-unstyled footer-legal">
+                    <li><a href="plan_site.html">Plan du site</a></li>                            
+                    <li><a href="mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="declaration_accessibilite.html">Déclaration d’accessibilité</a></li>
+                    <li><a href="politique_confidentialite.html">Politique de confidentialité et cookies</a></li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <p class="mb-0 mt-4 text-center">
+                    Ce site est réalisé avec le support de
+                    <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg" alt="ETNIC"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script>
     document.addEventListener('DOMContentLoaded', function () {

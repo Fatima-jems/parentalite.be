@@ -10,7 +10,7 @@
 </head>
 <body id="legal_mentions">
     <header class="colored">
-        <svg class="line-color top" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
             <rect x="47" width="82" height="7" fill="#C9C9C9"/>
             <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -38,10 +38,10 @@
                     <!-- DESKTOP MENUS -->
                     <div class="navbar-container navbar-desktop">
                         <!-- MENU-1 : FAST LINKS -->
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="container-fluid d-flex justify-content-between menu-1">
-                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be - Accueil"></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be, pour les Pros"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <ul class="navbar-nav  mb-2 mb-lg-0">
@@ -58,10 +58,9 @@
                                 </ul>
                             </div>
                         </nav>
-                        <!-- MENU-2 : MAIN MENU -->
-                        <div class="nav-dropdowns-container">
+                        <nav class="nav-dropdowns-container" aria-label="Menu principal">
                             <div class="nav-dropdowns">
-                                <li class="nav-item dropdown">
+                                <div class="nav-item dropdown">
                                     <div class="container-fluid d-flex justify-content-between px-0 menu-2">
                                         <button class="nav-link nav-item dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Thématiques
@@ -88,7 +87,7 @@
                                         </button>
                                         <div class="dropdown-menu w-100 search-section">
                                             <div class="dropdown-content">
-                                                <ul class=" tab-links list-tags" aria-label="Rechercher sur le site">
+                                                <ul class=" tab-links list-tags" aria-label="Mots-clés">
                                                     <li class="tag purple">Alimentation</li>
                                                     <li class="tag purple">Limites</li>
                                                     <li class="tag purple">Burn-out parentale</li>
@@ -99,7 +98,7 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="form-group input-withIcon w-100">
                                                             <i class="fa-solid fa-magnifying-glass icon"></i>
-                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                         </div>
                                                         <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                     </form>
@@ -107,16 +106,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                     <!-- MOBILE MENUS -->
                     <div class="navbar-container navbar-mobile">
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="navbar-top">
-                                <h1><a class="navbar-brand" href="index.html">parentalité.be</a></h1>
-                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                                <span><a class="navbar-brand" href="index.html">parentalité.be</a></span>
+                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Menu">
                                     <span class="nav-close">
                                         Menu
                                         <svg class="ms-2" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,10 +178,10 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="w-100">
                                                             <div class="form-group input-withIcon w-100">
-                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <svg width="18" height="18" aria-hidden="true" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
                                                                 </svg>
-                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                             </div>
                                                             <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                         </div>
@@ -228,7 +227,15 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="index.html">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">Accessibilité</a></span></p>
+                         <nav aria-label="Vous êtes ici" class="breadcrumbs">
+                            <ol class="breadcrumb-list d-flex ps-0">
+                                <li class="breadcrumb">
+                                    <a href="index.html">Accueil</a>
+                                    <span class="separator px-1" aria-hidden="true">/</span>
+                                </li>
+                                <li class="breadcrumb active" aria-current="page">Accessibilité</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -244,70 +251,68 @@
                 </div>
             </div>
         </section>
-        <section class="">
+        <div class="">
             <div class="container">
                 <div class="row g-5 d-flex justify-content-between">
                     <div class="col-12 col-md-8 section-760">
-                        <div class="">
-                            <div class="row list-articles">
-                                <div class="col-12">
-                                    <article>
-                                        <div class="card banner neutral">
-                                            <div class="header-card">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/>
-                                                </svg>
-                                                <!-- <h3 class="title-banner">L'Office de la Naissance et de l'Enfance</h3> -->
-                                                <p class="fw-bold mb-0">La présente déclaration sur l'accessibilité s'applique au site suivant : <a href="https://www.parentalite.be">https://www.parentalite.be.</a></p>
-                                            </div>
+                        <div class="row list-articles">
+                            <div class="col-12">
+                                <section>
+                                    <div class="card banner neutral">
+                                        <div class="header-card">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/>
+                                            </svg>
+                                            <!-- <h3 class="title-banner">L'Office de la Naissance et de l'Enfance</h3> -->
+                                            <p class="fw-bold mb-0">La présente déclaration sur l'accessibilité s'applique au site suivant : <a class="btn btn-ter blue" href="https://www.parentalite.be">https://www.parentalite.be.</a></p>
                                         </div>
-                                    </article>
-                                </div>
-                                <div class="col-12">
-                                    <article class="">
-                                        <h2 class="alpha-title m-b-8">Etat de conformité</h2>
-                                        <p>Ce site internet est en conformité avec les standards WCAG (Web Content Accessibility Guidelines) 2.2 niveau AA.</p>
-                                    </article>
-                                </div>
-                                <div class="col-12">
-                                    <article class="">
-                                        <h2 class="alpha-title m-b-8">Etat de conformité</h2>
-                                        <p>Le contenu visé ci-après n'est pas accessible ou seulement partiellement accessible pour les raisons suivantes :</p>
-                                        <ul>
-                                            <li>Certains documents ne sont pas complètement accessibles mais ils bénéficient  d'une exemption car ils datent d'avant septembre 2018.</li>
-                                            <li>Les contenus indiqués dans le plan d'amélioration ci-dessous ne sont pas  complètement accessibles mais ils bénéficient d'une dérogation  temporaire pour cause de charge disproportionnée.</li>
-                                        </ul>
-                                    </article>
-                                </div>
-                                <div class="col-12">
-                                    <article class="">
-                                        <h2 class="alpha-title m-b-8">Préparation de la déclaration sur l'accessibilité</h2>
-                                        <p>La présente déclaration a été préparée le 27/10/21. La méthode  utilisée pour mettre à jour la déclaration est la suivante : un audit  détaillé externe dont toutes les erreurs relevées ont été corrigées.</p>
-                                        <p>Ecrans représentatifs visés par l’audit : accueil, FAQ, recherche, à propos,  thématique handicap, référentiel, Agenda – Ces bébés qui nous  questionnent, ressources, annuaire, plan du site, détail d’une  actualité.</p>
-                                        <p class="mb-0">Date de la dernière mise à jour de la déclaration : 20/05/2025</p>
-                                    </article>
-                                </div>
-                                <div class="col-12">
-                                    <article class="">
-                                        <h2 class="alpha-title m-b-8">Retour d'information et coordonnées de contact</h2>
-                                        <p>Si vous ne pouvez prendre connaissance de certains contenus en raison de leur inaccessibilité, vous pouvez envoyer un mail à l'adresse e-mail du gestionnaire du site : <a class="t-c-b" href="mailto:celluleweb@one.be">celluleweb@one.be</a> ou <a class="t-c-b" href="mailto:parentalite@one.be">parentalite@one.be.</a></p>
-                                    </article>
-                                </div>
-                                <div class="col-12">
-                                    <article class="">
-                                        <h2 class="alpha-title m-b-8">Procédure permettant d'assurer le respect des dispositions</h2>
-                                        <p>En cas de non réponse dans les 30 jours ou de réponse insatisfaisante du gestionnaire du site, nous vous invitons à adresser un e-mail au  Service de médiation commun à la Communauté française et à la Région  wallonne via l'adresse : <a class="t-c-b" href="maito:courrier@le-mediateur.be">courrier@le-mediateur.be</a>. Dans votre message, vous pouvez indiquer le nom du site web concerné de même que le problème rencontré.</p>
-                                    </article>
-                                </div>
-                                <div class="col-12">
-                                    <article class="">
-                                        <h2 class="alpha-title m-b-8">Plan d'amélioration</h2>
-                                        <ul>
-                                            <li>Des retranscriptions seront ajoutées aux vidéos en 2025.</li>
-                                            <li>La trentaine de documents qui entrent dans le cadre de la loi seront progressivement rendus accessibles en 2025 et 2026.</li>
-                                        </ul>
-                                    </article>
-                                </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="">
+                                    <h2 class="alpha-title m-b-8">Etat de conformité</h2>
+                                    <p>Ce site internet est en conformité avec les standards WCAG (Web Content Accessibility Guidelines) 2.2 niveau AA.</p>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="">
+                                    <h2 class="alpha-title m-b-8">Etat de conformité</h2>
+                                    <p>Le contenu visé ci-après n'est pas accessible ou seulement partiellement accessible pour les raisons suivantes :</p>
+                                    <ul>
+                                        <li>Certains documents ne sont pas complètement accessibles mais ils bénéficient  d'une exemption car ils datent d'avant septembre 2018.</li>
+                                        <li>Les contenus indiqués dans le plan d'amélioration ci-dessous ne sont pas  complètement accessibles mais ils bénéficient d'une dérogation  temporaire pour cause de charge disproportionnée.</li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="">
+                                    <h2 class="alpha-title m-b-8">Préparation de la déclaration sur l'accessibilité</h2>
+                                    <p>La présente déclaration a été préparée le 27/10/21. La méthode  utilisée pour mettre à jour la déclaration est la suivante : un audit  détaillé externe dont toutes les erreurs relevées ont été corrigées.</p>
+                                    <p>Ecrans représentatifs visés par l’audit : accueil, FAQ, recherche, à propos,  thématique handicap, référentiel, Agenda – Ces bébés qui nous  questionnent, ressources, annuaire, plan du site, détail d’une  actualité.</p>
+                                    <p class="mb-0">Date de la dernière mise à jour de la déclaration : 20/05/2025</p>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="">
+                                    <h2 class="alpha-title m-b-8">Retour d'information et coordonnées de contact</h2>
+                                    <p>Si vous ne pouvez prendre connaissance de certains contenus en raison de leur inaccessibilité, vous pouvez envoyer un mail à l'adresse e-mail du gestionnaire du site : <a class="t-c-b" href="mailto:celluleweb@one.be">celluleweb@one.be</a> ou <a class="t-c-b" href="mailto:parentalite@one.be">parentalite@one.be.</a></p>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="">
+                                    <h2 class="alpha-title m-b-8">Procédure permettant d'assurer le respect des dispositions</h2>
+                                    <p>En cas de non réponse dans les 30 jours ou de réponse insatisfaisante du gestionnaire du site, nous vous invitons à adresser un e-mail au  Service de médiation commun à la Communauté française et à la Région  wallonne via l'adresse : <a class="t-c-b" href="maito:courrier@le-mediateur.be">courrier@le-mediateur.be</a>. Dans votre message, vous pouvez indiquer le nom du site web concerné de même que le problème rencontré.</p>
+                                </section>
+                            </div>
+                            <div class="col-12">
+                                <section class="">
+                                    <h2 class="alpha-title m-b-8">Plan d'amélioration</h2>
+                                    <ul>
+                                        <li>Des retranscriptions seront ajoutées aux vidéos en 2025.</li>
+                                        <li>La trentaine de documents qui entrent dans le cadre de la loi seront progressivement rendus accessibles en 2025 et 2026.</li>
+                                    </ul>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -329,7 +334,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="partners-section">
             <div class="container">
                 <!-- Titre -->
@@ -372,7 +377,7 @@
     </main>
     <footer>
         <div class="container">
-            <svg class="line-color" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="line-color" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="47" height="7" fill="#1D6FB7"/>
                 <rect x="47" width="82" height="7" fill="#C9C9C9"/>
                 <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -469,7 +474,7 @@
             <div class="row">
                 <div class="col-12 col-md-3">
                     <div class=" logo-parentalite">
-                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="LOGO ETNIC"></a>
+                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="Parentalité.be"></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-9 d-grid">
@@ -483,7 +488,7 @@
                 <div class="col-12">
                     <p class="mb-0 mt-4 text-center">
                         Ce site est réalisé avec le support de
-                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg"></a>
+                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg" alt="ETNIC"></a>
                     </p>
                 </div>
             </div>

@@ -138,7 +138,7 @@ body {
     font-weight: 600;
 }
 
-label {
+label, legend.form-label {
     color: var(--color-text-title);
     font-family: "Manrope", sans-serif;
     font-size: 18px;
@@ -166,7 +166,7 @@ label {
 }
 
 .link {
-    color: var(--color-text-title);
+    color: var(--color-purple-text);
     font-family: "Manrope", sans-serif;
     font-size: 1.125rem;
     font-style: normal;
@@ -943,7 +943,7 @@ button:focus,button:active,button:visited {
   line-height: var(--Font-Line-height-md, 32px); /* 177.778% */
 }
 
-.btn svg{
+.btn.video svg{
   height: 24px;
   width: 24px!important;
   flex-shrink: 0;
@@ -953,7 +953,7 @@ button:focus,button:active,button:visited {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-align-items: flex-start;
+    align-items: flex-start;
 }
 
 .btn--sm {
@@ -1579,12 +1579,12 @@ header .page-subtitle, header .page-title {
 .form-group input.form-control-lg, .form-control.form-control-lg, .form-select.form-control-lg {
     height: 64px;
     border-radius: 8px;
-    border: 1px solid var(--color-stroke-main);
+    border: 1px solid var(--color-purple-stroke);
 }
 
 textarea.form-control {
     border-radius: 8px;
-    border: 1px solid var(--color-stroke-main);
+    border: 1px solid var(--color-purple-stroke);
 }
 
 .newsletter-section .form-group {
@@ -2358,7 +2358,7 @@ ul {
   border-bottom: none;
 }
 
-#thematique_content article {
+#thematique_content .list-sections {
     margin-bottom: 80px;
 }
 
@@ -2413,7 +2413,7 @@ ul {
     color: var(--color-pink-text);
 }
 
-article p, ul {
+article p, ul, p.intro {
     line-height: 32px;
 }
 
@@ -2724,7 +2724,7 @@ body#navigation.dropdown-toggle.active:after {
     width: 100%
 }
 
-.navbar-mobile .navbar .navbar-top h1 {
+.navbar-mobile .navbar .navbar-top span {
     margin-bottom: 0;
     padding-bottom: 4px;
     font-size: 24px;
@@ -2734,7 +2734,7 @@ body#navigation.dropdown-toggle.active:after {
     color: var(--color-purple-text);
 }
 
-.navbar-mobile .navbar .navbar-top h1 > a{
+.navbar-mobile .navbar .navbar-top span > a{
     color: var(--color-purple-text);
 }
 
@@ -3953,10 +3953,17 @@ aside {
 .custom-file-upload  {
     border: 0px;
     color: var(--color-purple-text);
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 6px 0;
     cursor: pointer;
-    text-decoration: underline;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+    /* text-decoration: underline; */
 }
 
 .custom-file-upload:hover  {
@@ -4310,11 +4317,11 @@ button.btn-filters {
     }
 }
 
-.custom-input .form-control:focus-visible, .form-control:focus-visible, .form-control-lg:focus-visible, .dropdownMenuLink:focus-visible,  button.btn:focus-visible, a:focus-visible, a.btn:focus-visible, input[type="checkbox"]:focus-visible, a.focus:focus .card{
+.custom-input .form-control:focus-visible, .form-control:focus-visible, .form-control-lg:focus-visible, .dropdownMenuLink:focus-visible,  button.btn:focus-visible, a:focus-visible, a.btn:focus-visible, input[type="checkbox"]:focus-visible, a.focus:focus .card, .pagination a:focus, .upload-zone:focus-within {
     border-color: var(--color-stroke-main);
     outline: 3px solid var(--color-purple-interactive);
-    outline-offset: 3px;
-    box-shadow: 0 0 0 2px transparent;
+    outline-offset: 2px;
+    /* box-shadow: 0 0 0 2px transparent; */
     border-radius: 4px;
 }
 .custom-input .form-control:focus, .form-control:focus, .form-control-lg:focus, button:focus {
@@ -4323,6 +4330,15 @@ button.btn-filters {
     /* outline-offset: 3px; */
     /* box-shadow: 0 0 0 2px white; */
     border-radius: 4px;
+}
+
+footer a:focus-visible {
+    border-color: var(--color-stroke-main);
+    outline: 2px solid var(--color-purple-bg-light);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 2px transparent;
+    border-radius: 4px;
+    height: auto;
 }
 
 button:focus:not(:focus-visible) {
@@ -4364,7 +4380,7 @@ button:focus:not(:focus-visible) {
 }
 
 .upload-zone:hover,
-.upload-zone.dragover {
+.upload-zone.dragover, .upload-zone:focus-visible {
     border-color: var(--color-purple-interactive);
     background-color: var(--color-purple-bg-light);
 }
@@ -4417,7 +4433,7 @@ button:focus:not(:focus-visible) {
 .uploaded-file {
     /* min-height: 72px; */
 
-    border: 1px solid var(--color-stroke-main);
+    border: 1px solid var(--color-purple-stroke);
     border-radius: 8px;
 
     padding: 12px 12px 12px 16px;

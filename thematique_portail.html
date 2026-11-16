@@ -10,7 +10,7 @@
 </head>
 <body id="thematique_adoption">
     <header class="colored">
-        <svg class="line-color top" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
             <rect x="47" width="82" height="7" fill="#C9C9C9"/>
             <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -38,10 +38,10 @@
                     <!-- DESKTOP MENUS -->
                     <div class="navbar-container navbar-desktop">
                         <!-- MENU-1 : FAST LINKS -->
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="container-fluid d-flex justify-content-between menu-1">
-                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be - Accueil"></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be, pour les Pros"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <ul class="navbar-nav  mb-2 mb-lg-0">
@@ -58,10 +58,9 @@
                                 </ul>
                             </div>
                         </nav>
-                        <!-- MENU-2 : MAIN MENU -->
-                        <div class="nav-dropdowns-container">
+                        <nav class="nav-dropdowns-container" aria-label="Menu principal">
                             <div class="nav-dropdowns">
-                                <li class="nav-item dropdown">
+                                <div class="nav-item dropdown">
                                     <div class="container-fluid d-flex justify-content-between px-0 menu-2">
                                         <button class="nav-link nav-item dropdown-toggle w-100 active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Thématiques
@@ -88,7 +87,7 @@
                                         </button>
                                         <div class="dropdown-menu w-100 search-section">
                                             <div class="dropdown-content">
-                                                <ul class=" tab-links list-tags" aria-label="Rechercher sur le site">
+                                                <ul class=" tab-links list-tags" aria-label="Mots-clés">
                                                     <li class="tag purple">Alimentation</li>
                                                     <li class="tag purple">Limites</li>
                                                     <li class="tag purple">Burn-out parentale</li>
@@ -99,7 +98,7 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="form-group input-withIcon w-100">
                                                             <i class="fa-solid fa-magnifying-glass icon"></i>
-                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                         </div>
                                                         <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                     </form>
@@ -107,16 +106,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                     <!-- MOBILE MENUS -->
                     <div class="navbar-container navbar-mobile">
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="navbar-top">
-                                <h1><a class="navbar-brand" href="index.html">parentalité.be</a></h1>
-                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                                <span><a class="navbar-brand" href="index.html">parentalité.be</a></span>
+                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Menu">
                                     <span class="nav-close">
                                         Menu
                                         <svg class="ms-2" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,10 +178,10 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="w-100">
                                                             <div class="form-group input-withIcon w-100">
-                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <svg width="18" height="18" aria-hidden="true" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
                                                                 </svg>
-                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                             </div>
                                                             <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                         </div>
@@ -228,7 +227,15 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="">Adoption</a></span></p>
+                        <nav aria-label="Vous êtes ici" class="breadcrumbs">
+                            <ol class="breadcrumb-list d-flex ps-0">
+                                <li class="breadcrumb">
+                                    <a href="index.html">Accueil</a>
+                                    <span class="separator px-1" aria-hidden="true">/</span>
+                                </li>
+                                <li class="breadcrumb active" aria-current="page">Adoption</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -489,73 +496,72 @@
                 <!-- News list -->
                 <div class="row  g-4">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="thematique_content.html">
-                            <div class="card h-100">
-                                <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/preparer-candidats-adoptants.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="thematique_content.html" class="stretched-link">
                                     <h5 class="card-title">Préparer les candidats adoptants : repères pour les professionnels de soutien à la parentalité</h5>
                                     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Enfance</span>
-                                        </div>
-                                        <small>Article • 18.04.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Enfance</span>
                                     </div>
+                                    <small>Article • 18.04.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/agenda1.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/agenda1.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">"Adolescence et adoption : identité, questions et nouveaux équilibres</h5>
                                     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Article • 21.01.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Article • 21.01.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Grandir adopté·e : l’adoption à l’épreuve de l’adolescence</h5>
-                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Article • 29.12.2025</small>
+                                </a>
+                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> -->
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Article • 29.12.2025</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card card-more-ressources yellow h-100">
-                                <div class="card-body">
-                                    <div class="card-content-info">
+                        <div class="card card-more-ressources yellow h-100">
+                            <div class="card-body">
+                                <div class="card-content-info">
+                                    <a href="" class="stretched-link">
                                         <h4 class="beta-title">Voir tous les articles</h4>
-                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
-                                        </svg>
-                                    </div>
+                                    </a>
+                                    <svg width="45" height="37" aria-hidden=true viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -572,70 +578,69 @@
                 <!-- News list -->
                 <div class="row  g-4 slider-container">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100 ">
-                                <img src="./assets/images/lieu-rencontre.jpg" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100 ">
+                            <img src="./assets/images/lieu-rencontre.jpg" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Lieu de rencontre enfants et parents - l'ile aux trésors</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Enfance</span>
-                                        </div>
-                                        <small>Article • 18.04.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Enfance</span>
                                     </div>
+                                    <small>Article • 18.04.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/parlons-enfance.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/parlons-enfance.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Service Adoption ONE</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Article • 21.01.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Article • 21.01.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
+                        <div class="card h-100">
+                            <a href="" class="stretched-link">
                                 <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">L'Oranger</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Article • 29.12.2025</small>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">L'Oranger</h5>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Article • 29.12.2025</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card card-more-ressources pink h-100">
-                                <div class="card-body">
-                                    <div class="card-content-info">
+                        <div class="card card-more-ressources pink h-100">
+                            <div class="card-body">
+                                <div class="card-content-info">
+                                    <a href="" class="stretched-link">
                                         <h4 class="beta-title">Voir tous les contacts</h4>
-                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
-                                        </svg>
-                                    </div>
+                                    </a>
+                                    <svg width="45" height="37" aria-hidden=true viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -652,69 +657,68 @@
                 <!-- News list -->
                 <div class="row g-4 slider-container">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/news.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/news.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Souffrance psychique et parentalité : créer des ponts entre les soins aux adultes...</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Âge adulte</span>
-                                        </div>
-                                        <small>Bruxelles • 18.04.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Âge adulte</span>
                                     </div>
+                                    <small>Bruxelles • 18.04.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/parlons-enfance.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/parlons-enfance.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Être enfant d’un parent souffrant d’une vulnérabilité psychique</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Mons • 21.01.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Mons • 21.01.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/aide-jeunesse.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Coordination parentale</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>En ligne • 29.12.2025</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>En ligne • 29.12.2025</small>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card card-more-ressources blue h-100">
-                                <div class="card-body">
-                                    <div class="card-content-info">
+                        <div class="card card-more-ressources blue h-100">
+                            <div class="card-body">
+                                <div class="card-content-info">
+                                    <a href="" class="stretched-link">
                                         <h4 class="beta-title">Voir tous les événements</h4>
-                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
-                                        </svg>
-                                    </div>
+                                    </a>
+                                    <svg width="45" height="37" aria-hidden=true viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                         
                     </div>
                 </div>
@@ -732,70 +736,68 @@
                 <!-- News list -->
                 <div class="row g-4 slider-container">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/confier-son-enfant.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/confier-son-enfant.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Confier son enfant en adoption</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Âge adulte</span>
-                                        </div>
-                                        <small>Vidéo • 18.04.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Âge adulte</span>
                                     </div>
+                                    <small>Vidéo • 18.04.2026</small>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/convention-protection-enfants.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/convention-protection-enfants.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Convention sur la protection des enfants et la coopération en matière d'adoption internationale</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Texte législatif • 21.01.2026</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Texte législatif • 21.01.2026</small>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card h-100">
-                                <img src="./assets/images/brochure-service-repit.png" class="card-img-top" alt="">
-                                <div class="card-body">
+                        <div class="card h-100">
+                            <img src="./assets/images/brochure-service-repit.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <a href="" class="stretched-link">
                                     <h5 class="card-title">Brochure des services de répit</h5>
-                                    <div class="card-content-info">
-                                        <div class="list-tags">
-                                            <span class="tag yellow">Adoption</span>
-                                            <span class="tag purple">Adolescence</span>
-                                        </div>
-                                        <small>Brochure • 29.12.2025</small>
+                                </a>
+                                <div class="card-content-info">
+                                    <div class="list-tags">
+                                        <span class="tag yellow">Adoption</span>
+                                        <span class="tag purple">Adolescence</span>
                                     </div>
+                                    <small>Brochure • 29.12.2025</small>
                                 </div>
                             </div>
-                        </a>
-                        
-                    </div><div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <a href="">
-                            <div class="card card-more-ressources green h-100">
-                                <div class="card-body">
-                                    <div class="card-content-info">
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
+                        <div class="card card-more-ressources green h-100">
+                            <div class="card-body">
+                                <div class="card-content-info">
+                                    <a href="" class="stretched-link">
                                         <h4 class="beta-title">Voir toutes les ressources</h4>
-                                        <svg width="45" height="37" viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
-                                        </svg>
-                                    </div>
+                                    </a>
+                                    <svg width="45" height="37" aria-hidden=true viewBox="0 0 45 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.5 15.9099C1.11929 15.9099 0 17.0292 0 18.4099C0 19.7906 1.11929 20.9099 2.5 20.9099V18.4099V15.9099ZM44.2678 20.1777C45.2441 19.2014 45.2441 17.6185 44.2678 16.6421L28.3579 0.732243C27.3816 -0.244068 25.7986 -0.244068 24.8223 0.732243C23.846 1.70855 23.846 3.29147 24.8223 4.26778L38.9645 18.4099L24.8223 32.552C23.846 33.5284 23.846 35.1113 24.8223 36.0876C25.7986 37.0639 27.3816 37.0639 28.3579 36.0876L44.2678 20.1777ZM2.5 18.4099V20.9099H42.5V18.4099V15.9099H2.5V18.4099Z" fill="#F59D01"/>
+                                    </svg>
                                 </div>
                             </div>
-                        </a>
-                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -814,50 +816,51 @@
                 <div class="row g-2 logos-row">
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.enseignement.be/">
-                            <img  src="./assets/images/enseignement-fwb.svg" alt="Logo Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                            <img  src="./assets/images/enseignement-fwb.svg" alt="Enseignement.be - Fédération Wallonie-Bruxelles" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.aviq.be/fr">
-                            <img  src="./assets/images/Logo_AVIQ_Officiel.svg" alt="Logo AVIQ" class="img-fluid partner-logo">
+                            <img  src="./assets/images/Logo_AVIQ_Officiel.svg" alt="AVIQ - Agence pour une Vie de Qualité" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.federation-wallonie-bruxelles.be/">
-                            <img  src="./assets/images/FWB.svg"  alt="Logo Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                            <img  src="./assets/images/FWB.svg"  alt="Fédération Wallonie-Bruxelles" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://ccf.brussels/">
-                            <img  src="./assets/images/Logo Francophones Bruxelles.svg" alt="Logo COCOF" class="img-fluid partner-logo">
+                            <img  src="./assets/images/Logo Francophones Bruxelles.svg" alt="COCOF - Commission communautaire française" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.defenseurdesenfants.be/">
-                            <img src="./assets/images/Défenseur des droits de l’enfant.svg" alt="Logo DGDE - Délégué général aux droits de l'enfant" class="img-fluid partner-logo">
+                            <img src="./assets/images/Défenseur des droits de l’enfant.svg" alt="Logo alt="Défenseur des droits de l'enfant" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.one.be/public/">
-                            <img  src="./assets/images/logo-ONE.svg" alt="Logo ONE" class="img-fluid partner-logo">
+                            <img  src="./assets/images/logo-ONE.svg" alt="ONE - Office de la Naissance et de l'Enfance" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
-                        <a href="">
-                            <img  src="./assets/images/Logo-OEJAJ.svg" alt="Logo OEJAJ - Obervatoire de l'Enfance, de ka Jeunesse et de l'AIde à la Jeunesse" class="img-fluid partner-logo">
+                        <a href="https://oejaj.cfwb.be/">
+                            <img  src="./assets/images/Logo-OEJAJ.svg" alt="OEJAJ - Observatoire de l'Enfance, de la Jeunesse et de l'Aide à la Jeunesse" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://ccf.brussels/nos-services/personnes-handicapees/service-phare/">
-                            <img  src="./assets/images/Logo-PHARE.svg" alt="Logo Phare" class="img-fluid partner-logo">
+                            <img  src="./assets/images/Logo-PHARE.svg" alt="PHARE - Personne Handicapée Autonomie Recherchée" class="img-fluid partner-logo">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
+    </main>
+     <footer>
         <div class="container">
-            <svg class="line-color" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="line-color" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="47" height="7" fill="#1D6FB7"/>
                 <rect x="47" width="82" height="7" fill="#C9C9C9"/>
                 <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -954,7 +957,7 @@
             <div class="row">
                 <div class="col-12 col-md-3">
                     <div class=" logo-parentalite">
-                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="LOGO ETNIC"></a>
+                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="Parentalité.be"></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-9 d-grid">
@@ -968,14 +971,12 @@
                 <div class="col-12">
                     <p class="mb-0 mt-4 text-center">
                         Ce site est réalisé avec le support de
-                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg"></a>
+                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg" alt="ETNIC"></a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-    </main>
-
     <script>
     document.addEventListener('DOMContentLoaded', function () {
     console.log('frontend js is loading');

@@ -10,7 +10,7 @@
 </head>
 <body id="search-page">
     <header class="colored">
-        <svg class="line-color top" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
             <rect x="47" width="82" height="7" fill="#C9C9C9"/>
             <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -38,10 +38,10 @@
                     <!-- DESKTOP MENUS -->
                     <div class="navbar-container navbar-desktop">
                         <!-- MENU-1 : FAST LINKS -->
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="container-fluid d-flex justify-content-between menu-1">
-                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be - Accueil"></a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <a class="navbar-brand" href="index.html"><img src="./assets/images/logo-nav.svg" alt="Parentalité.be, pour les Pros"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <ul class="navbar-nav  mb-2 mb-lg-0">
@@ -58,10 +58,9 @@
                                 </ul>
                             </div>
                         </nav>
-                        <!-- MENU-2 : MAIN MENU -->
-                        <div class="nav-dropdowns-container">
+                        <nav class="nav-dropdowns-container" aria-label="Menu principal">
                             <div class="nav-dropdowns">
-                                <li class="nav-item dropdown">
+                                < class="nav-item dropdown">
                                     <div class="container-fluid d-flex justify-content-between px-0 menu-2">
                                         <button class="nav-link nav-item dropdown-toggle w-100" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Thématiques
@@ -88,7 +87,7 @@
                                         </button>
                                         <div class="dropdown-menu w-100 search-section">
                                             <div class="dropdown-content">
-                                                <ul class=" tab-links list-tags" aria-label="Rechercher sur le site">
+                                                <ul class=" tab-links list-tags" aria-label="Mots-clés">
                                                     <li class="tag purple">Alimentation</li>
                                                     <li class="tag purple">Limites</li>
                                                     <li class="tag purple">Burn-out parentale</li>
@@ -99,7 +98,7 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="form-group input-withIcon w-100">
                                                             <i class="fa-solid fa-magnifying-glass icon"></i>
-                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                            <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                         </div>
                                                         <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                     </form>
@@ -107,16 +106,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                     <!-- MOBILE MENUS -->
                     <div class="navbar-container navbar-mobile">
-                        <nav class="navbar navbar-expand-lg">
+                        <nav class="navbar navbar-expand-lg" aria-label="Liens rapides">
                             <div class="navbar-top">
-                                <h1><a class="navbar-brand" href="index.html">parentalité.be</a></h1>
-                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+                                <span><a class="navbar-brand" href="index.html">parentalité.be</a></span>
+                                <button class="nav-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Menu">
                                     <span class="nav-close">
                                         Menu
                                         <svg class="ms-2" width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -179,10 +178,10 @@
                                                     <form action="recherche.html" method="get">
                                                         <div class="w-100">
                                                             <div class="form-group input-withIcon w-100">
-                                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <svg width="18" height="18" aria-hidden="true" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
                                                                 </svg>
-                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="">
+                                                                <input class="form-control-lg" type="text" id="searchInput" name="" value="" aria-label="Recherche">
                                                             </div>
                                                             <a href="recherche.html" type="submit" class="btn btn--md btn-primary purple">Rechercher</a>
                                                         </div>
@@ -228,7 +227,15 @@
                 <!-- Titre -->
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="breadcrumbs d-flex"><span class="breadcrumb"><a href="index.html">Accueil</a></span> <span class="breadcrumb separator">/ </span><span class="breadcrumb active"><a href="#">Recherche</a></span></p>
+                        <nav aria-label="Vous êtes ici" class="breadcrumbs">
+                            <ol class="breadcrumb-list d-flex ps-0">
+                                <li class="breadcrumb">
+                                    <a href="index.html">Accueil</a>
+                                    <span class="separator px-1" aria-hidden="true">/</span>
+                                </li>
+                                <li class="breadcrumb active" aria-current="page">Recherche</li>
+                            </ol>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -248,7 +255,7 @@
                 <div class="row g-5 d-flex justify-content-between">
                     <div class="col-4 desktop-annuaire">
                         <h2 class="gamma-title mb-4 title-filters-card">
-                            <svg class="me-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="me-2" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_2619_38099)">
                                 <path d="M6.99999 6H17L11.99 12.3L6.99999 6ZM4.24999 5.61C6.26999 8.2 9.99999 13 9.99999 13V19C9.99999 19.55 10.45 20 11 20H13C13.55 20 14 19.55 14 19V13C14 13 17.72 8.2 19.74 5.61C20.25 4.95 19.78 4 18.95 4H5.03999C4.20999 4 3.73999 4.95 4.24999 5.61Z" fill="#846395"/>
                                 </g>
@@ -260,13 +267,13 @@
                             </svg>
                             Filtrer les résultats
                         </h2>
-                        <aside class="directory-filters">
+                        <section class="directory-filters">
                             <div class="accordion accordion-flush" id="directoryFilters">
 
                                 <!-- TYPE DE STRUCTURE -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterStructure">Type de contenu</button>
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterStructure" aria-expanded="true">Type de contenu</button>
                                     </h2>
                                     <div id="filterStructure" class="accordion-collapse collapse show" data-bs-parent="#directoryFilters">
                                         <div class="accordion-body">
@@ -317,7 +324,7 @@
                                 <!-- THEMATQIUE -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterProvince">Thématiques</button>
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterProvince" aria-expanded="true">Thématiques</button>
                                     </h2>
                                     <div id="filterProvince" class="accordion-collapse collapse show" data-bs-parent="#directoryFilters">
                                         <div class="accordion-body">
@@ -364,7 +371,7 @@
                                 <!-- MOMENT DE VIE -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterLife">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filterLife" aria-expanded="true">
                                             Moment de vie
                                             <!-- <span class="filter-count">4</span> -->
                                         </button>
@@ -397,7 +404,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </aside>
+                        </section>
                     </div>
                     <div class="col-12 col-lg-8">
                         <div class="row">
@@ -406,10 +413,10 @@
                                     <form action="recherche.html" method="get">
                                         <div class="form-group input-withIcon w-100">
                                             <i class="fa-solid fa-magnifying-glass icon"></i>
-                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="18" height="18" aria-hidden="true" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#846395"/>
                                             </svg>
-                                            <input class="form-control-lg" type="text" id="searchKeyWords" name="" value="" placeholder="Recherche">
+                                            <input class="form-control-lg" type="text" id="searchKeyWords" name="" value="" placeholder="Recherche" aria-label="Recherche">
                                         </div>
                                     </form>
                                 </div>
@@ -417,13 +424,13 @@
                                     Filtrer les résultats
                                 </button>
                                 <h2 class="alpha-title mt-4 m-b-8">
-                                    <span>2</span> Résultat(s)
+                                    <span role=alert><span>2</span> Résultat(s)</span>
                                 </h2>
                                 <div class="tag-filters-list">
                                     <div class="list-tags">
                                         <span class="tag grey close">Vidéos
-                                            <button>
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <button aria-label="Supprimer le filtre Vidéos">
+                                                <svg width="20" height="20" aria-hidden="true" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M15.8333 5.34169L14.6583 4.16669L9.99996 8.82502L5.34163 4.16669L4.16663 5.34169L8.82496 10L4.16663 14.6584L5.34163 15.8334L9.99996 11.175L14.6583 15.8334L15.8333 14.6584L11.175 10L15.8333 5.34169Z" fill="#555555"/>
                                                 </svg>
                                             </button>
@@ -432,13 +439,15 @@
                                     <button class="btn btn-ter purple">Effacer tous les filtres</button>
                                 </div>
                                 <div class="list-results-search">
-                                    <a href="video_detail.html" class="event-card card">
+                                    <div class="event-card card">
                                         <div class="row g-0 h-100">
                                             <div class="col-12 col-md event-card-body">
                                                 <div class="card-body h-100 d-flex flex-column">
-                                                    <h3 class="event-title card-title">
-                                                        La maltraitance familiale
-                                                    </h3>
+                                                    <a href="video_detail.html" class="text-decoration-none stretched-link">
+                                                        <h3 class="event-title card-title">
+                                                            La maltraitance familiale
+                                                        </h3>
+                                                    </a>
                                                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur. Condimentum arcu nunc faucibus ipsum luctus et aliquam erat orci. Lorem ipsum dolor sit amet consectetur.</p>
                                                     <div class="mt-auto pt-3">
                                                         <div class="list-tags">
@@ -456,7 +465,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-auto event-card-image position-relative">
-                                                <img src="assets/images/parlons-enfance.png" alt="Évènement" class="img-fluid h-100 w-100">
+                                                <img src="assets/images/parlons-enfance.png" alt="" class="img-fluid h-100 w-100">
                                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g filter="url(#filter0_di_2672_17380)">
                                                 <rect x="6" y="3" width="40" height="40" rx="20" fill="#4E3A61"/>
@@ -481,14 +490,16 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="video_detail.html" class="event-card card">
+                                    </div>
+                                    <div href="video_detail.html" class="event-card card">
                                         <div class="row g-0 h-100">
                                             <div class="col-12 col-md event-card-body">
                                                 <div class="card-body h-100 d-flex flex-column">
-                                                    <h3 class="event-title card-title">
-                                                        Nouvelles configurations familiales
-                                                    </h3>
+                                                    <a href="video_detail.html" class="text-decoration-none stretched-link">
+                                                        <h3 class="event-title card-title">
+                                                            Nouvelles configurations familiales
+                                                        </h3>
+                                                    </a>
                                                     <p class="mb-0">Lorem ipsum dolor sit amet consectetur. Condimentum arcu nunc faucibus ipsum luctus et aliquam erat orci. Lorem ipsum dolor sit amet consectetur.</p>
                                                     <div class="mt-auto pt-3">
                                                         <div class="list-tags">
@@ -504,7 +515,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12 col-md-auto event-card-image position-relative">
-                                                <img src="assets/images/preparer-candidats-adoptants.png" alt="Évènement" class="img-fluid h-100 w-100">
+                                                <img src="assets/images/preparer-candidats-adoptants.png" alt="" class="img-fluid h-100 w-100">
                                                 <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g filter="url(#filter0_di_2672_17380)">
                                                 <rect x="6" y="3" width="40" height="40" rx="20" fill="#4E3A61"/>
@@ -529,11 +540,11 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                    </a>
-                                    <nav aria-label="Page navigation">
+                                    </div>
+                                    <nav aria-label="Pagination">
                                     <ul class="pagination">
                                         <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
+                                        <a class="page-link" href="#" aria-label="Page précédente">
                                             <span class="d-flex" aria-hidden="true">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="#846395"/>
@@ -541,13 +552,13 @@
                                             </span>
                                         </a>
                                         </li>
-                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link active" href="#" aria-current="page">1</a></li>
                                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                                         <li class="page-item"><a class="page-link" href="#">...</a></li>
                                         <li class="page-item"><a class="page-link" href="#">12</a></li>
                                         <li class="page-item"><a class="page-link" href="#">13</a></li>
                                         <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
+                                        <a class="page-link" href="#" aria-label="Page suivante">
                                             <span class="d-flex" aria-hidden="true">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="#846395"/>
@@ -582,42 +593,42 @@
                 <div class="row g-3 logos-row">
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.enseignement.be/">
-                            <img  src="./assets/images/enseignement-fwb.svg" alt="Logo Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                            <img  src="./assets/images/enseignement-fwb.svg" alt="Enseignement.be - Fédération Wallonie-Bruxelles" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.aviq.be/fr">
-                            <img  src="./assets/images/Logo_AVIQ_Officiel.svg" alt="Logo AVIQ" class="img-fluid partner-logo">
+                            <img  src="./assets/images/Logo_AVIQ_Officiel.svg" alt="AVIQ - Agence pour une Vie de Qualité" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.federation-wallonie-bruxelles.be/">
-                            <img  src="./assets/images/FWB.svg"  alt="Logo Fédération Wallonie Bruxelles" class="img-fluid partner-logo">
+                            <img  src="./assets/images/FWB.svg"  alt="Enseignement.be - Fédération Wallonie-Bruxelles" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://ccf.brussels/">
-                            <img  src="./assets/images/Logo Francophones Bruxelles.svg" alt="Logo COCOF" class="img-fluid partner-logo">
+                            <img  src="./assets/images/Logo Francophones Bruxelles.svg" alt="COCOF - Commission communautaire française" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.defenseurdesenfants.be/">
-                            <img src="./assets/images/Défenseur des droits de l’enfant.svg" alt="Logo DGDE - Délégué général aux droits de l'enfant" class="img-fluid partner-logo">
+                            <img src="./assets/images/Défenseur des droits de l’enfant.svg" alt="Logo alt="Défenseur des droits de l'enfant" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://www.one.be/public/">
-                            <img  src="./assets/images/logo-ONE.svg" alt="Logo ONE" class="img-fluid partner-logo">
+                            <img  src="./assets/images/logo-ONE.svg" alt="ONE - Office de la Naissance et de l'Enfance" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
-                        <a href="">
-                            <img  src="./assets/images/Logo-OEJAJ.svg" alt="Logo OEJAJ - Obervatoire de l'Enfance, de ka Jeunesse et de l'AIde à la Jeunesse" class="img-fluid partner-logo">
+                        <a href="https://oejaj.cfwb.be/">
+                            <img  src="./assets/images/Logo-OEJAJ.svg" alt="OEJAJ - Observatoire de l'Enfance, de la Jeunesse et de l'Aide à la Jeunesse" class="img-fluid partner-logo">
                         </a>
                     </div>
                     <div class="col-3 col-lg d-flex align-items-center">
                         <a href="https://ccf.brussels/nos-services/personnes-handicapees/service-phare/">
-                            <img  src="./assets/images/Logo-PHARE.svg" alt="Logo Phare" class="img-fluid partner-logo">
+                            <img  src="./assets/images/Logo-PHARE.svg" alt="PHARE - Personne Handicapée Autonomie Recherchée" class="img-fluid partner-logo">
                         </a>
                     </div>
                 </div>
@@ -626,7 +637,7 @@
     </main>
     <footer>
         <div class="container">
-            <svg class="line-color" width="1728" height="7" preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="line-color" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="47" height="7" fill="#1D6FB7"/>
                 <rect x="47" width="82" height="7" fill="#C9C9C9"/>
                 <rect x="129" width="164" height="7" fill="#00A7AA"/>
@@ -723,7 +734,7 @@
             <div class="row">
                 <div class="col-12 col-md-3">
                     <div class=" logo-parentalite">
-                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="LOGO ETNIC"></a>
+                        <a href="index.html"><img class="" src="./assets/images/logo-parentalité-footer.svg" alt="Parentalité.be"></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-9 d-grid">
@@ -737,7 +748,7 @@
                 <div class="col-12">
                     <p class="mb-0 mt-4 text-center">
                         Ce site est réalisé avec le support de
-                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg"></a>
+                        <a class="ms-2" href="https://www.etnic.be/"><img src="assets/images/ETNIC_LOGO.svg" alt="ETNIC"></a>
                     </p>
                 </div>
             </div>
@@ -753,7 +764,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <aside class="directory-filters">
+                    <section class="directory-filters">
                         <div class="accordion accordion-flush" id="directoryFilters">
 
                             <!-- TYPE DE STRUCTURE -->
@@ -885,7 +896,7 @@
                                 </div>
                             </div>
                         </div>
-                    </aside>
+                    </section>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary purple" data-bs-dismiss="modal">Effacer</button>
