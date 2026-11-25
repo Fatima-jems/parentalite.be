@@ -9,6 +9,9 @@
     <title>Portail thématique</title>
 </head>
 <body id="thematique_adoption">
+    <a class="visually-hidden-focusable page-skip-link btn btn--md btn-primary purple" href="#page-content">
+        <span>Skip to main content</span>
+    </a>
     <header class="colored">
         <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
@@ -221,7 +224,7 @@
             </div> 
         </div>  
     </header>
-    <main>
+    <main id="page-content">
         <section class="breadcrumbs-section">
             <div class="container">
                 <!-- Titre -->
@@ -259,67 +262,167 @@
                     </div>
                 </div>
 
-                <!-- <div class="row g-4">
-                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <div class="card h-100 sub-theme-card">
-                            <div class="card-body">
-                                <h3 class="beta-title">Accompagner les candidats adoptants</h3>
-                                <ul>
-                                    <li>
-                                        <a class="link" href="#">Comment préparer un projet d’adoption avec un parent</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Parler des attentes et des représentations de l’enfant à venir</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Accompagner les démarches administratives de l’adoption</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <div class="card h-100 sub-theme-card">
-                            <div class="card-body">
-                                <h3 class="beta-title">Accompagner le non-désir d’enfant</h3>
-                                <ul>
-                                    <li>
-                                        <a class="link" href="#">Accueillir les émotions liées à un parcours de parentalité difficile</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Soutenir un parent face à un projet parental incertain</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Orienter vers des ressources spécialisées</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg col-md-4 col-sm-6 col-s-12">
-                        <div class="card h-100 sub-theme-card">
-                            <div class="card-body">
-                                <h3 class="beta-title">Accompagner l’enfant</h3>
-                                <ul>
-                                    <li>
-                                        <a class="link" href="#">Faciliter la création du lien parent-enfant après adoption</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Comprendre les besoins spécifiques des enfants adoptés</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Gérer les difficultés d’attachement</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="row g-4" id="themesAccordion">
+                    <!-- Thématique 1 -->
                     <div class="col-12 col-md-4 theme-item">
                         <div class="card theme-card h-100">
-                            <!-- Header -->
+                            <div class="card-header theme-card-header">
+                                <h3 class="beta-title">
+                                    <!-- Titre desktop -->
+                                    <span class="d-none d-md-block">
+                                        Accompagner les candidats adoptants
+                                    </span>
+                                    <!-- Bouton mobile -->
+                                    <button type="button" class="theme-header collapsed d-md-none px-0 py-0" id="heading-subtheme-1" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-1">
+                                        <span>Accompagner les candidats adoptants</span>
+                                        <span class="theme-icon" aria-hidden="true">
+                                            <svg width="12" height="8" viewBox="0 0 12 8"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z"
+                                                    fill="#846395"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                            </div>
+
+                            <!-- Contenu -->
+                            <div
+                                id="collapse-subtheme-1"
+                                class="collapse d-md-block theme-collapse">
+
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Comment préparer un projet d'adoption avec un parent
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Parler des attentes et des représentations de l'enfant à venir
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Accompagner les démarches administratives de l'adoption
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thématique 2 -->
+                    <div class="col-12 col-md-4 theme-item">
+                        <div class="card theme-card h-100">
+                            <div class="card-header theme-card-header">
+                                <h3 class="beta-title">
+                                    <!-- Titre desktop -->
+                                    <span class="d-none d-md-block">
+                                        Accompagner le non-désir d'enfant
+                                    </span>
+
+                                    <!-- Bouton mobile -->
+                                    <button type="button" class="theme-header collapsed d-md-none px-0 py-0" id="heading-subtheme-2" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-2">
+                                        <span>Accompagner le non-désir d'enfant</span>
+                                        <span class="theme-icon" aria-hidden="true">
+                                            <svg width="12" height="8" viewBox="0 0 12 8"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z"
+                                                    fill="#846395"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                            </div>
+                            <!-- Contenu -->
+                            <div
+                                id="collapse-subtheme-2"
+                                class="collapse d-md-block theme-collapse">
+
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Accueillir les émotions liées à un parcours de parentalité difficile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Soutenir un parent face à un projet parental incertain
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Orienter vers des ressources spécialisées
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thématique 3 -->
+                    <div class="col-12 col-md-4 theme-item">
+                        <div class="card theme-card h-100">
+
+                            <div class="card-header theme-card-header">
+
+                                <h3 class="beta-title">
+
+                                    <!-- Titre desktop -->
+                                    <span class="d-none d-md-block">
+                                        Accompagner l'enfant
+                                    </span>
+                                    <!-- Bouton mobile -->
+                                    <button type="button" class="theme-header collapsed d-md-none px-0 py-0" id="heading-subtheme-3" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-3">
+                                        <span>Accompagner l'enfant</span>
+                                        <span class="theme-icon" aria-hidden="true">
+                                            <svg width="12" height="8" viewBox="0 0 12 8"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z"
+                                                    fill="#846395"/>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </h3>
+                            </div>
+                            <!-- Contenu -->
+                            <div
+                                id="collapse-subtheme-3"
+                                class="collapse d-md-block theme-collapse">
+
+                                <div class="card-body">
+                                    <ul>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Faciliter la création du lien parent-enfant après adoption
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Comprendre les besoins spécifiques des enfants adoptés
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="link" href="#">
+                                                Gérer les difficultés d'attachement
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+               
+                <!-- <div class="row g-4" id="themesAccordion">
+                    <div class="col-12 col-md-4 theme-item">
+                        <div class="card theme-card h-100">
                             <div class="card-header theme-header" id="heading-subtheme-1" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-1" aria-expanded="false" aria-controls="collapse-subtheme-1" >
                                 <h3 class="beta-title">Accompagner les candidats adoptants</h3>
                                 <span class="theme-icon">
@@ -328,7 +431,6 @@
                                     </svg>
                                 </span>
                             </div>
-                            <!-- Contenu -->
                             <div id="collapse-subtheme-1" class="collapse theme-collapse" aria-labelledby="heading-subtheme-1" data-bs-parent="#themesAccordion1" >
                                 <div class="card-body">
                                     <ul>
@@ -349,7 +451,6 @@
                     </div>
                     <div class="col-12 col-md-4 theme-item">
                         <div class="card theme-card h-100">
-                            <!-- Header -->
                             <div class="card-header theme-header" id="heading-subtheme-2" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-2" aria-expanded="false" aria-controls="collapse-subtheme-2" >
                                 <h3 class="beta-title">Accompagner le non-désir d'enfant</h3>
                                 <span class="theme-icon">
@@ -358,7 +459,6 @@
                                     </svg>
                                 </span>
                             </div>
-                            <!-- Contenu -->
                             <div id="collapse-subtheme-2" class="collapse theme-collapse" aria-labelledby="heading-subtheme-2" data-bs-parent="#themesAccordion1" >
                                 <div class="card-body">
                                     <ul>
@@ -379,7 +479,6 @@
                     </div>
                     <div class="col-12 col-md-4 theme-item">
                         <div class="card theme-card h-100">
-                            <!-- Header -->
                             <div class="card-header theme-header" id="heading-subtheme-3" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-3" aria-expanded="false" aria-controls="collapse-subtheme-3" >
                                 <h3 class="beta-title">Accompagner l'enfant</h3>
                                 <span class="theme-icon">
@@ -388,7 +487,6 @@
                                     </svg>
                                 </span>
                             </div>
-                            <!-- Contenu -->
                             <div id="collapse-subtheme-3" class="collapse theme-collapse" aria-labelledby="heading-subtheme-1" data-bs-parent="#themesAccordion1" >
                                 <div class="card-body">
                                     <ul>
@@ -408,80 +506,8 @@
                     </div>
 
 
-                </div>
-                <!-- <div class="row">
-                    <div class="subthemes">
-                        <div class="subthemes-list">
-                            <details class="subtheme" open>
-                                <summary class="beta-title">Accompagner les candidats adoptants
-                                    <span class="accordion-icon">
-                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z" fill="#846395"/>
-                                        </svg>
-                                    </span>
-                                </summary>
-                                <ul>
-                                    <li>
-                                        <a class="link" href="#">Comment préparer un projet d'adoption avec un parent</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Parler des attentes et des représentations de l'enfant à venir</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Accompagner les démarches administratives de l'adoption</a>
-                                    </li>
-                                </ul>
-                            </details>
-
-
-                            <details class="subtheme" open>
-                                <summary class="beta-title">Accompagner le non-désir d'enfant
-                                    <span class="accordion-icon">
-                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z" fill="#846395"/>
-                                        </svg>
-                                    </span>
-                                </summary>
-
-                                <ul>
-                                    <li>
-                                        <a class="link" href="#">Accueillir les émotions liées à un parcours de parentalité difficile</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Soutenir un parent face à un projet parental incertain</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Orienter vers des ressources spécialisées</a>
-                                    </li>
-                                </ul>
-                            </details>
-
-
-                            <details class="subtheme" open>
-                                <summary class="beta-title">
-                                    Accompagner l'enfant
-                                    <span class="accordion-icon">
-                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z" fill="#846395"/>
-                                        </svg>
-                                    </span>
-                                </summary>
-
-                                <ul>
-                                    <li>
-                                        <a class="link" href="#">Faciliter la création du lien parent-enfant après adoption</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Comprendre les besoins spécifiques des enfants adoptés</a>
-                                    </li>
-                                    <li>
-                                        <a class="link" href="#">Gérer les difficultés d'attachement</a>
-                                    </li>
-                                </ul>
-                            </details>
-                        </div>
-                    </div>
                 </div> -->
+
             </div>
         </section>
         <section class="last-articles-section">
@@ -808,7 +834,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h2 class="alpha-title mb-2">Partenaires</h2>
-                        <h3 class="beta-title">Un site interinstitutionnel aux expertises multiples</h3>
+                        <<p class="beta-title">Un site interinstitutionnel aux expertises multiples</p>
                     </div>
                 </div>
 
@@ -1073,6 +1099,86 @@ Array.from(parentNavItem.parentElement.children).forEach(item => {
 
    
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const accordion = document.querySelector('#themesAccordion');
+
+    if (!accordion) return;
+
+    const mediaQuery = window.matchMedia('(max-width: 767.98px)');
+
+    const buttons = accordion.querySelectorAll('.theme-header');
+
+    function updateAccordionMode() {
+
+        const isMobile = mediaQuery.matches;
+
+        buttons.forEach(button => {
+
+            const targetId = button.getAttribute('data-bs-target');
+            const content = document.querySelector(targetId);
+
+            if (!content) return;
+
+            if (isMobile) {
+
+                // Mode mobile : accordéon
+                const isOpen = content.classList.contains('show');
+
+                button.setAttribute('aria-controls', content.id);
+                button.setAttribute('aria-expanded', String(isOpen));
+
+            } else {
+
+                // Mode desktop : contenu toujours visible
+                button.removeAttribute('aria-controls');
+                button.removeAttribute('aria-expanded');
+
+                // Réinitialisation de l'état Bootstrap
+                content.classList.remove('collapsing', 'show');
+                content.classList.add('collapse');
+
+            }
+
+        });
+
+    }
+
+    // Mise à jour après une ouverture ou fermeture Bootstrap
+    accordion.addEventListener('shown.bs.collapse', event => {
+
+        const button = accordion.querySelector(
+            `[data-bs-target="#${event.target.id}"]`
+        );
+
+        if (button && mediaQuery.matches) {
+            button.setAttribute('aria-expanded', 'true');
+        }
+
+    });
+
+    accordion.addEventListener('hidden.bs.collapse', event => {
+
+        const button = accordion.querySelector(
+            `[data-bs-target="#${event.target.id}"]`
+        );
+
+        if (button && mediaQuery.matches) {
+            button.setAttribute('aria-expanded', 'false');
+        }
+
+    });
+
+    // Initialisation
+    updateAccordionMode();
+
+    // Changement de breakpoint ou zoom
+    mediaQuery.addEventListener('change', updateAccordionMode);
+
+});
+
+
 </script>
 </body>
 </html>

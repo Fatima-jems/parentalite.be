@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="./assets/css/Bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/Bootstrap5/bootstrap.bundle.min.js"></script>
-    <title>Homepage</title>
+    <title>Annuaire | Parentalité.be</title>
 </head>
 <body id="annuaire">
+    <a class="visually-hidden-focusable page-skip-link btn btn--md btn-primary purple" href="#page-content">
+        <span>Skip to main content</span>
+    </a>
     <header class="colored">
         <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
@@ -221,7 +224,7 @@
             </div> 
         </div> 
     </header>
-    <main>
+    <main id="page-content">
          <section class="breadcrumbs-section">
             <div class="container">
                 <!-- Titre -->
@@ -432,15 +435,15 @@
                                 <div class="tag-filters-list">
                                     <div class="list-tags">
                                         <span class="tag grey close">Hainaut
-                                            <button>
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <button aria-label="Supprimer le filtre Hainaut">
+                                                <svg width="20" height="20" aria-hidden="true" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M15.8333 5.34169L14.6583 4.16669L9.99996 8.82502L5.34163 4.16669L4.16663 5.34169L8.82496 10L4.16663 14.6584L5.34163 15.8334L9.99996 11.175L14.6583 15.8334L15.8333 14.6584L11.175 10L15.8333 5.34169Z" fill="#555555"/>
                                                 </svg>
                                             </button>
                                         </span>
                                         <span class="tag grey close">Handicap
-                                            <button>
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <button aria-label="Supprimer le filtre Handicap">
+                                                <svg width="20" height="20" aria-hidden="true" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M15.8333 5.34169L14.6583 4.16669L9.99996 8.82502L5.34163 4.16669L4.16663 5.34169L8.82496 10L4.16663 14.6584L5.34163 15.8334L9.99996 11.175L14.6583 15.8334L15.8333 14.6584L11.175 10L15.8333 5.34169Z" fill="#555555"/>
                                                 </svg>
                                             </button>
@@ -465,12 +468,20 @@
                                                         qu'éducative, au bénéfice des enfants et des jeunes dans
                                                         leur milieu de vie et dans leurs relations familiales.
                                                     </p>
-                                                    <div class="directory-card__badges">
-                                                        <span class="tag green badge-organisme">Organisme</span>
-                                                        <span class="tag yellow badge-theme">Adoption</span>
-                                                        <span class="tag purple badge-life">Moment de vie</span>
-                                                        <span class="tag grey badge-more">+3</span>
-                                                    </div>
+                                                    <ul class="list-tags directory-card__badges" aria-label="Types de contenu">
+                                                        <li>
+                                                            <span class="tag green badge-organisme">Organisme</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag yellow badge-theme">Adoption</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag purple badge-life">Moment de vie</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag grey badge-more">+3</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                                 <!-- LOGO -->
                                                 <div class="col-lg-auto directory-card__logo">
@@ -522,12 +533,20 @@
                                                         L'équipe du SAJE travaille au bénéfice de tout enfant de 0 à 8 ans présentant une déficience, une maladie chronique ou génétique, des troubles du développement et / ou du comportement. Le service d'Accompagnement s'adresse également à l'entourage de l'enfant.
                                                         Un accompagnement peut également être proposé durant la grossesse
                                                     </p>
-                                                    <div class="directory-card__badges">
-                                                        <span class="tag green badge-organisme">Organisme</span>
-                                                        <span class="tag yellow badge-theme">Handicap</span>
-                                                        <span class="tag purple badge-life">Naissance à enfance</span>
-                                                        <span class="tag grey badge-more">+3</span>
-                                                    </div>
+                                                    <ul class="list-tags directory-card__badges" aria-label="Types de contenu">
+                                                        <li>
+                                                            <span class="tag green badge-organisme">Organisme</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag yellow badge-theme">Handicap</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag purple badge-life">Naissance à enfance</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag grey badge-more">+3</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                                 <!-- LOGO -->
                                                 <div class="col-lg-auto directory-card__logo">
@@ -577,12 +596,20 @@
                                                     <p class="directory-card__description">
                                                         L'équipe du SAJE travaille au bénéfice de tout enfant de 0 à 8 ans présentant une déficience, une maladie chronique ou génétique, des troubles du développement et / ou du comportement. Le service d'Accompagnement s'adresse également à l'entourage de l'enfant. Un accompagnement peut également être proposé durant la grossesse, lorsqu'un dialogue
                                                     </p>
-                                                    <div class="directory-card__badges">
-                                                        <span class="tag green badge-organisme">Projet</span>
-                                                        <span class="tag yellow badge-theme">Handicap</span>
-                                                        <span class="tag purple badge-life">Naissance à enfance</span>
-                                                        <span class="tag grey badge-more">+3</span>
-                                                    </div>
+                                                    <ul class="list-tags directory-card__badges" aria-label="Types de contenu">
+                                                        <li>
+                                                            <span class="tag green badge-organisme">Organisme</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag yellow badge-theme">Handicap</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag purple badge-life">Naissance à enfance</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="tag grey badge-more">+3</span>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                                 <!-- LOGO -->
                                                 <div class="col-lg-auto directory-card__logo">
@@ -662,7 +689,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h2 class="alpha-title mb-2">Partenaires</h2>
-                        <h3 class="beta-title">Un site interinstitutionnel aux expertises multiples</h3>
+                        <p class="beta-title">Un site interinstitutionnel aux expertises multiples</p>
                     </div>
                 </div>
 

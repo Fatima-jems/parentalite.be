@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="./assets/css/Bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/Bootstrap5/bootstrap.bundle.min.js"></script>
-    <title>Référentiel</title>
+    <title>Référentiel | Parentalité.be</title>
 </head>
 <body id="brochure_detail">
+    <a class="visually-hidden-focusable page-skip-link btn btn--md btn-primary purple" href="#page-content">
+        <span>Skip to main content</span>
+    </a>
     <header class="colored">
         <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
@@ -210,22 +213,22 @@
                         </nav>
                     </div> 
                 </div>
-                <div class="col-lg-6 col-12">
-                    <h1 class="page-subtitle">
-                        Ressources
-                    </h1> 
-                    <h2 class="page-title">
+                <div class="col-lg-6 col-12 d-flex flex-column">
+                    <h1 class="page-title order-1">
                         Un référentiel de soutien à la parentalité
-                    </h2>
-                    <h3 class="page-desc-title">
+                    </h1>
+                    <span class="page-subtitle mb-2 order-0">
+                        Ressources
+                    </span>
+                    <span class="page-desc-title order-2">
                         Référentiel et satellites
-                    </h3>                     
-                </div> 
+                    </span>
+                </div>
                 </div> 
             </div> 
         </div> 
     </header>
-    <main>
+    <main id="page-content">
         <section class="breadcrumbs-section">
             <div class="container">
                 <!-- Titre -->
@@ -262,36 +265,49 @@
                         </section>
                         <section class="m-b-12">
                             <h3 class="alpha-title m-b-8">Articles du référentiel</h3>
-                            <div class="card theme-card h-100 theme-item">
-                                <!-- Header -->
-                                <div class="card-header theme-header" id="heading-subtheme-1" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-3" aria-expanded="false" aria-controls="collapse-subtheme-1" >
-                                    <h3 class="beta-title">Sommaire</h3>
-                                    <span class="theme-icon">
-                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z" fill="#846395"/>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <!-- Contenu -->
-                                <div id="collapse-subtheme-1" class="collapse theme-collapse" aria-labelledby="heading-subtheme-1" data-bs-parent="#themesAccordion1" >
-                                    <div class="card-body">
-                                        <ul>
-                                            <li>
-                                            <a class="link" href="referentiel_article.html">Pourquoi un référentiel de soutien à la parentalité ?</a>
-                                            </li>
-                                            <li>
-                                                <a class="link" href="#">Parentalité, soutien à la parentalité: de quoi parle-t-on vraiment ?</a>
-                                            </li>
-                                            <li>
-                                                <a class="link" href="#">4 grands principes du soutien à la parentalité en FWB</a>
-                                            </li>
-                                            <li>
-                                                <a class="link" href="#">5 balises et un outils pour réfléchir aux postures professionnelles</a>
-                                            </li>
-                                        </ul>
+                            <div class="row g-4" id="themesAccordion">
+                                <div class="col-12 theme-item">
+                                    <div class="card theme-card h-100">
+                                        <div class="card-header theme-card-header">
+                                            <h3 class="beta-title">
+                                                <!-- Titre desktop -->
+                                                <span class="d-none d-md-block">
+                                                    Sommaire
+                                                </span>
+                                                <!-- Bouton mobile -->
+                                                <button type="button" class="theme-header collapsed d-md-none px-0 py-0" id="heading-subtheme-1" data-bs-toggle="collapse" data-bs-target="#collapse-subtheme-1">
+                                                    <span>Sommaire</span>
+                                                    <span class="theme-icon" aria-hidden="true">
+                                                        <svg width="12" height="8" viewBox="0 0 12 8"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.41 0L6 4.58L10.59 0L12 1.41L6 7.41L0 1.41L1.41 0Z"
+                                                                fill="#846395"/>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                            </h3>
+                                        </div>
+                                        <!-- Contenu -->
+                                        <div id="collapse-subtheme-1" class="collapse d-md-block theme-collapse">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>
+                                                        <a class="link" href="referentiel_article.html">Pourquoi un référentiel de soutien à la parentalité ?</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">Parentalité, soutien à la parentalité: de quoi parle-t-on vraiment ?</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">4 grands principes du soutien à la parentalité en FWB</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">5 balises et un outils pour réfléchir aux postures professionnelles</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                         </section>
                          <section class="m-b-12">
@@ -320,7 +336,7 @@
 
                             <div class="card mb-4 card-contact purple w-100">
                                 <div class="card-body  w-100">
-                                    <h3 class="beta-title mb-0">Informations générales</h3>
+                                    <h2 class="beta-title mb-0">Informations générales</h2>
                                     <div>
                                         <h4 class="card-title">
                                             Réalisé par
@@ -358,7 +374,7 @@
                 </div>
 
                 <!-- News list -->
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-lg col-md-4 col-sm-6 col-s-12">
                         <div class="card h-100">
                             <img src="./assets/images/Le soutien à la parentalité dans les lieux daccueil_WEB-1.jpg" class="card-img-top" alt="">
@@ -435,7 +451,7 @@
                     <div class="col-lg-7 col-12">
                         <div class="m-b-6 ">
                             <h2 class="alpha-title">Votre avis compte</h2>
-                            <h3 class="beta-title">Vous souhaitez approfondir une thématique liée au soutien à la parentalité ?</h3>
+                            <p class="beta-title">Vous souhaitez approfondir une thématique liée au soutien à la parentalité ?</p>
                         </div> 
                         <p class="m-b-6 ">Partagez vos idées, besoins ou suggestions pour enrichir les ressources et les réflexions autour du soutien à la parentalité.</p>
                         <a href="" class="btn btn--md btn-primary green">Partager une idée</a>

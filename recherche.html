@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="./assets/css/Bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/Bootstrap5/bootstrap.bundle.min.js"></script>
-    <title>Recherche</title>
+    <title>Ressources | Parentalité.be</title>
 </head>
 <body id="search-page">
+    <a class="visually-hidden-focusable page-skip-link btn btn--md btn-primary purple" href="#page-content">
+        <span>Skip to main content</span>
+    </a>
     <header class="colored">
         <svg class="line-color top" width="1728" height="7" aria-hidden=true preserveaspectratio="none" viewBox="0 0 1728 7" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="47" height="7" fill="#1D6FB7"/>
@@ -221,7 +224,7 @@
             </div> 
         </div> 
     </header>
-    <main>
+    <main id="page-content">
          <section class="breadcrumbs-section">
             <div class="container">
                 <!-- Titre -->
@@ -256,7 +259,7 @@
                     <div class="col-4 desktop-annuaire">
                         <!-- FILTERS BY DATE & ALPHABETICAL ORDER-->
                         <!-- <button class="btn btn-filters mobile"></button> -->
-                        <div class="sortOf-container js-sortOf-content">
+                        <!-- <div class="sortOf-container js-sortOf-content">
                             <div class="dropdown custom-select">
                                 <div id="" class="sortOf-content js-sortOf-content">
                                     <div class="dropdown select-filters custom-select">
@@ -273,7 +276,33 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> -->
+
+                        <div class="sortOf-container js-sortOf-content">
+                            <div class="dropdown custom-select">
+
+                                <button class="btn-filters dropdown-content" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="selected-option">Trier par</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                        <path
+                                            d="M9 3L5 6.99H8V14H10V6.99H13L9 3ZM16 17.01V10H14V17.01H11L15 21L19 17.01H16Z"
+                                            fill="#4E3A61"
+                                        />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item active" href="#" aria-current="page">Date</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            Alphabétique
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                         <h2 class="gamma-title mb-4 title-filters-card">
                             <svg class="me-2" width="24" height="24" aria-hidden="true" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_2619_38099)">
@@ -586,7 +615,7 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h2 class="alpha-title mb-2">Partenaires</h2>
-                        <h3 class="beta-title">Un site interinstitutionnel aux expertises multiples</h3>
+                        <p class="beta-title">Un site interinstitutionnel aux expertises multiples</p>
                     </div>
                 </div>
 
@@ -1007,30 +1036,39 @@ Array.from(parentNavItem.parentElement.children).forEach(item => {
 });
 
 
+
 const dropdown = document.querySelector(".custom-select");
 
-const items = dropdown.querySelectorAll(".dropdown-item");
+if (dropdown) {
 
-const selectedText = dropdown.querySelector(".selected-option");
+    const items = dropdown.querySelectorAll(".dropdown-item");
 
-items.forEach(item => {
+    const selectedText = dropdown.querySelector(".selected-option");
 
-    item.addEventListener("click", function(e){
+    items.forEach(item => {
 
-        e.preventDefault();
+        item.addEventListener("click", function(e) {
 
-        // Retire l'active de tous les éléments
-        items.forEach(el => el.classList.remove("active"));
+            e.preventDefault();
 
-        // Active l'élément cliqué
-        this.classList.add("active");
+            // Retire l'état actif et ARIA des autres éléments
+            items.forEach(el => {
+                el.classList.remove("active");
+                el.removeAttribute("aria-current");
+            });
 
-        // Met à jour le texte du bouton
-        // selectedText.textContent = this.textContent.trim();
+            // Active l'élément sélectionné
+            this.classList.add("active");
+            this.setAttribute("aria-current", "page");
+
+            // Le bouton conserve toujours son libellé
+            selectedText.textContent = "Trier par";
+
+            // Ici, conserver ou appeler ta fonction de tri
+        });
 
     });
-
-});
+}
 
 </script>
 
